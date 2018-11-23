@@ -1,0 +1,41 @@
+digraph {
+	bgcolor=transparent;
+	rankdir=TB;
+	splines=ortho;
+	
+	node [shape=box,style=filled,fillcolor=white,fontsize=12];
+	{
+		rank=same;rankdir=LR;
+		start[shape=circle,label=""];
+		proposal[label="Proposal",style="filled,rounded"];
+		creation_review[label="Creation\nReview"];
+	}
+	{
+		rank=same;rankdir=LR;
+		plan[label="Plan"];
+		plan_review[label="Plan\nReview"];
+		development[label="Development"];
+		milestone[label="Milestone",style="filled,rounded"];
+		progress_review[label="Progress\nReview"];
+	}
+	{
+		rank=same; rankdir=LR;
+		rc[label="Specification\nVersion",style="filled,rounded"];
+		release_review[label="Release\nReview"];
+		final[label="Ratified Final\nSpecification",style="filled,rounded"];
+	}
+	
+	start -> proposal;
+	proposal -> creation_review;
+	creation_review -> development;
+	plan -> plan_review;
+	plan_review -> development [weight=1000];
+	development -> milestone[weight=1000];
+	milestone -> development[weight=1000];
+	milestone -> progress_review;
+	progress_review -> development;
+	development -> rc[weight=1000];
+	rc -> release_review ;
+	release_review -> final;
+	final -> plan;
+}

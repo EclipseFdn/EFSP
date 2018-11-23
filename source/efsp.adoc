@@ -1,0 +1,17 @@
+:linkcss:
+:stylesdir: ./resources
+:scriptsdir: ./resources
+
+:toc:
+:toc-placement: auto
+:icons: font
+
+:sectlinks:
+:sectanchors:
+:figure-caption!:
+
+:experimental:
+
+include::process.adoc[]
+
+include::addendum.adoc[leveloffset=+1]

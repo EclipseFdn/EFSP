@@ -1,0 +1,33 @@
+[[efsp-addendum-revisions]]
+= Addendum: Process Revisions
+
+[[efsp-addendum-revisions-edp]]
+== Eclipse Development Process
+
+* Architecture Council initiates work, gathers requirements, and authors an updated document.
+* Architecture Council approves final draft by simple majority (lazy consensus).
+* Eclipse Board of Directors approves final draft by super-majority vote
+* Version is published for use.
+
+[[efsp-addendum-revisions-efsp]]
+== Eclipse Foundation Specification Process
+
+* Executive Director convenes a committee (composed primarily, but not exclusively, of representatives from Working Group Specification Committees) and appoints a chairperson.
+* Committee initiates work, gathers requirements, and authors an updated document
+* Committee approves final draft by simple majority (lazy consensus).
+* Eclipse Board of Directors approves the final draft.
+* Version is published for use.
+
+[NOTE]
+====
+A Board delegation in place for the Executive Director to approve version 1.0 of the EFSP
+====
+
+[[efsp-addendum-revisions-wg]]
+== Working Group Specification Process
+
+* Working Group Specification Committee initiates work, gathers requirements, and authors an updated document.
+* Working Group Specification Committee approves final draft by super-majority vote (as defined in the EFSP)
+* Working Group Steering Committee approves final draft
+* EMO(ED) approves final draft.
+* Version is published for use.
