@@ -1,7 +1,16 @@
+////
+ * Copyright (C) Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+////
 [[efsp]]
 = Eclipse Foundation Specification Process v1.0
 
-Effective December 7, 2018
+Version 1.0. Effective December 7, 2018
 
 The document describes the Eclipse Foundation Specification Process (EFSP) for optional use by Eclipse Foundation Working Groups.
 
@@ -259,7 +268,7 @@ The Specification Team must complete all required due diligence under the Eclips
 Specification Projects are created using the process defined by the EDP with the added requirement that the Specification Committee must approve the Project Proposal by a Super-majority before the Specification Project can successfully complete a Creation Review.
 
 .The Specification Project creation process.
-image::images/image2.png[image]
+image::images/creation.svg[Specification Project Proposal and Creation Review]
 
 The Specification Committee vote and the Creation Review run in parallel for a minimum of one week. The Project Proposal text must not be changed during the Creation Review period. If changes are required during this period, the Project Proposal is pushed back into the Proposal Phase.
 
