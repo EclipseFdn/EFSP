@@ -65,9 +65,17 @@ Member Participant :: A Member of the Eclipse Foundation including Solutions Mem
 Milestone :: A build of the project content for limited distribution to demonstrate progress and solicit feedback.
 
 Open Source License ::
-// TODO: Other than by using passthrough HTML, I don't know how to group
-// in a glossary entry.
-One of the following OSI-approved open source licenses: +++<ol><li><a href="https://www.eclipse.org/legal/epl-2.0/">Eclipse Public License - v 2.0</a> (possibly with Secondary Licenses)<br/>SPDX short identifier: EPL-2.0</li><li><a href="https://www.eclipse.org/org/documents/edl-v10.php">Eclipse Distribution License - v 1.0</a><br/>SPDX short identifier: BSD-3-Clause</li><li><a href="https://opensource.org/licenses/Apache-2.0">Apache License - v 2.0</a>.<br/>SPDX short identifier: Apache-2.0</li></ol>+++
+One of the following OSI-approved open source licenses:
++
+****
+* https://www.eclipse.org/legal/epl-2.0/[Eclipse Public License - v 2.0] (possibly with Secondary Licenses) +
+SPDX short identifier: EPL-2.0
+* https://www.eclipse.org/org/documents/edl-v10.php[Eclipse Distribution License - v 1.0] +
+SPDX short identifier: BSD-3-Clause
+* https://opensource.org/licenses/Apache-2.0[Apache License - v 2.0] +
+SPDX short identifier: Apache-2.0
+****
++
 This list may be modified with the unanimous approval of the Working Group Steering Committee and the Eclipse Foundation Board of Directors.
 
 Participant :: A Member Participant or Individual Participant.
@@ -120,7 +128,7 @@ Specification Team :: The collective of Committers with responsibilities and pri
 
 Specification Version :: A specific version of a Specification.
 
-Super-majority :: Two-thirds of the eligible voters
+Super-majority :: Two-thirds of the eligible voters.
 
 Top-Level Project :: An organizational unit that defines an overall mission and scope for a collection of Projects (and Specification Projects). For a complete definition, see the EDP.
 
