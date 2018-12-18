@@ -75,7 +75,7 @@
 						<imagesoutdir>.</imagesoutdir>
 						<imagesdir>.</imagesdir>
 						<data-uri />
-						<toc>left</toc>
+						<toc>macro</toc>
 						<icons>font</icons>
 						<sectanchors>true</sectanchors>
 						<idprefix />
@@ -87,13 +87,26 @@
 				</configuration>
 				<executions>
 					<execution>
-						<id>asciidoc-to-html-eclipse</id>
+						<id>asciidoc-to-html-efsp</id>
 						<phase>generate-resources</phase>
 						<goals>
 							<goal>process-asciidoc</goal>
 						</goals>
 						<configuration>
 							<sourceDocumentName>efsp.adoc</sourceDocumentName>
+							<headerFooter>false</headerFooter>
+							<attributes>
+							</attributes>
+						</configuration>
+					</execution>
+					<execution>
+						<id>asciidoc-to-html-faq</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>process-asciidoc</goal>
+						</goals>
+						<configuration>
+							<sourceDocumentName>faq.adoc</sourceDocumentName>
 							<headerFooter>false</headerFooter>
 							<attributes>
 							</attributes>

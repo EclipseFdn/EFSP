@@ -1,0 +1,61 @@
+////
+ * Copyright (C) Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[efsp-faq]]
+= Frequently Asked Questions
+
+[qanda]
+How does the role of the Specification Committee differ from the role of the PMC? ::
+
+The PMC manages the technical governance process, and provides oversight. It ensures that the open source rules of engagement are observed and the EDP as a whole is followed. It participates in the Intellectual Property process to ensure that requests for review are technically sound (for example, to ensure that the use of third-party content makes technical sense). The PMC provides best practices. It tends to work more at the development and technical level.
++
+The Specification Committee is responsible for ensuring that the rules and processes outlined by the EFSP are implemented by Specification Projects.
++
+The PMC is in the Project Leadership Chain; the Specification Committee is not. Approvals from both parties are required for Reviews.
+
+If a Specification Project is archived, do the Specification Versions that it previously produced remain valid? ::
+
+Yes. All previously created Specification Versions remain valid. 
+
+What does it mean for a Specification Project to be “under the supervision” of a Specification Committee? ::
+
+A Specification Project effectively belongs to one Working Group. By aligning itself with a particular Working Group, a Specification Project agrees to take direction from the corresponding Specification Committee. 
+
+How does the Specification Committee manage the overall roadmap for the Specification Projects under their supervision? ::
+
+How a Specification Committee manages a roadmap varies based on the nature of the parties involved. The Specification Committee may choose to defer this responsibility to one of the Specification Projects (e.g. a _Platform_ Specification Project). The roadmap itself may take the form of a set of published guidelines or best practices, the implementation of a simultaneous release, or required themes and other elements in Release Plans. Ultimately, the Specification Committee should work with the PMC and the Project Teams to build consensus rather than impose rules.
+
+What happens if a Review fails? ::
+
+The party that fails (i.e. denies approval) the review is expected to provide feedback in the event of failure. The Specification Team will engage with the party to determine the correct course of action. That course of action may be to re-engage in the Review at a later date or take some other corrective action. In any case, the Reviews required by the process must be completed successfully to proceed to the next step.
+
+What do I do if I feel that my Review was failed unfairly? ::
+
+Follow the Grievance Handling process defined in the EDP.
+
+Why do I need to sign the Eclipse Membership Agreement and Working Group Participation Agreement to be a committer on a Specification Project? ::
+
+TBD
+
+How is the association of the artifacts of a particular Specification Version represented? ::
+
+The Specification Committee should provide best practices to Specification Projects, for example, a standard metadata format.
+
+What is the difference between a Specification Version and a Final Specification? ::
+
+A Specification Version is produced by a release cycle, then becomes a Final Specification when it is Ratified (under the Eclipse Foundation Specification License (EFSL)).
+
+What types of changes are not appropriate for a Service Release? ::
+
+Changes to method signatures or additions of new methods or behavior (for example) are never appropriate in a Service Release.
+
+Are Specification Projects required to implement the Eclipse IP Policy and engage in the Eclipse IP Due Diligence Process? ::
+
+Yes. 

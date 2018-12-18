@@ -12,6 +12,8 @@
 
 Version 1.0. Effective December 7, 2018
 
+toc::[]
+
 The document describes the Eclipse Foundation Specification Process (EFSP) for optional use by Eclipse Foundation Working Groups.
 
 The EFSP leverages and augments the https://www.eclipse.org/projects/dev_process/development_process.php[Eclipse Development Process] (EDP). The EDP defines important concepts, including the Open Source Rules of Engagement, the organizational framework for open source projects and teams, releases, reviews, and more.
