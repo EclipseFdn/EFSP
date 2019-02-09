@@ -16,9 +16,9 @@ How does the role of the Specification Committee differ from the role of the PMC
 
 The PMC manages the technical governance process, and provides oversight. It ensures that the open source rules of engagement are observed and the EDP as a whole is followed. It participates in the Intellectual Property process to ensure that requests for review are technically sound (for example, to ensure that the use of third-party content makes technical sense). The PMC provides best practices. It tends to work more at the development and technical level.
 +
-The Specification Committee is responsible for ensuring that the rules and processes outlined by the EFSP are implemented by Specification Projects.
+The Specification Committee is responsible for ensuring that the rules and processes outlined by the EFSP are implemented by Specification Projects, that the integrity of the Scope is maintained (e.g. that release plans define changes that are in-scope), that community has been properly consulted, implementation is technical feasible, and that the Specification otherwise remains consistent with the goals of the Working Group.
 +
-The PMC is in the Project Leadership Chain; the Specification Committee is not. Approvals from both parties are required for Reviews.
+The PMC is in the Project Leadership Chain; the Specification Committee is not. Approvals from both parties are required for Progress and Release Reviews.
 
 If a Specification Project is archived, do the Specification Versions that it previously produced remain valid? ::
 
