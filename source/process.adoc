@@ -30,15 +30,15 @@ This document, and future revisions thereof will be approved by the Eclipse Foun
 * https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf[Eclipse Foundation Bylaws]
 * https://www.eclipse.org/org/workinggroups/industry_wg_process.php#[Working Group Process]
 * https://www.eclipse.org/org/workinggroups/IWG_Participation_Agreement.pdf#[Working Group Participation Agreement]
-* Eclipse Foundation Specification License
-* Eclipse Foundation Technology Compatibility Kit License
+* https://www.eclipse.org/legal/efsl.php[Eclipse Foundation Specification License]
+* https://www.eclipse.org/legal/tck.php[Eclipse Foundation TCK License]
 * Eclipse Foundation Trademark License Agreement
 * https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf#[Eclipse Foundation Membership Agreement]
 * https://www.eclipse.org/projects/dev_process/development_process.php#[Eclipse Development Process]
 * https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf#[Eclipse Foundation Intellectual Property Policy]
 * https://www.eclipse.org/org/documents/Eclipse_Antitrust_Policy.pdf#[Eclipse Foundation Anti-Trust Policy]
 
-In the event of any conflict between the terms set forth in this Eclipse Foundation Specification Process and the terms of the documents listed above, the terms of those documents shall take precedence.
+In the event of any conflict between the terms set forth in this EFSP and the terms of the documents listed above, the terms of those documents shall take precedence.
 
 [[efsp-terms]]
 == Terms and Definitions
@@ -62,9 +62,13 @@ Final Specification :: A Ratified Specification Version.
 
 Individual Participant :: An individual Committer on a Specification Project.
 
+Major Release :: A type of Release that includes either significant new functionality and/or breaking changes.
+
 Member Participant :: A Member of the Eclipse Foundation including Solutions Member, Enterprise Member, or Strategic Member (as defined in the https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf#[Eclipse Foundation Bylaws]) that has one or more Committers on a Specification Project.
 
 Milestone :: A build of the project content for limited distribution to demonstrate progress and solicit feedback.
+
+Minor Release :: A type of Release that includes new features over a Major Release.
 
 Open Source License ::
 One of the following OSI-approved open source licenses:
@@ -104,6 +108,8 @@ Proposal Phase :: A phase in the Project lifecycle during which a Project Propos
 
 Ratified :: A Specification Version that has been adopted by the Specification Committee and made available under the Eclipse Foundation Specification License to enable the creation and certification of Compatible Implementations.
 
+Release :: A Specification Version intended for ratification as a Final Specification.
+
 Release Candidate :: A feature-complete Milestone.
 
 Release Cycle :: The cycle of development that produces a Specification Version.
@@ -116,7 +122,7 @@ Review :: The EFSP uses the same reviews as defined in the https://www.eclipse.o
 
 Scope :: The defined scope of activities for a Specification Project.
 
-Service Release :: A release that fixes bugs only. For example, spelling and simple grammar updates that do not change meaning in a Specification Document or API documentation. The PMC and Specification Committee can provide more guidance.
+Service Release :: A Release that includes only minor changes and/or clarifications over a Major or Minor Release. A Service Release may also be referred to as a Maintenance Release.
 
 Specification :: A collection of Application Programming Interface (API) definitions, descriptions of semantic behavior, data formats, protocols, and/or other referenced specifications, along with its TCK, intended to enable the development and testing of independent Compatible Implementations.
 
@@ -239,6 +245,37 @@ The EFSP is based on the Development Process described in the https://www.eclips
 
 The Specification https://www.eclipse.org/projects/dev_process/#6_2_Project_Lifecycle[Project Lifecycle] is defined by the EDP.
 
+
+[[efsp-releases]]
+==== Releases
+
+While in the Incubation and Mature Phases, a Specification Project may engage in the Release process to produce Specification Versions which, when <<efsp-ratification,Ratified>>, become Final Specifications. <<efsp-reviews,Reviews>> are required for all Releases of a Specification Project.
+
+There are three types of Releases: Major, Minor, and Service. A Specification Team may consult with their PMC and Specification Committee to determine the appropriate classification.
+
+[[efsp-releases-major]]
+==== Major and Minor Releases
+
+A Major Release includes significant new features and/or breaking changes. A Minor Release includes new features over a Major Release. For both Major and Minor Releases the Specification Team must engage in at least one <<efsp-reviews-progress, Progress Review>> and a <<efsp-reviews-release, Release Review>>.
+
+A Specification Project's first Release is a Major Release.
+
+[[efsp-milestones]]
+==== Milestone Builds
+
+Leading up to a Release, a Specification Team must produce at least one Milestone Build. Milestones and Release Candidates are "almost Releases" intended for adoption and testing by early-adopters. No formal Reviews are required for Milestone Builds. 
+
+Under no circumstances are Milestone Builds to be used as a substitute for doing proper official Releases. 
+
+All communication regarding Milestone Builds must include caveats explaining that these are not official Releases. Milestones and Release Candidate builds must be labeled as such (e.g. `x.yMn`, `x.yRCn`, `alpha`, `beta`, or similar).
+
+[[efsp-releases-service]
+==== Service Releases
+
+A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
+
+Service Releases based on a Specification Version that has engaged in a successful Release Review do not require any further Reviews, but must be approved by a Super-majority vote of the Specification Committee.
+
 [[efsp-version-lifecycle]]
 === Specification Version Lifecycle
 
@@ -258,8 +295,6 @@ The Specification Team must deliver at least one Milestone to demonstrate progre
 Milestones should be staged for limited distribution to key stakeholders to solicit feedback. The delivery of at least one Milestone must coincide with engagement in a successful Progress Review.
 
 The Specification Team must engage in a successful Release Review before the final Specification Version may be Ratified. A Specification Version becomes a Final Specification when it is Ratified.
-
-Service Releases (bug fixes) for a Specification Version that has engaged in a successful Release Review do not require any further Reviews, but must be approved by a Super-majority vote of the Specification Committee.
 
 [[efsp-reviews]]
 === Reviews
