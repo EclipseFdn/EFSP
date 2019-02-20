@@ -20,5 +20,5 @@ The Maven `pom.xml` file will generate both an HTML and PDF version of the docum
 PDF generation is out-of-the-box; no attempts have been made to tune or tweak the output (hint: contribution opportunity).
 
 ````bash
-mvn clean:generate-resources
+mvn clean generate-resources
 ````
