@@ -169,7 +169,7 @@ A Specification may describe parts as being optional. Optional parts of a Speci
 
 A Specification can define rules. If defined, such rules must not override the rules defined in any referenced Specification.
 
-A Specification that aggregates other Specifications by reference may be designated as a Profile. Profiles do not have to be arranged in unique subsets (i.e. a Specification may appear in more than one Profile). A Super-majority, including a Super-majority of Strategic Members, is required to approve a Profile Specification. A Specification Committee may, at its discretion, elect to label one or more Profiles as a “Platform”.
+A Specification that aggregates other Specifications by reference may be designated as a Profile. Profiles do not have to be arranged in unique subsets (i.e. a Specification may appear in more than one Profile). A Super-majority, including a Super-majority of the Strategic Members of the Working Group, is required to approve a Profile Specification. A Specification Committee may, at its discretion, elect to label one or more Profiles as a “Platform”.
 
 [[efsp-versions]]
 ==== Specification Versions
@@ -220,8 +220,8 @@ A Specification Committee must approve, by Super-majority, the following lifecyc
 * The Release Plan for a new Release Cycle of a Specification.
 * Each revision to the Scope of a Specification.
 * Each Review of a Specification Project, including the adoption of Specification Versions.
-* A Profile Specification (this Super-majority must include a Super-majority of Strategic Members).
-* A Platform designation (this Super-majority must include a Super-majority of Strategic Members).
+* A Profile Specification (this Super-majority must include a Super-majority of Strategic Members of the Working Group).
+* A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group).
 * Service Releases.
 
 [[efsp-plans]]
