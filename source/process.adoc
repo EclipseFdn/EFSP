@@ -245,7 +245,6 @@ The EFSP is based on the Development Process described in the https://www.eclips
 
 The Specification https://www.eclipse.org/projects/dev_process/#6_2_Project_Lifecycle[Project Lifecycle] is defined by the EDP.
 
-
 [[efsp-releases]]
 ==== Releases
 
@@ -269,7 +268,7 @@ Under no circumstances are Milestone Builds to be used as a substitute for doing
 
 All communication regarding Milestone Builds must include caveats explaining that these are not official Releases. Milestones and Release Candidate builds must be labeled as such (e.g. `x.yMn`, `x.yRCn`, `alpha`, `beta`, or similar).
 
-[[efsp-releases-service]
+[[efsp-releases-service]]
 ==== Service Releases
 
 A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
@@ -353,7 +352,6 @@ All Specification Versions referenced by a Ratified Final Specification must the
 The Specification Document for the Final Specification must be distributed as read-only text under the Eclipse Foundation Specification License. The Ratified TCK in composite must be distributed under the Eclipse Foundation Technology Compatibility Kit License. Other technical artifacts must be distributed under an Open Source License.
 
 The diagram below is a conceptual model of the transition from a Specification Version to a Final Specification. No specific packaging technology or structure should be implied from this diagram.
-
 
 .Conceptual model of the transition from a Specification Version to a Final Specification. Note that no specific packaging technology or structure should be implied from this diagram.
 image::images/image4.png[image]
