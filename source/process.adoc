@@ -226,6 +226,8 @@ A Specification Committee must approve, by Super-majority vote, the following li
 
 All Specification Committee votes must be scheduled to run for a period of no less than one week.
 
+All artifacts related to a vote must be delivered in distribution form to the Specification Committee prior to the start of the vote, must not change during the voting period, and must persist in the delivered form following the vote as part of the public record. If related artifacts are modified while a vote is in progress, the vote is declared invalid and the corresponding review (if any) is declared failed.
+
 [[efsp-plans]]
 === Release Plans
 
