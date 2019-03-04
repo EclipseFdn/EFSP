@@ -214,15 +214,17 @@ The Specification Committee works with the PMC to manage the overall vision for 
 [[efsp-committee-approvals]]
 ==== Approvals
 
-A Specification Committee must approve, by Super-majority, the following lifecycle events of Specification Projects:
+A Specification Committee must approve, by Super-majority vote, the following lifecycle events of Specification Projects:
 
-* The creation of a new Specification Project.
-* The Release Plan for a new Release Cycle of a Specification.
-* Each revision to the Scope of a Specification.
-* Each Review of a Specification Project, including the adoption of Specification Versions.
-* A Profile Specification (this Super-majority must include a Super-majority of Strategic Members of the Working Group).
-* A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group).
+* The creation of a new Specification Project;
+* The Release Plan for a new Release Cycle of a Specification;
+* Each revision to the Scope of a Specification;
+* Each Review of a Specification Project, including the adoption of Specification Versions;
+* A Profile Specification (this Super-majority must include a Super-majority of Strategic Members of the Working Group);
+* A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group); and
 * Service Releases.
+
+All specification committee votes must be scheduled to run for a period of no less than one week.
 
 [[efsp-plans]]
 === Release Plans
