@@ -224,7 +224,7 @@ A Specification Committee must approve, by Super-majority vote, the following li
 * A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group); and
 * Service Releases.
 
-All specification committee votes must be scheduled to run for a period of no less than one week.
+All Specification Committee votes must be scheduled to run for a period of no less than one week.
 
 [[efsp-plans]]
 === Release Plans
