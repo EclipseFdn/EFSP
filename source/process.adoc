@@ -122,7 +122,7 @@ Review :: The EFSP uses the same reviews as defined in the https://www.eclipse.o
 
 Scope :: The defined scope of activities for a Specification Project.
 
-Service Release :: A Release that includes only minor changes and/or clarifications over a Major or Minor Release. A Service Release may also be referred to as a Maintenance Release.
+Service Release :: A Release that includes only minor changes and/or clarifications over a Major or Minor Release.
 
 Specification :: A collection of Application Programming Interface (API) definitions, descriptions of semantic behavior, data formats, protocols, and/or other referenced specifications, along with its TCK, intended to enable the development and testing of independent Compatible Implementations.
 
@@ -271,7 +271,7 @@ All communication regarding Milestone Builds must include caveats explaining tha
 [[efsp-releases-service]]
 ==== Service Releases
 
-A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
+A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. Specifically, a Service Release must not include any significant new features and/or breaking changes. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
 
 Service Releases based on a Specification Version that has engaged in a successful Release Review do not require any further Reviews, but must be approved by a Super-majority vote of the Specification Committee.
 
