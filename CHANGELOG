@@ -1,0 +1,19 @@
+# ChangeLog
+
+## [Version 1.1] - 2018-03-20
+
+### Added
+- Link to the Eclipse Foundation Specification License 
+- Link to the Eclipse Foundation TCK License
+- Definitions of "Release", "Major Release", and "Minor Release"
+- Specification Committee votes requires a Super-major of members of the Working Group (not members of the Eclipse Foundation)
+- Specification Committee votes must be scheduled to run for a period of no less than one week.
+- All artifacts related to a vote must be delivered in distribution form to the Specification Committee prior to the start of the vote, must not change during the voting period, and must persist in the delivered form following the vote as part of the public record. 
+- New section that describes releases.
+
+### Removed
+- The Specification Project creation process diagram (moved to the FAQ).
+
+### Changes
+- Simplied the definition of "Service Release".
+- Made the delivery of Final Specifications inclusive of Service Releases.
