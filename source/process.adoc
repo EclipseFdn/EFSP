@@ -256,12 +256,17 @@ While in the Incubation and Mature Phases, a Specification Project may engage in
 
 There are three types of Releases: Major, Minor, and Service. A Specification Team may consult with their PMC and Specification Committee to determine the appropriate classification.
 
+[NOTE]
+====
+The notions of Major, Minor, and Service Release bear a close resemblance to the "MAJOR.MINOR.PATCH" structure described by the Semantic Versioning specification. While a Specification Team may opt to use Semantic Versioning when naming their releases, this process imposes no requirement to do so. Further, this process imposes no requirement to tie any particular type of Release to any particular Semantic Versioning scheme.
+====
+
 [[efsp-releases-major]]
 ==== Major and Minor Releases
 
-A Major Release includes significant new features and/or breaking changes. A Minor Release includes new features over a Major Release. For both Major and Minor Releases the Specification Team must engage in at least one <<efsp-reviews-progress, Progress Review>> and a <<efsp-reviews-release, Release Review>>.
+A Major Release includes significant new features and/or breaking changes. A Minor Release includes new features over a Major Release. For both Major and Minor Releases the Specification Team must engage in at least one successful <<efsp-reviews-progress, Progress Review>> and a successful <<efsp-reviews-release, Release Review>>.
 
-A Specification Project's first Release is a Major Release.
+A Specification Project's first Release must be a Major or Minor Release.
 
 [[efsp-milestones]]
 ==== Milestone Builds
@@ -277,7 +282,7 @@ All communication regarding Milestone Builds must include caveats explaining tha
 
 A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. Specifically, a Service Release must not include any significant new features and/or breaking changes. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
 
-Service Releases based on a Specification Version that has engaged in a successful Release Review do not require any further Reviews, but must be approved by a Super-majority of the Specification Committee.
+A Specification Team must have engaged in a successful Release Review for a Major or Minor Release prior to engaging in a Service Release. No Progress Review is required for a Service Release; the Specification Team must, however, engage in a successful <<efsp-reviews-release, Release Review>>.
 
 [[efsp-version-lifecycle]]
 === Specification Version Lifecycle
