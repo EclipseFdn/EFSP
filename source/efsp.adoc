@@ -32,4 +32,4 @@ include::addendum.adoc[leveloffset=+1]
 
 Changes made in this document:
 
-include::../CHANGELOG[leveloffset=+3]
+include::../CHANGELOG[leveloffset=+2]
