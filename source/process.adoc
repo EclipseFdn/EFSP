@@ -158,7 +158,7 @@ A Specification Project is the main operational unit for Specification developme
 
 Specification Projects operate under the supervision of both the Project Leadership Chain and the Specification Committee.
 
-Among other things, the Scope of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification. Since a change in Scope may change the nature of the contribution to the project, a change to a Specification Project’s Scope must be approved by a Super-majority vote of the Specification Committee.
+Among other things, the Scope of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification. Since a change in Scope may change the nature of the contribution to the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
 
 [[efsp-specifications]]
 === Specifications
@@ -214,7 +214,7 @@ The Specification Committee works with the PMC to manage the overall vision for 
 [[efsp-committee-approvals]]
 ==== Approvals
 
-A Specification Committee must approve, by Super-majority vote, the following lifecycle events of Specification Projects:
+A Specification Committee must approve, by Super-majority, the following lifecycle events of Specification Projects:
 
 * The creation of a new Specification Project;
 * The Release Plan for a new Release Cycle of a Specification;
@@ -224,9 +224,9 @@ A Specification Committee must approve, by Super-majority vote, the following li
 * A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group); and
 * Service Releases.
 
-All Specification Committee votes must be scheduled to run for a period of no less than one week.
+A ballot is used to seek Specification Committee approval. All Specification Committee ballots must be scheduled to run for a period of no less than one week.
 
-All artifacts related to a vote must be delivered in distribution form to the Specification Committee prior to the start of the vote, must not change during the voting period, and must persist in the delivered form following the vote as part of the public record. If related artifacts are modified while a vote is in progress, the vote is declared invalid and the corresponding review (if any) is declared failed.
+All artifacts related to a ballot must be delivered in distribution form to the Specification Committee prior to the start of the ballot period, must not change during the ballot period (with the exception of minor corrections that do not change the semantic intent, as determined by the Specification Committee), and must persist in the delivered form following the ballot as part of the public record.
 
 [[efsp-plans]]
 === Release Plans
@@ -237,7 +237,7 @@ The exact requirements for a Release Plan, including the number and timing of Mi
 
 The Project Proposal serves as the Release Plan for the first release of a Specification Project.
 
-A Release Plan must be approved by a Super-majority vote of the Specification Committee. If the Release Plan is rejected, the Specification Team may reapply at a future date.
+A Release Plan must be approved by a Super-majority of the Specification Committee. If the Release Plan is rejected, the Specification Team may reapply at a future date.
 
 [[efsp-process]]
 == Specification Process
@@ -277,7 +277,7 @@ All communication regarding Milestone Builds must include caveats explaining tha
 
 A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. Specifically, a Service Release must not include any significant new features and/or breaking changes. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
 
-Service Releases based on a Specification Version that has engaged in a successful Release Review do not require any further Reviews, but must be approved by a Super-majority vote of the Specification Committee.
+Service Releases based on a Specification Version that has engaged in a successful Release Review do not require any further Reviews, but must be approved by a Super-majority of the Specification Committee.
 
 [[efsp-version-lifecycle]]
 === Specification Version Lifecycle
@@ -291,7 +291,7 @@ To produce a Specification Version, a Specification Project must engage in a for
 include::diagrams/efsp_lifecycle.dot[]
 ----
 
-A Specification Project’s first Release Cycle starts with the successful completion of a Creation Review. To start a subsequent Release Cycle, the Specification Team presents a Release Plan to the Specification Committee in a Plan Review. The Plan Review must be approved by a Super-majority vote of the Specification Committee.
+A Specification Project’s first Release Cycle starts with the successful completion of a Creation Review. To start a subsequent Release Cycle, the Specification Team presents a Release Plan to the Specification Committee in a Plan Review. The Plan Review must be approved by a Super-majority of the Specification Committee.
 
 The Specification Team must deliver at least one Milestone to demonstrate progress and solicit feedback. Milestones may be incomplete. For example, designated Compatible Implementations will not necessarily pass milestone builds of the TCK in their entirety. Subsequent Milestones should, however, demonstrate progress. Later Milestones may be referred to as Release Candidates.
 
@@ -304,7 +304,7 @@ The Specification Team must engage in a successful Release Review before the fin
 
 Reviews are a formal process through which all major lifecycle events and changes to Specification Projects are announced and reviewed by the membership-at-large, and approved by the PMC, the Specification Committee, and the EMO.
 
-A Specification Project may engage in all of the Reviews described by the EDP with the additional requirement that approval by a Super-majority vote of the Specification Committee is required to successfully complete a Review. Such Review shall include affirmation that the Specification Version in progress remains within the Scope of the Specification Project. Other additions and qualifications are noted in the descriptions of the reviews below.
+A Specification Project may engage in all of the Reviews described by the EDP with the additional requirement that approval by a Super-majority of the Specification Committee is required to successfully complete a Review. Such Review shall include affirmation that the Specification Version in progress remains within the Scope of the Specification Project. Other additions and qualifications are noted in the descriptions of the reviews below.
 
 Project Leads are responsible for initiating the appropriate Reviews. The Project Leadership Chain may also initiate a Review on the project’s behalf.
 
@@ -315,19 +315,19 @@ The Specification Team must complete all required due diligence under the Eclips
 
 Specification Projects are created using the process defined by the EDP with the added requirement that the Specification Committee must approve the Project Proposal by a Super-majority before the Specification Project can successfully complete a Creation Review.
 
-The Specification Committee vote and the Creation Review run in parallel for a minimum of one week. The Project Proposal text must not be changed during the Creation Review period. If changes are required during this period, the Project Proposal is pushed back into the Proposal Phase.
+The Specification Committee ballot and the Creation Review run in parallel for a minimum of one week. The Project Proposal text must not be changed during the Creation Review period. If changes are required during this period, the Project Proposal is pushed back into the Proposal Phase.
 
 [[efsp-reviews-plan]]
 ==== Plan Review
 
-A Plan Review provides a means for the Specification Team to present their Release Plan to the Project Leadership Chain, the Specification Committee, and the community for feedback. The Specification Committee must approve the Plan Review by a Super-majority vote.
+A Plan Review provides a means for the Specification Team to present their Release Plan to the Project Leadership Chain, the Specification Committee, and the community for feedback. The Specification Committee must approve the Plan Review by a Super-majority ballot.
 
 [[efsp-reviews-progress]]
 ==== Progress Review
 
 A Specification Project must engage in at least one successful Progress Review during every release cycle. The timing of a Progress Review must coincide with the staging of a Milestone which must be delivered to the PMC and the Specification Committee before the start of the Review.
 
-The Specification Committee must approve the Progress Review by a Super-majority vote.
+The Specification Committee must approve the Progress Review by a Super-majority.
 
 Progress Reviews may be combined with a Graduation or Restructuring Review, but must not be combined with a Release Review.
 
@@ -342,14 +342,14 @@ The Specification Team must provide evidence that the TCK selected for the Spec
 
 The Specification Team must provide evidence that cited Compatible Implementations fulfill all requirements of the TCK and that at least one Compatible Implementation implements all optional aspects.
 
-A Release Review concludes successfully with approval from the PMC and EMO, and approval by a Super-majority vote of the Specification Committee.
+A Release Review concludes successfully with approval from the PMC and EMO, and approval by a Super-majority of the Specification Committee.
 
 With approval, the Specification Project must release the final build of the artifacts of the Specification Version.
 
 [[efsp-ratification]]
 === Ratification
 
-With the approval of the Specification Committee by a Super-majority vote, a Specification Version is Ratified and the associated artifacts can be promoted and distributed by the Specification Committee as a Final Specification.
+With the approval of the Specification Committee by a Super-majority, a Specification Version is Ratified and the associated artifacts can be promoted and distributed by the Specification Committee as a Final Specification.
 
 All Specification Versions referenced by a Ratified Final Specification must themselves be Ratified. The Release Review for prerequisite Specification Versions may be run concurrently with the Release Review for a referenced Specification Version.
 
