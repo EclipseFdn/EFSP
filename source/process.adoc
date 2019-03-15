@@ -291,7 +291,7 @@ To produce a Specification Version, a Specification Project must engage in a for
 
 .The Specification Version Lifecycle at a high-level
 [graphviz, images/lifecycle, svg]
-.An overview of the Project Creation Process
+.An overview of the Eclipse Foundation Specification Process
 ----
 include::diagrams/efsp_lifecycle.dot[]
 ----
