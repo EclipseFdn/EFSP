@@ -1,0 +1,19 @@
+/*******************************************************************************
+ * Copyright (c) 2017 Eclipse Foundation and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *******************************************************************************/
+
+The files in this directory are basically numbers in circles. They are
+generated using ImageMagik, and then exiftool to set copyright and license
+information. 
+
+At least theoretically, we should consider making this part of the build.
+
+for i in {1..9}
+do 
+  convert -size 17x17 xc:none -fill black -draw 'translate 8,8 circle 0,0 8,0' -font "Helvetica" -pointSize 10 -weight normal -fill white -gravity center -strokewidth 0 -draw "text 0,1 \"$i\"" $i.png
+  exiftool -overwrite_original_in_place -copyright="Copyright © 2017 The Eclipse Foundation" -usageterms="EPL-1.0" $i.png
+done

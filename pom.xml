@@ -76,7 +76,7 @@
 						<imagesdir>.</imagesdir>
 						<data-uri />
 						<toc>macro</toc>
-						<icons>font</icons>
+						<icons></icons>
 						<sectanchors>true</sectanchors>
 						<idprefix />
 						<idseparator>-</idseparator>
