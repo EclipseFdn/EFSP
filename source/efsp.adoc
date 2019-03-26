@@ -25,6 +25,8 @@ include::process.adoc[]
 
 include::addendum.adoc[leveloffset=+1]
 
+include::faq.adoc[leveloffset=+1]
+
 [efsp-history]
 == History
 

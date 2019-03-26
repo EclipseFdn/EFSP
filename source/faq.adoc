@@ -14,15 +14,15 @@
 [qanda]
 How does the role of the Specification Committee differ from the role of the PMC? ::
 
-The PMC manages the technical governance process, and provides oversight. It ensures that the open source rules of engagement are observed and the EDP as a whole is followed. It participates in the Intellectual Property process to ensure that requests for review are technically sound (for example, to ensure that the use of third-party content makes technical sense). The PMC provides best practices. It tends to work more at the development and technical level.
+The Project Management Committee (PMC) manages the technical governance process, and provides oversight. It ensures that the open source rules of engagement are observed and the Eclipse Development Process (EDP) as a whole is followed. It participates in the Intellectual Property Due Diligence Process to ensure that requests for review are technically sound (for example, to ensure that the use of third-party content makes technical sense). The PMC provides best practices. It tends to work more at the development and technical level.
 +
 The Specification Committee is responsible for ensuring that the rules and processes outlined by the EFSP are implemented by Specification Projects, that the integrity of the Scope is maintained (e.g. that release plans define changes that are in-scope), that community has been properly consulted, implementation is technical feasible, and that the Specification otherwise remains consistent with the goals of the Working Group.
 +
 The PMC is in the Project Leadership Chain; the Specification Committee is not. Approvals from both parties are required for Progress and Release Reviews.
 
-If a Specification Project is archived, do the Specification Versions that it previously produced remain valid? ::
+If a Specification Project is archived, do the Final Specifications that it previously produced remain valid? ::
 
-Yes. All previously created Specification Versions remain valid. 
+Yes. All previously created Final Specifications remain valid. 
 
 What does it mean for a Specification Project to be “under the supervision” of a Specification Committee? ::
 
@@ -40,10 +40,6 @@ What do I do if I feel that my Review was failed unfairly? ::
 
 Follow the Grievance Handling process defined in the EDP.
 
-Why do I need to sign the Eclipse Membership Agreement and Working Group Participation Agreement to be a committer on a Specification Project? ::
-
-TBD
-
 How is the association of the artifacts of a particular Specification Version represented? ::
 
 The Specification Committee should provide best practices to Specification Projects, for example, a standard metadata format.
@@ -51,10 +47,12 @@ The Specification Committee should provide best practices to Specification Proje
 What is the difference between a Specification Version and a Final Specification? ::
 
 A Specification Version is produced by a release cycle, then becomes a Final Specification when it is Ratified (under the Eclipse Foundation Specification License (EFSL)).
++
+The intellectual property rights required to build a compatible implementation flow from the Final Specification. That is, in order to be considered a Compatible Implementation and benefit from the intellectual property protections provided by the Eclipse Foundation Specification Agreement, an implementation must be based on a final specification. No claims regarding compatibility may be made for an implementation milestone build or unratified Specification Version.
 
 What types of changes are not appropriate for a Service Release? ::
 
-Changes to method signatures or additions of new methods or behavior (for example) are never appropriate in a Service Release.
+Changes to method signatures or additions of new methods or behavior (for example) are generally not considered appropriate in a Service Release. A Specification Team should consult with their PMC and Specification Committee to determine precisely what sort of review is required for a particular change.
 
 Are Specification Projects required to implement the Eclipse IP Policy and engage in the Eclipse IP Due Diligence Process? ::
 
