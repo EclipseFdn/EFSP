@@ -7,19 +7,6 @@
  * 
  * SPDX-License-Identifier: EPL-2.0
 ////
-:linkcss:
-:stylesdir: ./resources
-:scriptsdir: ./resources
-
-:toc:
-:toc-placement: auto
-:icons: font
-
-:sectlinks:
-:sectanchors:
-:figure-caption!:
-
-:experimental:
 
 [[efsp-specializing]]
 = Specializing the EFSP

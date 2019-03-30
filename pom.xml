@@ -75,14 +75,21 @@
 						<imagesoutdir>.</imagesoutdir>
 						<imagesdir>.</imagesdir>
 						<data-uri />
-						<toc>macro</toc>
-						<icons></icons>
 						<sectanchors>true</sectanchors>
+						<sectlinks>true</sectlinks>
 						<idprefix />
 						<idseparator>-</idseparator>
 						<docinfo1>true</docinfo1>
 						<embedAssets>true</embedAssets>
 						<stylesheet>efsp.css</stylesheet>
+						<linkcss/>
+						<stylesdir>./resources</stylesdir>
+						<scriptsdir>./resources</scriptsdir>
+						<toc>macro</toc>
+						<toc-placement>auto</toc-placement>
+						<icons>font</icons>
+						<figure-caption>false</figure-caption>
+						<experimental/>
 					</attributes>
 				</configuration>
 				<executions>
