@@ -8,9 +8,9 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 [[efsp]]
-= Eclipse Foundation Specification Process v1.1
+= Eclipse Foundation Specification Process
 
-Version 1.1. Effective March 20, 2019
+Version 1.2. Effective June 30, 2019
 
 toc::[]
 
@@ -66,7 +66,7 @@ Major Release :: A type of Release that includes either significant new function
 
 Member Participant :: A Member of the Eclipse Foundation including Solutions Member, Enterprise Member, or Strategic Member (as defined in the https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf#[Eclipse Foundation Bylaws]) that has one or more Committers on a Specification Project.
 
-Milestone :: A build of the project content for limited distribution to demonstrate progress and solicit feedback.
+Milestone Build :: A build of the project content for limited distribution to demonstrate progress and solicit feedback.
 
 Minor Release :: A type of Release that includes new features over a Major Release.
 
@@ -110,7 +110,7 @@ Ratified :: A Specification Version that has been adopted by the Specification C
 
 Release :: A Specification Version intended for ratification as a Final Specification.
 
-Release Candidate :: A feature-complete Milestone.
+Release Candidate :: A feature-complete Milestone Build.
 
 Release Cycle :: The cycle of development that produces a Specification Version.
 
@@ -177,14 +177,14 @@ A Specification that aggregates other Specifications by reference may be designa
 Each Specification Version references specific versions of its constituent artifacts. These artifacts include the Specification Documents, zero or more other Specifications, one or more Compatible Implementations licensed under an Open Source License, and exactly one associated TCK for this Specification.
 
 .Conceptual structure of a Specification Version
-image::images/image3.png[image]
+image::images/version.svg[image, 250]
 
 The Specification Document and related technical artifacts must be developed by the Specification Team.
 
 [[efsp-tck]]
 ==== Technology Compatibility Kits
 
-There is exactly one TCK project under an Open Source License for each Specification Version.
+There is exactly one TCK under an Open Source License for each Specification Version.
 
 A specific version of a TCK is chosen by the Specification Project for each Specification Version; the TCK may be different for different Specification Versions.
 
@@ -224,16 +224,18 @@ A Specification Committee must approve, by Super-majority, the following lifecyc
 * A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group); and
 * Service Releases.
 
-A ballot is used to seek Specification Committee approval. All Specification Committee ballots must be scheduled to run for a period of no less than one week.
+A ballot is used to seek Specification Committee approval. Unless otherwise stated in this process (or a Working Group-specific derivative of this process), the default period for all Specification Committee ballots is seven (7) days. During that time, any member of a Specification Committee may request that the period be extended to thirty (30) days. 
+
+A Specification Committee may opt to increase the length of the ballot period, but may not--under any circumstances--reduce any review period to fewer than seven (7) days.
 
 All artifacts related to a ballot must be delivered in distribution form to the Specification Committee prior to the start of the ballot period, must not change during the ballot period (with the exception of minor corrections that do not change the semantic intent, as determined by the Specification Committee), and must persist in the delivered form following the ballot as part of the public record.
 
 [[efsp-plans]]
 === Release Plans
 
-A Release Plan lists themes and areas of focus, describes Milestones, and lists tentative dates for Reviews. The work defined by a Release Plan must be within the Scope of the Specification Project.
+A Release Plan lists themes and areas of focus, describes Milestone Builds, and lists tentative dates for Reviews. The work defined by a Release Plan must be within the Scope of the Specification Project.
 
-The exact requirements for a Release Plan, including the number and timing of Milestones and Reviews, are determined by the Project Leadership Chain and the Specification Committee. Minimally, a Release Plan must include a textual description of the activities planned for the Specification Version, and tentative dates for at least one Milestone, at least one Progress Review, and the Release Review. Following approval, the Specification Committee must be notified of any changes to the dates of the Progress Review and the Release Review. The Specification committee can require that the project team engage in a Progress Review.
+The exact requirements for a Release Plan, including the number and timing of Milestone Builds and Reviews, are determined by the Project Leadership Chain and the Specification Committee. Minimally, a Release Plan must include a textual description of the activities planned for the Specification Version, and tentative dates for Milestone Builds, Progress Reviews, and the Release Review. Following approval, the Specification Committee must be notified of any changes to the dates of the Progress Review and the Release Review. The Specification Committee may, at their discretion, demand that the project team engage in additional Progress Reviews.
 
 The Project Proposal serves as the Release Plan for the first release of a Specification Project.
 
@@ -264,18 +266,18 @@ The notions of Major, Minor, and Service Release bear a close resemblance to the
 [[efsp-releases-major]]
 ==== Major and Minor Releases
 
-A Major Release includes significant new features and/or breaking changes. A Minor Release includes new features over a Major Release. For both Major and Minor Releases the Specification Team must engage in at least one successful <<efsp-reviews-progress, Progress Review>> and a successful <<efsp-reviews-release, Release Review>>.
+A Major Release includes significant new features and/or breaking changes. A Minor Release includes new features over a Major Release. 
 
 A Specification Project's first Release must be a Major or Minor Release.
 
 [[efsp-milestones]]
 ==== Milestone Builds
 
-Leading up to a Release, a Specification Team must produce at least one Milestone Build. Milestones and Release Candidates are "almost Releases" intended for adoption and testing by early-adopters. No formal Reviews are required for Milestone Builds. 
+Leading up to a Release, a Specification Team must produce at least one Milestone Build. Milestone Builds and Release Candidates are "almost Releases" intended for adoption and testing by early-adopters. No formal Reviews are required for Milestone Builds. 
 
 Under no circumstances are Milestone Builds to be used as a substitute for doing proper official Releases. 
 
-All communication regarding Milestone Builds must include caveats explaining that these are not official Releases. Milestones and Release Candidate builds must be labeled as such (e.g. `x.yMn`, `x.yRCn`, `alpha`, `beta`, or similar).
+All communication regarding Milestone Builds must include caveats explaining that these are not official Releases. Milestone Builds and Release Candidate builds must be labeled as such (e.g. `x.yMn`, `x.yRCn`, `alpha`, `beta`, or similar).
 
 [[efsp-releases-service]]
 ==== Service Releases
@@ -287,7 +289,7 @@ A Specification Team must have engaged in a successful Release Review for a Majo
 [[efsp-version-lifecycle]]
 === Specification Version Lifecycle
 
-To produce a Specification Version, a Specification Project must engage in a formal Release Cycle under supervision of the Project Management Committee (PMC) and the Specification Committee.
+To produce a <<efsp-versions,Specification Version>> (with the exception of <<efsp-releases-service, Service Releases>>) a Specification Team must engage in a formal Release Cycle under the supervision of the Project Management Committee (PMC) and the Specification Committee.
 
 .The Specification Version Lifecycle at a high-level
 [graphviz, images/lifecycle, svg]
@@ -296,11 +298,11 @@ To produce a Specification Version, a Specification Project must engage in a for
 include::diagrams/efsp_lifecycle.dot[]
 ----
 
-A Specification Project’s first Release Cycle starts with the successful completion of a Creation Review. To start a subsequent Release Cycle, the Specification Team presents a Release Plan to the Specification Committee in a Plan Review. The Plan Review must be approved by a Super-majority of the Specification Committee.
+A Specification Project’s first Release Cycle starts with the successful completion of a Creation Review. To start a subsequent Release Cycle (and every Release Cycle thereafter), the Specification Team must present a Release Plan to the Specification Committee in a <<efsp-reviews-plan,Plan Review>>. The Plan Review must be approved by a Super-majority of the Specification Committee. 
 
-The Specification Team must deliver at least one Milestone to demonstrate progress and solicit feedback. Milestones may be incomplete. For example, designated Compatible Implementations will not necessarily pass milestone builds of the TCK in their entirety. Subsequent Milestones should, however, demonstrate progress. Later Milestones may be referred to as Release Candidates.
+A Release Cycle ends when the Specification Team delivers a Specification Version to the EMO and Specification Committee via a <<efsp-reviews-release,Release Review>>. To extend the Release Cycle, the Specification Team must stage a Milestone Build and engage in a <<efsp-reviews-progress, Progress Review>>. The Specification Team must engage in either a Release Review (which ends the Release Cycle) or a Progress Review (which extends the Release Cycle) within twelve (12) months of the last Review.
 
-Milestones should be staged for limited distribution to key stakeholders to solicit feedback. The delivery of at least one Milestone must coincide with engagement in a successful Progress Review.
+The Specification Team must deliver at least one Milestone Build to demonstrate progress and solicit feedback. Milestone Builds may be incomplete (for example, designated Compatible Implementations will not necessarily pass Milestone Builds of the TCK in their entirety). Subsequent Milestone Builds should, however, demonstrate progress. Later (feature complete) Milestone Builds may be referred to as _Release Candidates_. Milestones Builds should be staged for limited distribution to key stakeholders to solicit feedback.
 
 The Specification Team must engage in a successful Release Review before the final Specification Version may be Ratified. A Specification Version becomes a Final Specification when it is Ratified.
 
@@ -320,7 +322,7 @@ The Specification Team must complete all required due diligence under the Eclips
 
 Specification Projects are created using the process defined by the EDP with the added requirement that the Specification Committee must approve the Project Proposal by a Super-majority before the Specification Project can successfully complete a Creation Review.
 
-The Specification Committee ballot and the Creation Review run in parallel for a minimum of one week. The Project Proposal text must not be changed during the Creation Review period. If changes are required during this period, the Project Proposal is pushed back into the Proposal Phase.
+The Specification Committee ballot and the Creation Review may run in parallel. The Project Proposal text must not be changed during the Creation Review period. If changes are required during this period, the Project Proposal is pushed back into the Proposal Phase.
 
 [[efsp-reviews-plan]]
 ==== Plan Review
@@ -330,11 +332,13 @@ A Plan Review provides a means for the Specification Team to present their Relea
 [[efsp-reviews-progress]]
 ==== Progress Review
 
-A Specification Project must engage in at least one successful Progress Review during every release cycle. The timing of a Progress Review must coincide with the staging of a Milestone which must be delivered to the PMC and the Specification Committee before the start of the Review.
+Progress Reviews are used to extend a <<efsp-version-lifecycle, Release Cycle>>. During a Release Cycle a Project Team may be required to engage in one or more Progress Reviews. 
+
+The timing of a Progress Review must coincide with the staging of a Milestone Build which must be delivered to the PMC and the Specification Committee before the start of the Review.
 
 The Specification Committee must approve the Progress Review by a Super-majority.
 
-Progress Reviews may be combined with a Graduation or Restructuring Review, but must not be combined with a Release Review.
+Progress Reviews may be combined with a Graduation or Restructuring Review, but must not be combined or overlap with a Release Review.
 
 [[efsp-reviews-release]]
 ==== Release Review
@@ -363,4 +367,12 @@ The Specification Document for the Final Specification must be distributed as re
 The diagram below is a conceptual model of the transition from a Specification Version to a Final Specification. No specific packaging technology or structure should be implied from this diagram.
 
 .Conceptual model of the transition from a Specification Version to a Final Specification. Note that no specific packaging technology or structure should be implied from this diagram.
-image::images/image4.png[image]
+image::images/transmogrify.svg[image,750]
+
+== Exceptions
+
+Exceptions to this process may be granted only with Super-majority approval of the Specification Committee and approval of the Executive Director. All exceptions must be documented as part of the public record. Such documentation must include the exact change to the process, the case or conditions under which it applies, and the votes of each Specification Committee member.
+
+Notwithstanding this exception process, no Specification Committee ballot period may be shorter than seven (7) days.
+
+This exception process may not be used to override a Specification Committee member's request to extend the ballot period.

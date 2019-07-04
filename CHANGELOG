@@ -1,6 +1,20 @@
 # ChangeLog
 
-## [Version 1.1] - 2018-03-20
+## [Version 1.2] - 2019-06-30
+
+### Added
+- Clarification that all reviews are by default seven (7) days, see https://github.com/EclipseFdn/EFSP/issues/14.
+- A section that describes how exceptions to the process may be granted, see https://github.com/EclipseFdn/EFSP/issues/12.
+
+### Changes
+- Clarified that there must be exactly one TCK (not "TCK project") for each Specification Version.
+- The requirement to engage in Progress Reviews is now time-based, see https://github.com/EclipseFdn/EFSP/issues/13.
+- Reworded parts of the "Specification Version Lifecycle" section.
+- Clarify that a formal Release Cycle is not required for a Service Release.
+- Clarified that a Progress Review must not overlap with a Release Review.
+- Recasted the defined term "Milestone" as "Milestone Build".
+
+## [Version 1.1] - 2019-03-20
 
 ### Added
 - Link to the Eclipse Foundation Specification License.
