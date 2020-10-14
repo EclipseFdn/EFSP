@@ -12,7 +12,7 @@ include::process.adoc[]
 
 include::addendum.adoc[leveloffset=+1]
 
-[efsp-history]
+[[efsp-history]]
 == History
 
 :!sectlinks:
