@@ -75,6 +75,12 @@ The EMO schedules reviews to conclude on the first and third Wednesday of the mo
 
 === Plan Reviews
 
+When reviewing a plan, the question that specification committee members need to ask is whether or not they would vote to approve the eventual completion of the plan when the project returns for a release review. If the answer is yes, then the specification committee member should vote in the affirmative `pass:[+1]`; they should either vote in the negative `pass:[-1]` or abstain `pass:[+0]` otherwise.
+
+The basis upon which this decision is made is at the discretion of the individual specification committee member. The specification committee may decide to establish a set of guidelines or requirements to provide a basis for voting; though these may instead be regarded as a gate to even starting a ballot
+
+Ideally, when casting their vote, specification committee members should focus less on the mechanics of implementing the plan and more on the broader implications of the themes and changes suggested in the plan to implementers, adopters, and the ecosystem. 
+
 === Progress Reviews
 
 === Release Reviews
