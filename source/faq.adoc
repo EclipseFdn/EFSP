@@ -20,6 +20,7 @@ The Specification Committee is responsible for ensuring that the rules and proce
 +
 The PMC is in the Project Leadership Chain; the Specification Committee is not. Approvals from both parties are required for Progress and Release Reviews.
 
+
 If a Specification Project is archived, do the Final Specifications that it previously produced remain valid? ::
 
 Yes. All previously created Final Specifications remain valid. 
@@ -31,6 +32,14 @@ A Specification Project effectively belongs to one Working Group. By aligning it
 How does the Specification Committee manage the overall roadmap for the Specification Projects under their supervision? ::
 
 How a Specification Committee manages a roadmap varies based on the nature of the parties involved. The Specification Committee may choose to defer this responsibility to one of the Specification Projects (e.g. a _Platform_ Specification Project). The roadmap itself may take the form of a set of published guidelines or best practices, the implementation of a simultaneous release, or required themes and other elements in Release Plans. Ultimately, the Specification Committee should work with the PMC and the Project Teams to build consensus rather than impose rules.
+
+[[efsp-faq-plan-1]]By what criteria does the specification committee assess a plan? What constitutes an acceptable plan? ::
+
+When reviewing a plan, the question that specification committee members need to answer is whether or not they, would vote to approve the eventual completion of that plan when the project returns to the committee for a release review.
++
+Specification committee members have to decide whether or not, for example, themes and plan items described in a plan are something they would actually want to see in an implementation of the specification.
++
+A specification committees may opt to make specific requirements for plans (including delivery format). That notwithstanding, how specification committee members vote is left to the discretion of the individual committee members. 
 
 What happens if a Review fails? ::
 
@@ -57,3 +66,13 @@ Changes to method signatures or additions of new methods or behavior (for exampl
 Are Specification Projects required to implement the Eclipse IP Policy and engage in the Eclipse IP Due Diligence Process? ::
 
 Yes. 
+
+When we transmogrify a specification into a Final Specification, we set the copyright holder on the specification document to the Eclipse Foundation, and make that document available under the Eclipse Foundation Specification License. How do we do this? That is, by what legal mechanism do we have the ability to do this? ::
+
+Eclipse Foundation specifications are composed of many contributions, licensed to the Eclipse Foundation via committer and contributor agreements by various authors who maintain ownership of their contributions. When a Specification Project and its related Specification Committee goes through the process of selecting, coordinating, and arranging all these various contributions into a single and final document, this compilation is protected by U.S. copyright law and the rights in it are is owned by the Eclipse Foundation -- even though the rights in each individual contribution remains owned by its contributor. The Eclipse Foundation can make the document available under the Eclipse Foundation Specification License based on the following grant provided for in the Eclipse Contributor Agreement and the Eclipse Foundation's committer agreements:
++
+----
+...You grant a non- exclusive, worldwide, perpetual, royalty-free license of all necessary rights under Your copyright in and to Your Contributions (the “Specification Grant”): (a) for the Eclipse Foundation (and its contributors solely as a part of foundation projects) to create, reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense specifications subject to the terms of the then-current Eclipse Foundation Specification License...
+----
++
+By asserting copyright ownership on the specification documents, the Eclipse Foundation has the ability to protect the specifications in the event that a third party fails to follow the terms of the Eclipse Foundation Specification License.
