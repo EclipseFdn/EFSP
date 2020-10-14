@@ -1,0 +1,82 @@
+////
+ * Copyright (C) Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+////
+[[efsp]]
+= Eclipse Foundation Specification Committee Handbook
+
+Version 1.0. DRAFT
+
+toc::[]
+
+The document describes the operation of the Eclipse Foundation Specification Process (EFSP) for optional use by Eclipse Foundation Working Groups.
+
+== Roles
+
+=== Specification Committee
+
+The specification committee is responsible for implementing the Eclipse Foundation Specification Process (EFSP) for all specification projects (as that term is defined by the EFSP) under the purview of the a working group. A working group may, via their charter, assign specification committee responsibilities to another committee.
+
+The Specification Committee is ultimately responsible for ensuring that the Final Specifications produced by the Working Group’s Specification Projects make sense. The definition of “makes sense” varies by Specification Committee Participant, but is generally understood to mean that the Specification can be implemented and that those aspects of the Eclipse Intellectual Property Policy with regard to Essential Claims are observed. In practical terms, Specification Committee Participants wields power via the ballots that are required to approve key lifecycle events per the EFSP.
+
+The Specification Committee is responsible for producing, publishing and maintaining operational guidance documentation for specification projects. This includes the minimum requirements and process for producing a Final Specification. It also includes operational guidance for running a specifications TCK for the purpose of testing for compatibility.
+
+The Specification Chair (or their delegate) is responsible for initiating ballots, tallying their results, disseminating them to the community, and (when appropriate; e.g., in the case a release review ballot) reporting them to the EMO.
+
+The Specification Committee is also responsible for defining and refining how they implement the EFSP/JESP for those Specification Projects under their purview.
+
+==== Project Management Committee
+
+The primary role of the PMC is to ensure that project teams are implementing the Eclipse Development Process. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. The PMC reviews and approves (or vetos) committer elections, first validating that candidate committers have demonstrated sufficient merit.
+
+The PMC is further responsible for ensuring that project teams abiding by the Eclipse IP Policy and implementing the IP Due Diligence process. In practical terms, the PMC approves intellectual property contributions (CQs) and provides (limited) guidance to project teams regarding intellectual property (deferring to the Eclipse IP Team as necessary).
+
+The PMC is responsible for the structure of the Top Level Project and the organization of the open source (software and Specification) projects contained within.
+
+The PMC is a link in the project leadership chain. As such, the PMC has a role in the grievance handling process: they identify and document project dysfunction (with the responsibility to remove/replace/add disruptive committers).
+
+The PMC provides other oversight regarding the operation of open source projects. They review and approve release and progress review materials, and facilitate cross-project communication within the Top-Level Project.
+
+=== Project Lead(s)
+
+A specification project must designate one or more committers to serve as the project lead. The lead is responsible for initiating reviews as the project reaches the appropriate milestone.
+
+== Specification Projects and Committers
+
+=== Profiles
+
+=== Component Specifications
+
+=== Participant Representative
+
+The EFSP states that a _member participant_ may appoint a representative committer. A member participant is defined as an Eclipse Foundation solutions, enterprise, or strategic member of the Eclipse Foundation. This specifically excludes committer members. This makes sense as, to be a committer member participant (the EFSP refers to this an an _individual participant_) in a working group, one must already be a committer. This does mean, however, that an individual participant who is a committer on one specification project cannot appoint themselves as a participant representative on another. 
+
+The intention of a participant representative is to ensure continuity of a member participant's interest. That is, this is a power that a member participant will use to ensure that they have at least one committer on the project to ensure the continued flow of intellectual property grants. If the member participant already has an employee as a committer, then that member participant is considered to already have a participant representative and could not appoint another.
+
+If a company already has a representative, there is no urgency to add another.
+
+== Reviews
+
+Specification projects in active development must engage in a progress or release review at least once per year. In practical terms, this means that the clock starts ticking when the plan review that occurs at the beginning of the development cycle concludes successfully, and is reset following a successful progress review.
+
+The entire process is halted when either the specification project engages in a successful release review (thereby concluding the development cycle), or the specification team decides to abandon the cycle.
+
+[NOTE]
+====
+The EMO schedules reviews to conclude on the first and third Wednesday of the month; this will impact the timing of the start of a specification committee vote and the timing of a project team re-engaging following a failed vote. This means that specification committee chair must start the ballot with enough time to conclude the voting period one week prior to the either the first or third Wednesday of the month if they wish to minimize the time for the review to complete. In the event that the specification committee opts to extend a vote, the EMO will, at its discretion, either bump the corresponding review to the next review slot or withhold approval of the review until the results of the specification committee vote are received.
+====
+
+=== Creation Reviews
+
+=== Plan Reviews
+
+=== Progress Reviews
+
+=== Release Reviews
+
+== Ballots
