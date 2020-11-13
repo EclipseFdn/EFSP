@@ -159,3 +159,80 @@ We will rename "Eclipse Project for JTA" project to "Jakarta Transactions" and c
 
 Jakarta Transactions defines a standard that allows the demarcation of transactions and the transactional coordination of XA-aware resource managers as described in the X/Open XA-specification and mapped to the Java SE XAResource interface within Java applications.
 ____
+
+== Specializing the EFSP
+
+A working group may, through their specification committee, choose to specialize the Eclipse Foundation Specification Process (EFSP) for their own implementation. The process document is a foundational document that defines underlying principles, fundamental rules, and other requirements with regard to implementing specifications. The process document does not generally prescribe the use of specific technology, or provide any detail with regard to implementation. 
+
+This document starts by describing what must not be taken away from the specification process, and concludes with some suggestions of what might be considered for a working group's specialization of the process.
+
+=== Minimum Values
+
+The most critical aspect of the EFSP is the management of Essential Claims as defined by the Eclipse IP Policy. In this regard, the requirement that all committers be covered by an Eclipse Foundation Membership Agreement and Working Group Participation Agreement cannot be relaxed. By extension, the restrictions placed on Participants and Participant Representatives cannot be relaxed in any customization of the process, nor can the ability of a Participant to appoint a Participant Representative be inhibited in any way.
+
+The requirements regarding Scope must not be relaxed. Specifically, the requirements regarding approvals and the requirement that the development work of the project stay with the boundaries defined by the Scope must not be curtailed.
+
+The underlying principles of open source (the so-called “Open Source Rules of Engagement”) may not be curtailed. Specifically, all Specification Projects operate in an open and transparent manner, must follow meritocratic practices to promote individuals to positions of power and authority, and (although not strictly listed as a rule of engagement) operate in a vendor neutral manner.
+
+The powers granted to the Project Leadership Chain by the Eclipse Development Process must not be restricted.
+
+In general, quantities included in the EFSP and EDP can be increased, but not decreased:
+
+* The period of time required to run a simple ballot (e.g. a committer election) must not be less than seven days (It is generally accepted at a week is a reasonable minimum period of time to run a ballot that meets a minimum standard of community inclusion);
+* Specification committee approval ballots, and ballots that otherwise that require some sort of legal review must not be less than fourteen days to give adequate time for voting members to consult with their legal teams; and
+* Specification Teams must engage in at least one Progress Review during the development cycle of a Major or Minor Release (Progress Reviews are not required for Service Releases).
+
+=== Specializing the Process
+
+The EFSP defines a set of underlying principles and fundamental requirements. It intentionally does not define any sort of practical implementation, or prescribe any specific technologies. Specializations of the process should take a similar approach. The process might, for example, extend the amount of time required for a specification committee ballot; but any attempt to describe the specific mechanisms and technology by which a ballet is run in a practical sense is more of an operational detail that should be defined in an operations document.
+
+==== Example Process Specializations
+
+Providing a comprehensive list of every possible thing that can be customized is an impossible task. In place of a comprehensive list, we provide a list of examples of things that might be customized and/or tuned.
+
+A customization may extend the list of Open Source Licenses (but many not remove Licenses from the master list).
+
+A customization may define requirements for evolving itself to create future versions of the Working Group-specific specification process.
+
+The process requires that a Specification Project engage in at least one Progress Review. A customization may:
+
+* Require some specific number of additional Progress Reviews;
+* Specify a maximum and/or minimum period of time required for Specification Committee approval ballot;
+* Specify the period of time that must pass between Reviews; and
+* Describe mitigation steps in the event that a review fails.
+
+The process requires that a Specification Project engage in a Release Review. A customization may:
+
+* Specify a maximum and/or minimum period of time required for Specification Committee approval votes;
+* Specify the period of time that must pass between the last Progress Review and the Release Review; and
+* Describe mitigation steps in the event that the review fails.
+
+A customization may also define:
+
+* Technical namespaces;
+* Criteria for designating a release as major, minor, or service; and
+* Criteria, requirements, etc. for managing exceptions in a TCK.
+
+While generally considered best practices, a customization may prescribe:
+
+* How a Specification is bundled for dissemination; 
+* Specific file formats for documentation; and
+* Document structure and style.
+
+The EFSP provides no specific criteria for designating a specification as a profile, nor does it attempt to define “platform”. A specialization may choose to provide definitions or specify the criteria for designating a specification as a profile.
+
+==== Operational Considerations
+
+Specification committees are encouraged to create an operations document that describes how the process is implemented. The evolution of an operations document tends to be organic, based on building consensus within the team instead of relying on a formal approvals process.
+
+Out of convenience, an operations document may repeat information that’s captured in the process; as such, an operations document must include a clear statement that in the event of conflict the process document must be taken as the authority.
+
+The practical implementation of aspects of the process are not defined by the EFSP, and so a Working Group Specification Process (customization) may choose to formalize (for example):
+
+* How to run Specification Committee Ballot;
+* How a Participant appoints a Participant Representative;
+* What to do when a ballot fails or approval is not otherwise granted;
+* The mechanism by which a Specification Committee determines whether or not a minor correction made during a ballot changes semantic meaning;
+* How a Specification Version becomes a Final Specification; 
+* Requirements/guidelines to pass a Progress Review, along with timing of the review itself; and
+* A standard means of describing relationships between specifications.
