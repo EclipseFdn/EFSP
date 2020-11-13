@@ -71,9 +71,21 @@ The entire process is halted when either the specification project engages in a 
 The EMO schedules reviews to conclude on the first and third Wednesday of the month; this will impact the timing of the start of a specification committee vote and the timing of a project team re-engaging following a failed vote. This means that specification committee chair must start the ballot with enough time to conclude the voting period one week prior to the either the first or third Wednesday of the month if they wish to minimize the time for the review to complete. In the event that the specification committee opts to extend a vote, the EMO will, at its discretion, either bump the corresponding review to the next review slot or withhold approval of the review until the results of the specification committee vote are received.
 ====
 
+
+
+The PMC approval and the specification committee vote are different things. We solicit and handle them separately.
+
+The primary role of the PMC is to ensure that project teams are implementing the EDP. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. 
+
+The specification committee is ultimately responsible for ensuring that the ratified final specifications produced by the working group’s specification projects match the working group’s purpose and goals, that they can be implemented, and that those aspects of the Eclipse Intellectual Property Policy with regard to essential claims are observed. 
+
 === Creation Reviews
 
 === Plan Reviews
+
+Plan reviews are not formally tracked or managed by the EMO.
+
+A plan review requires a <<efsp-operations-ballot,ballot>> of the specification committee.
 
 When reviewing a plan, the question that specification committee members need to ask is whether or not they would vote to approve the eventual completion of the plan when the project returns for a release review. If the answer is yes, then the specification committee member should vote in the affirmative `pass:[+1]`; they should either vote in the negative `pass:[-1]` or abstain `pass:[+0]` otherwise.
 
@@ -85,4 +97,65 @@ Ideally, when casting their vote, specification committee members should focus l
 
 === Release Reviews
 
+Releases of specification projects operate under the Eclipse Foundation Development Process (EDP) augmented by the Eclipse Foundation Specification Process (EFSP).
+
+From the EMO's POV, before a release review will be declared successful, we need:
+
+1) IP Log approved by the IP Team;
+2) Release and corresponding review materials approved by the PMC; and
+3) Specifications approved by the specification committee.
+
+These approvals can be sought in an order or in parallel.
+
+It is up to the individual parties to determine the basis on which they will approve.
+
+Minimally... the EMO needs the PMC's approval to mean that--to the best of their know
+
+
+[[efsp-operations-ballot]]
 == Ballots
+
+Run in the specification committee's public mailing list.
+
+Starts with a call for a ballot, inviting specification committee members to indicate their vote in the affirmative with a `pass:[+1]`, the negative with `pass:[-1]` or their decision to abstain with `pass:[+0]`.
+
+Specification committee members vote on behalf of their constituency (generally the company whose interests they represent on the committee, or--in the case of an elected representative--their electoral base).
+
+____
+Your vote is required to approve and ratify the release of `<specification>`.
+
+The Eclipse Foundation Specification Process (EFSP) requires a successful ballot of the specification committee in order to ratify the products of this release as a Final Specification (as that term is defined in the EFSP).
+
+`<details>`
+
+Per the process, this will be a `<duration>` day ballot, ending on `<date>` that requires a super-majority positive vote of the `<working-group>` specification committee members (note that there is no veto). Community input is welcome, but only votes cast by specification committee representatives will be counted.
+
+Specification committee representatives, your vote is hereby requested. Please respond with pass:[+1] (positive), pass:[+0] (abstain), or pass:[-1] (reject).  Any feedback that you can provide to support your vote will be appreciated.
+____
+
+== Converting Existing Projects
+
+Restructuring Review. Specialization of the creation and plan review.
+
+____
+We need to restructure the existing `<project>` into a specification project as defined by the Eclipse Foundation Specification Process (EFSP). For this, the EMO has initiated a restructuring review.
+
+The purpose of a restructuring review is to change the nature of a project. While we are not strictly creating a new project, we are in a manner of thinking, creating a new specification project from an existing project. With this in mind, we are treating this as a creation review from the perspective of the specification committee approval requirement.
+
+Per the process, this will be a `<duration>` day ballot, ending on `<date>` that requires a super-majority positive vote of the `<working-group>` specification committee members (note that there is no veto). Community input is welcome, but only votes cast by specification committee representatives will be counted.
+
+`<details>`
+
+Specification committee representatives, your vote is hereby requested. Please respond with pass:[+1] (positive), pass:[+0] (abstain), or pass:[-1] (reject).  Any feedback that you can provide to support your vote will be appreciated.
+____
+
+
+The `<details>` should concisely describe the changes that are proposed. This could be as simple as a statement stating that "The Eclipse Foo project will be converted into a specification project.", but other changes may be included.
+
+For example:
+
+____
+We will rename "Eclipse Project for JTA" project to "Jakarta Transactions" and convert it into a specification project with this project/specification scope statement:
+
+Jakarta Transactions defines a standard that allows the demarcation of transactions and the transactional coordination of XA-aware resource managers as described in the X/Open XA-specification and mapped to the Java SE XAResource interface within Java applications.
+____
