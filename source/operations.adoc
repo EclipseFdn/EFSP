@@ -77,6 +77,20 @@ The specification committee is ultimately responsible for ensuring that the rati
 
 === Creation Reviews
 
+==== Creation Review Ballot
+
+___
+Your vote is required to approve the creation of the `<specification>` Project with the following scope:
+
+`<details>`
+
+Per the Eclipse Foundation Specification Process, this will be a `<duration>` ballot, ending on `<date>`. We require a super-majority positive vote of the Specification Committee representatives. 
+
+While only Specification Committee representatives votes will be binding, all are welcome and encouraged to participate.  
+
+Specification committee representatives, your vote is hereby requested. Please respond with pass:[+1] (positive), pass:[+0] (abstain), or pass:[-1] (reject).  Any feedback that you can provide to support your vote will be appreciated.
+____
+
 === Plan Reviews
 
 Plan reviews are not formally tracked or managed by the EMO.
