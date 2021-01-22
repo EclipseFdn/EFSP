@@ -79,7 +79,7 @@ The specification committee is ultimately responsible for ensuring that the rati
 
 ==== Creation Review Ballot
 
-___
+____
 Your vote is required to approve the creation of the `<specification>` Project with the following scope:
 
 `<details>`
