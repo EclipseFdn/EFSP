@@ -7,6 +7,10 @@
  * 
  * SPDX-License-Identifier: EPL-2.0
 ////
+
+:efspUrl: https://www.eclipse.org/projects/efsp
+:ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
+
 [[efsp]]
 = Eclipse Foundation Specification Committee Handbook
 
@@ -14,7 +18,7 @@ Version 1.0. DRAFT
 
 toc::[]
 
-The document describes the operation of the Eclipse Foundation Specification Process (EFSP) for optional use by Eclipse Foundation Working Groups.
+The document describes the operation of the {efspUrl}[Eclipse Foundation Specification Process] (EFSP) for optional use by Eclipse Foundation Working Groups.
 
 == Roles
 
@@ -22,17 +26,17 @@ The document describes the operation of the Eclipse Foundation Specification Pro
 
 The specification committee is responsible for implementing the Eclipse Foundation Specification Process (EFSP) for all specification projects (as that term is defined by the EFSP) under the purview of the a working group. A working group may, via their charter, assign specification committee responsibilities to another committee.
 
-The Specification Committee is ultimately responsible for ensuring that the Final Specifications produced by the Working Group’s Specification Projects make sense. The definition of “makes sense” varies by Specification Committee Participant, but is generally understood to mean that the Specification can be implemented and that those aspects of the Eclipse Intellectual Property Policy with regard to Essential Claims are observed. In practical terms, Specification Committee Participants wields power via the ballots that are required to approve key lifecycle events per the EFSP.
+The Specification Committee is ultimately responsible for ensuring that the Final Specifications produced by the Working Group’s Specification Projects make sense. The definition of “makes sense” varies by Specification Committee Participant, but is generally understood to mean that the Specification can be implemented and that those aspects of the {ipPolicyUrl}[Eclipse Intellectual Property Policy] with regard to Essential Claims are observed. In practical terms, Specification Committee Participants wields power via the ballots that are required to approve key lifecycle events per the EFSP.
 
 The Specification Committee is responsible for producing, publishing and maintaining operational guidance documentation for specification projects. This includes the minimum requirements and process for producing a Final Specification. It also includes operational guidance for running a specifications TCK for the purpose of testing for compatibility.
 
 The Specification Chair (or their delegate) is responsible for initiating ballots, tallying their results, disseminating them to the community, and (when appropriate; e.g., in the case a release review ballot) reporting them to the EMO.
 
-The Specification Committee is also responsible for defining and refining how they implement the EFSP/JESP for those Specification Projects under their purview.
+The Specification Committee is also responsible for defining and refining how they implement the EFSP for those Specification Projects under their purview.
 
 ==== Project Management Committee
 
-The primary role of the PMC is to ensure that project teams are implementing the Eclipse Development Process. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. The PMC reviews and approves (or vetos) committer elections, first validating that candidate committers have demonstrated sufficient merit.
+The primary role of the Project Management Committee (PMC) is to ensure that project teams are implementing the Eclipse Development Process. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. The PMC reviews and approves (or vetos) committer elections, first validating that candidate committers have demonstrated sufficient merit.
 
 The PMC is further responsible for ensuring that project teams abiding by the Eclipse IP Policy and implementing the IP Due Diligence process. In practical terms, the PMC approves intellectual property contributions (CQs) and provides (limited) guidance to project teams regarding intellectual property (deferring to the Eclipse IP Team as necessary).
 
@@ -44,21 +48,13 @@ The PMC provides other oversight regarding the operation of open source projects
 
 === Project Lead(s)
 
-A specification project must designate one or more committers to serve as the project lead. The lead is responsible for initiating reviews as the project reaches the appropriate milestone.
-
-== Specification Projects and Committers
-
-=== Profiles
-
-=== Component Specifications
+The lead is responsible for initiating reviews as the project reaches the appropriate milestone.
 
 === Participant Representative
 
 The EFSP states that a _member participant_ may appoint a representative committer. A member participant is defined as an Eclipse Foundation solutions, enterprise, or strategic member of the Eclipse Foundation. This specifically excludes committer members. This makes sense as, to be a committer member participant (the EFSP refers to this an an _individual participant_) in a working group, one must already be a committer. This does mean, however, that an individual participant who is a committer on one specification project cannot appoint themselves as a participant representative on another. 
 
-The intention of a participant representative is to ensure continuity of a member participant's interest. That is, this is a power that a member participant will use to ensure that they have at least one committer on the project to ensure the continued flow of intellectual property grants. If the member participant already has an employee as a committer, then that member participant is considered to already have a participant representative and could not appoint another.
-
-If a company already has a representative, there is no urgency to add another.
+The intention of a participant representative is to ensure continuity of a member participant's interest. That is, this is a power that a member participant will use to ensure that they have at least one committer on the project to ensure the continued flow of intellectual property grants. If the member participant already has an employee as a committer, then that member participant is considered to already have a participant representative and cannot appoint another.
 
 == Reviews
 
