@@ -1,0 +1,19 @@
+////
+ * Copyright (C) Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+:efspUrl: https://www.eclipse.org/projects/efsp
+:edpUrl: https://www.eclipse.org/projects/dev_process
+:ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
+:ewgpUrl: https://www.eclipse.org/org/workinggroups/process.php
+:ewgogUrl: https://www.eclipse.org/org/workinggroups/operations.php
+
+:handbookUrl: https://www.eclipse.org/projects/handbook
+:handbookReleaseLink: {handbookUrl}#release[release]
+:handbookReleaseAndProgressReviewsLink: {handbookUrl}#release-review[release and progress reviews]
