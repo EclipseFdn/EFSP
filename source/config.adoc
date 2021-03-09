@@ -14,6 +14,8 @@
 :ewgpUrl: https://www.eclipse.org/org/workinggroups/process.php
 :ewgogUrl: https://www.eclipse.org/org/workinggroups/operations.php
 
+:compatibleImplementationUrl: {efspUrl}#efsp-compatible
+
 :handbookUrl: https://www.eclipse.org/projects/handbook
-:handbookReleaseLink: {handbookUrl}#release[release]
-:handbookReleaseAndProgressReviewsLink: {handbookUrl}#release-review[release and progress reviews]
+:handbookReleaseUrl: {handbookUrl}#release
+:handbookReleaseAndProgressReviewsUrl: {handbookUrl}#release-review
