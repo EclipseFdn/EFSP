@@ -17,7 +17,7 @@ Version 1.0. DRAFT
 
 toc::[]
 
-This document describes the operation of the {efspUrl}[Eclipse Foundation Specification Process] (EFSP) for optional use by Eclipse Foundation Working Groups.
+This document describes the operation of the {efspUrl}[Eclipse Foundation Specification Process] (EFSP) for use by Eclipse Foundation Working Groups engaged in specification development.
 
 [[efspo-related]]
 == Related Documents
@@ -31,7 +31,7 @@ The {ewgpUrl}[Eclipse Foundation Working Group Process] defines the process for 
 [[efspo-projects]]
 == Projects and Specifications
 
-The Eclipse Foundation Specification Process focuses on _specification projects_ in matters of governance (e.g. project structure, committers and project leads). That is, in matters of governance, open source projects are the atomic unit.
+The EFSP focuses on specification _projects_ in matters of governance (e.g. project structure, committers and project leads). That is, in matters of governance, open source projects are the atomic unit.
 
 Specifically:
 
