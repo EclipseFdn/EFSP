@@ -219,10 +219,9 @@ A Specification Committee must approve, by Super-majority, the following lifecyc
 * The creation of a new Specification Project;
 * The Release Plan for a new Release Cycle of a Specification;
 * Each revision to the Scope of a Specification;
-* Each Review of a Specification Project, including the adoption of Specification Versions;
-* A Profile Specification (this Super-majority must include a Super-majority of Strategic Members of the Working Group);
-* A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group); and
-* Service Releases.
+* Each Checkpoint Review of a Specification Project, including the adoption of Specification Versions;
+* A Profile Specification (this Super-majority must include a Super-majority of Strategic Members of the Working Group); and
+* A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group).
 
 A ballot is used to seek Specification Committee approval. Unless otherwise stated in this process (or a Working Group-specific derivative of this process), the default period for all Specification Committee ballots is seven (7) days. During that time, any member of a Specification Committee may request that the period be extended to thirty (30) days. 
 
@@ -284,7 +283,14 @@ All communication regarding Milestone Builds must include caveats explaining tha
 
 A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. Specifically, a Service Release must not include any significant new features and/or breaking changes. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
 
-A Specification Team must have engaged in a successful Release Review for a Major or Minor Release prior to engaging in a Service Release. No Progress Review is required for a Service Release; the Specification Team must, however, engage in a successful <<efsp-reviews-release, Release Review>>.
+A Specification Team must have engaged in a successful Release Review prior to engaging in a Service Release. 
+
+[NOTE]
+====
+In the case where a Specification Project hosts multiple Specifications, the first release any individual Specification must be treated as either a Major or Minor Release regardless of its history.
+====
+
+No reviews are required for a Service Release.
 
 [[efsp-version-lifecycle]]
 === Specification Version Lifecycle
