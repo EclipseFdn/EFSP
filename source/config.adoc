@@ -19,3 +19,4 @@
 :handbookUrl: https://www.eclipse.org/projects/handbook
 :handbookReleaseUrl: {handbookUrl}#release
 :handbookReleaseAndProgressReviewsUrl: {handbookUrl}#release-review
+:handbookProjectPage: {handbookUrl}#pmi-project-page

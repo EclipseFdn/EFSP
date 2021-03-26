@@ -33,7 +33,25 @@ The {ewgpUrl}[Eclipse Foundation Working Group Process] defines the process for 
 
 The EFSP focuses on specification _projects_ in matters of governance (e.g. project structure, committers and project leads). That is, in matters of governance, open source projects are the atomic unit.
 
-Specifically:
+.Relationship between Projects and Specifications
+[plantuml, projects_and_specs, svg]
+----
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+
+class Project
+class SpecificationProject
+class Specification
+class Committer
+
+Project "1..n" o-- "1..n" Committer
+Project <|-- SpecificationProject : "subtype"
+SpecificationProject "1" *-- "1..n" Specification
+@enduml
+----
+
+*Specification projects are a special type of open source project.* In mathematical terms, a specification project (as defined by the EFSP) can be thought of as a subtype of project (as defined by the EDP). The EDP describes governance that applies to both projects and specification projects; the EFSP defines additional governance that applies to specification projects.
 
 *Git repositories are assigned to _projects_ not _specifications_.* Git repositories are managed by the Eclipse Foundation at the _project_ level. Specifically, privileges on a Git repositories is managed at the project level.
 
@@ -43,13 +61,47 @@ Specifically:
  
 *Specification _projects_ engage in releases and reviews.* This one is more subtle and only applies to specification projects that support the development of more than one specification. The EDP allows projects to engage in releases that contain some subset of their content, so the notion of engaging in, for example, a {handbookReleaseUrl}[release] (and corresponding release review) for one single specification is fully supported. While, strictly speaking, this sort of hypothetical release would be a _project_ release and be owned by the _project_, it would be a _specification_ release in a practical sense. There are no requirements regarding how releases are named/numbered.
 
+Specification projects operating under the EFSP follow the same lifecycle as open source projects operating under the EDP with the additional requirements that they engage in a <<efspo-reviews-plan,plan review>> at the beginning of a development cycle, that they engage in a <<efspo-reviews-release,release review>> for all major and minor releases, and that all <<efspo-reviews,reviews>> be approved by super-majority ballot of the working group's specification committee.
+
+[[efspo-wg]]
+== Working Groups and Specifications
+
+Specifications are created and maintained by specification projects. Each specification _project_ is aligned with exactly one Eclipse Foundation working group. Specification projects are said to work _under the purview_ of a particular working group, or--more specifically--the <<efspo-spec-committee,specification committee>> of a working group.
+
+.Relationship between Working Groups and Specifications
+[plantuml, wg_and_specs, svg]
+----
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+
+class SpecificationProject
+class Specification
+class WorkingGroup
+class SpecificationCommittee
+
+WorkingGroup "1" *-- "1" SpecificationCommittee
+WorkingGroup "1" *-- "1..n" SpecificationProject
+SpecificationProject "1" *-- "1..n" Specification
+SpecificationCommittee --> SpecificationProject : "governs"
+SpecificationCommittee --> Specification : "ratifies"
+@enduml
+----
+
+*Working groups provide governance for specification projects operating under their purview.* A working group, through its specification committee, votes to approve <<efspo-reviews,review>>, thereby locking in patent grants and ratifying the release of final specifications.
+
+*Specification project committers write the specification.* Specification committee members do not have any write privileges on specification project repositories.
+
+Patent grants flow into a specification via the committers. Patent grants are locked when a <<efspo-reviews,review>> concludes successfully.
+
+[#efspo-patent-license]
 === Patent License
 
-When creating a new specification project, the project team must select a _patent license_ that defines how patent grants flow from a {efspUrl}#efsp-ratification[Final Specification] to an implementor of the specification. Generally all specification projects operating under the purview of a working group use the same patent license, which makes selecting the appropriate patent license a responsibility of the working group's _specification committee_.
+When creating a new specification project, the project team must select a _patent license_ that defines how patent grants flow from a {efspUrl}#efsp-ratification[Final Specification] to an implementer of the specification. Generally all specification projects operating under the purview of a working group use the same patent license, which makes selecting the appropriate patent license a responsibility of the working group's _specification committee_.
 
-With the *Implementation Patent License*  an implementor receives the grants by implementing the specification. 
+With the *Implementation Patent License*, an implementer receives the grants by starting an implementation of the specification.  
 
-With the *Compatible Patent License* an implementor of the specification only receives the patent license grants when their implementation meets the criteria for being a {compatibleImplementationUrl}[compatible implementation] (that is, the implementation fulfills all requirements of the associated TCK).
+With the *Compatible Patent License*, an implementer of the specification only receives the patent license grants when their implementation meets the criteria for being a {compatibleImplementationUrl}[compatible implementation] (that is, the implementation fulfills all requirements of the associated TCK).
 
 [TIP]
 ====
@@ -60,6 +112,7 @@ There are legal subtleties to consider so individual members of the specificatio
 
 == Roles
 
+[#efspo-spec-committee]
 === Specification Committee
 
 The specification committee is responsible for implementing the Eclipse Foundation Specification Process (EFSP) for all specification projects (as that term is defined by the EFSP) under the purview of the a working group. A working group may, via their charter, assign specification committee responsibilities to another committee.
@@ -68,11 +121,11 @@ The specification committee is ultimately responsible for ensuring that the fina
 
 The Specification Committee is responsible for producing, publishing, and maintaining operational guidance documentation for specification projects. This includes the minimum requirements and process for producing a Final Specification. It also includes operational guidance for running a specifications TCK for the purpose of testing for compatibility.
 
-The Specification Chair (or their delegate) is responsible for initiating ballots, tallying their results, disseminating them to the community, and (when appropriate; e.g., in the case a release review ballot) reporting them to the EMO.
+The Specification Chair (or their delegate) is responsible for initiating ballots, tallying their results, disseminating them to the community, and (when appropriate; e.g., in the case a <<efspo-reviews-release,release review>> ballot) reporting them to the EMO.
 
 The Specification Committee is also responsible for defining and refining how they implement the EFSP for those Specification Projects under their purview.
 
-[[efspo-roles-pmc]]
+[#efspo-roles-pmc]
 ==== Project Management Committee
 
 The primary role of the Project Management Committee (PMC) is to ensure that project teams are implementing the Eclipse Foundation Development Process. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. The PMC reviews and approves (or vetos) committer elections, first validating that candidate committers have demonstrated sufficient merit.
@@ -85,11 +138,12 @@ The PMC is a link in the project leadership chain. As such, the PMC has a role i
 
 The PMC provides other oversight regarding the operation of open source projects. They review and approve release and progress review materials, and facilitate cross-project communication within the top-level project.
 
-[[efspo-roles-pl]]
+[#efspo-roles-pl]
 === Project Lead(s)
 
 A specification project has one or more project leads. Project leads are the main liaison between the project team and the Eclipse Management Organization (EMO), and are responsible for ensuring that team members are implementing their responsibilities under the EDP, EFSP, and the Eclipse Foundation's IP Policy. The lead is responsible for initiating reviews as the project reaches the appropriate milestone.
 
+[#efspo-roles-rep]
 === Participant Representative
 
 The EFSP states that a _member participant_ may appoint a _participant representative_ committer. A member participant is defined as a solutions, enterprise, or strategic member of the Eclipse Foundation. The intention of a participant representative is to ensure continuity of a member participant's interest. 
@@ -109,9 +163,10 @@ The notion of a participant representative specifically excludes committer membe
 
 Appointing a participant representative this is a power that a member participant will use to ensure that they have at least one committer on a specification project. If the member participant already has an employee as a committer, then that member participant is considered to already have a participant representative and cannot appoint another.
 
+[#efspo-reviews]
 == Reviews
 
-Specification projects in active development must engage in a progress or release review at least once per year. In practical terms, this means that the clock starts ticking when the plan review that occurs at the beginning of the development cycle concludes successfully, and is reset following a successful progress review.
+Specification projects in active development must engage in a <<efspo-reviews-release,progress>> or <<efspo-reviews-release,release>> review at least once per year. In practical terms, this means that the clock starts ticking when the <<efspo-reviews-plan,plan review>> that occurs at the beginning of the development cycle concludes successfully, and is reset following a successful progress review.
 
 The entire process is halted when either the specification project engages in a successful release review (thereby concluding the development cycle), or the specification team decides to abandon the cycle.
 
@@ -120,12 +175,18 @@ The entire process is halted when either the specification project engages in a 
 The EMO schedules reviews to conclude on the first and third Wednesday of the month; this will impact the timing of the start of a specification committee vote and the timing of a project team re-engaging following a failed vote. This means that specification committee chair must start the ballot with enough time to conclude the voting period one week prior to the either the first or third Wednesday of the month if they wish to minimize the time for the review to complete. In the event that the specification committee opts to extend a vote, the EMO will, at its discretion, either bump the corresponding review to the next review slot or withhold approval of the review until the results of the specification committee vote are received.
 ====
 
-The PMC approval and the specification committee vote are different things. We solicit and handle them separately.
+The PMC approval and the specification committee vote are different things. 
 
-The primary role of the PMC is to ensure that project teams are implementing the EDP. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. 
+The primary role of the PMC is to ensure that project teams are implementing the EDP. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. Any specification project committer or project lead can solicit approval for a release from their PMC by posting on the PMC's mailing list.
+
+[TIP]
+====
+The _Committer Tools_ block on the right side of the {handbookProjectPage}[project page] contains links subscribe to the PMC's mailing list ("PMC Mailing List") and to send a note ("Send Email to the PMC").
+====
 
 The specification committee is ultimately responsible for ensuring that the ratified final specifications produced by the working group’s specification projects match the working group’s purpose and goals, that they can be implemented, and that those aspects of the Eclipse Intellectual Property Policy with regard to essential claims are observed. 
 
+[#efspo-reviews-creation]
 === Creation Reviews
 
 A creation review is required before a new specification project is created. In the case where an existing open source project is converted into a specification project, or a specification moves from working under the supervision of one working group to another, the creation review will be combined with a restructuring review.
@@ -134,6 +195,7 @@ Creation reviews are tracked and managed by the EMO. A creation review requires 
 
 In considering their vote in the ballot, the question that specification committee members must consider is whether or not they would vote to approve the eventual release, ratification, and creation of a Final Specification when the project returns for a release review. If the answer is yes, then the specification committee member should vote in the affirmative `pass:[+1]`; they should either vote in the negative `pass:[-1]` or abstain `pass:[+0]` otherwise.
 
+[#efspo-reviews-plan]
 === Plan Reviews
 
 Plan reviews occur at the start of a development cycle. A creation review serves as the plan review for a specification project's first release.
@@ -144,6 +206,7 @@ When reviewing a plan, the question that specification committee members must co
 
 Ideally, when casting their vote, specification committee members should focus less on the mechanics of implementing the plan and more on the broader implications of the themes and changes suggested in the plan to implementers, adopters, and the ecosystem. 
 
+[#efspo-reviews-release]
 === Release Reviews
 
 A release review is required for all major and minor releases from a specification project. The review may be skipped for service releases that do no implicate any new intellectual property (i.e., bug fixes only). A specification project must engage in a release review for the first release of all specifications (independent of whether or not it is a major, minor, or service release).
@@ -162,6 +225,7 @@ See {handbookReleaseAndProgressReviewsUrl}[release and progress reviews] for a m
 
 It is up to the individual parties to determine the basis on which they will vote in the ballot. When determining how to vote in a release review ballot, the question that specification committee members must consider is whether or not they believe that the specification as written can be implemented, that the TCK is complete enough, and whether or not the project team has met their obligations under the EFSP. If the answer is yes, then the specification committee member should vote in the affirmative `pass:[+1]`; they should either vote in the negative `pass:[-1]` or abstain `pass:[+0]` otherwise.
 
+[#efspo-reviews-progress]
 === Progress Reviews
 
 A progress review is required by a specification project when the time elapsed between a plan review and a release review exceeds one year.
@@ -170,7 +234,7 @@ Progress reviews are tracked and managed by the EMO. A progress review requires 
 
 When determining how to vote in a release review ballot, the question that specification committee members must consider is whether or not they believe that the specification is progressing in a manner that will produce a specification that can later be ratified. If the answer is yes, then the specification committee member should vote in the affirmative `pass:[+1]`; they should either vote in the negative `pass:[-1]` or abstain `pass:[+0]` otherwise.
 
-[[efsp-operations-ballot]]
+[#efsp-operations-ballot]
 == Ballots
 
 Specification ballots are run in the specification committee's public mailing list.
@@ -181,13 +245,13 @@ Specification committee members vote on behalf of their constituency (generally 
 
 The following templates can be modified accordingly and used to initiate a ballot. 
 
-[WARN]
+[NOTE]
 ====
-The ballot initiation message does not need to follow this template; this template is provided here only as a convenience.
+The ballot initiation message does not need to follow these templates; they are provided here only as a convenience.
 ====
 
-[# efspo-ballot-release]
-.Release Review Ballot Template
+[#efspo-ballot-release]
+=== Release Review Ballot Template
 ____
 Title: BALLOT: Approval to Release the `<specification>` Specification Project
 
@@ -203,11 +267,13 @@ Specification committee representatives, your vote is hereby requested. Please r
 ____
 
 
-Restructuring Reviews are used to change the structure of a project. A restructuring review would be used to, for example, move a specification from one project to another, move a specification project from one working group to another, or convert an existing open source _software_ project into a specification project.
+[#efspo-ballot-restructure]
+=== Restructuring Review Ballot Template
 
-[# efspo-ballot-restructure]
-.Restructuring Review Ballot Template
+Restructuring Reviews are used to change the structure of a project. A restructuring review would be used to, for example, move a specification from one project to another, move a specification project from one working group to another, or convert an existing open source _software_ project into a specification project.
 ____
+Title: BALLOT: Approval to change the `<project>` into a Specification Project
+
 We need to restructure the existing `<project>` into a specification project as defined by the Eclipse Foundation Specification Process (EFSP). For this, the EMO has initiated a restructuring review.
 
 The purpose of a restructuring review is to change the nature of a project. While we are not strictly creating a new project, we are in a manner of thinking, creating a new specification project from an existing project. With this in mind, we are treating this as a creation review from the perspective of the specification committee approval requirement.
@@ -308,6 +374,10 @@ The practical implementation of aspects of the process are not defined by the EF
 
 [[efspo-faq]]
 == Frequently Asked Questions
+
+Is a specification project is a subtype of a Eclipse project, governed by the EDP? ::
+
+In a mathematical sense, yes. A specification project as defined by the EFSP is a specialization or subtype of an Eclipse open source project as defined by the EDP.
 
 Does a specification need to list patents? ::
 
