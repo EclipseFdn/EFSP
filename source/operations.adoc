@@ -146,7 +146,7 @@ A specification project has one or more project leads. Project leads are the mai
 [#efspo-roles-rep]
 === Participant Representative
 
-The EFSP states that a _member participant_ may appoint a _participant representative_ committer. A member participant is defined as a solutions, enterprise, or strategic member of the Eclipse Foundation. The intention of a participant representative is to ensure continuity of a member participant's interest. 
+The EFSP states that a _member participant_ may appoint a _participant representative_ committer. A member participant is defined as a strategic member or contributing member of the Eclipse Foundation that is a participant in the working group (i.e., has signed the corresponding working group participation agreement). The intention of a participant representative is to ensure continuity of a member participant's interest. 
 
 Specifically, appointment of a participant representative:
 
@@ -266,7 +266,6 @@ Per the process, this will be a `<duration>` day ballot, ending on `<date>` that
 Specification committee representatives, your vote is hereby requested. Please respond with pass:[+1] (positive), pass:[+0] (abstain), or pass:[-1] (reject).  Any feedback that you can provide to support your vote will be appreciated.
 ____
 
-
 [#efspo-ballot-restructure]
 === Restructuring Review Ballot Template
 
@@ -284,6 +283,9 @@ Per the process, this will be a `<duration>` day ballot, ending on `<date>` that
 
 Specification committee representatives, your vote is hereby requested. Please respond with pass:[+1] (positive), pass:[+0] (abstain), or pass:[-1] (reject).  Any feedback that you can provide to support your vote will be appreciated.
 ____
+
+[#efspo-ballot-details]
+=== Details
 
 The `<details>` should concisely describe the changes that are proposed. This could be as simple as a statement stating that "The Eclipse Foo project will be converted into a specification project.", but other changes may be included.
 
@@ -397,7 +399,7 @@ Meritocracy is very relevant. However, the rules of engagement with specificatio
 
 Can a member participant (i.e., a particiant representing a company) appoint as many _participant representative_ committers as they'd like? ::
 
-No. A participating company can appoint a single participant representative committer on a specification project, and only if they do not already have a committer representing their interests on that project.
+No. A member participant (i.e., a company that is a participant in the working group) can appoint a single participant representative committer on a specification project, and only if they do not already have a committer representing their interests on that project. Additional committers representing the interests of a member participant must demonstrate merit through contribution and be elected to the project using the standard mechanism for {handbookCommitterElections}[electing committers].
 
 Is a participant representative a special kind of committer? ::
 
