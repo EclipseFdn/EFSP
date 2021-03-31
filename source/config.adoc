@@ -16,6 +16,9 @@
 
 :compatibleImplementationUrl: {efspUrl}#efsp-compatible
 
+:efspRatificationUrl: {efspUrl}#efsp-ratification
+
 :handbookUrl: https://www.eclipse.org/projects/handbook
+:handbookCommitterElectionsUrl: {handbook}#elections-committer
 :handbookReleaseUrl: {handbookUrl}#release
 :handbookReleaseAndProgressReviewsUrl: {handbookUrl}#release-review
