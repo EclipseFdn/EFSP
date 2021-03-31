@@ -13,7 +13,7 @@ include::config.adoc[]
 [[efspo]]
 = Eclipse Foundation Specification Operations Guide
 
-Version 1.0. DRAFT
+Version 1.0. Effective March 31/2021.
 
 toc::[]
 
@@ -193,7 +193,7 @@ Additional committers can be added via {handbookCommitterElectionsUrl}[committer
 [#efspo-implementing]
 == Implementing the EFSP
 
-Working groups may, at their discretion, <<efspo-specializing,tune the EFSP>> to suit needs specific to their domain or circumstances. In general, specialization of the EFSP takes the form of adding requirements or constraints, not removing them.
+The specification committee must establish open and transparent communication channels for specification-related discussion and ballots. The specification committee's public mailing list is typically used for this sort of communication.
 
 .An overview of the Specification Release Process
 [plantuml, overview_release, svg]
@@ -202,57 +202,88 @@ Working groups may, at their discretion, <<efspo-specializing,tune the EFSP>> to
 skinparam monochrome true
 skinparam shadowing false
 hide footbox
-title Footer removed
+autonumber
 
-actor Committers
-actor ProjectLead
+actor Committer
 actor SpecificationCommittee
 actor PMC
 actor EMO
 
 == Plan ==
-Committers -> Plan : Assemble
-ProjectLead -> PlanReview : Initiate
+Committer -> Plan : Assemble
+Committer -> PlanReview : Initiate
 SpecificationCommittee -> PlanReview : Ballot
 
-== Development ==
-Committers -> Plan : Implement
-Committers -> Git : Contribute
+== Develop ==
+Committer -> Plan : Implement
+Committer -> Code : Contribute
 ...time passes...
-Git -> SpecificationVersion : Build
 
 == Release ==
-ProjectLead -> ReleaseReview : Initiate
-SpecificationCommittee -> ReleaseReview: Ballot
+Committer -> Code : Initiate final build
+Code -> SpecificationVersion: Build
+activate SpecificationVersion
+Committer -> ReleaseReview : Initiate
+activate ReleaseReview
+Committer -> SpecificationCommittee : Request ballot
+Committer -> PMC : Request approval
+Committer -> IPLog : Submit for review
 PMC -> ReleaseReview : Approve
-EMO -> ReleaseReview : Approve
+EMO -> IPLog : Approve
+SpecificationCommittee -> Ballot: Initiates
+activate Ballot
+SpecificationCommittee -> Ballot: Votes
 ...minimum of one week...
+SpecificationCommittee -> Ballot: Concludes
+deactivate Ballot
+SpecificationCommittee -> ReleaseReview : Approves
+EMO -> ReleaseReview : Approve
+deactivate ReleaseReview
 SpecificationVersion -> FinalSpecification : Transmogrifies
+deactivate SpecificationVersion
+activate FinalSpecification
 @enduml
 ----
 
 === Planning
 
-*Every development cycle starts with a plan and a plan review.* The project team assembles their release plan, the project lead (or their delegate) presents the plan to the specification committee, and the specification committee initiates <<efspo-reviews-plan,plan review>>. The plan review consists entirely of a ballot of the specification committee. A super-majority of the specification committee must vote to approve the plan.
+Every development cycle starts with a plan and a plan review. The project team assembles their release plan, the project lead (or their delegate) presents the plan to the specification committee, and the specification committee initiates <<efspo-reviews-plan,plan review>>. The plan review consists entirely of a ballot of the specification committee. A super-majority of the specification committee must vote to approve the plan.
+
+A plan should concisely describe the new features and themes on which the development team intends to focus. The level of detail required in a plan varies by working group.
+
+[start=1]
+. The specification project committers assemble the plan in an open and transparent manner. Project committers create a {hadnbookReleasePlanUrl}[release record]. The release record can be used to actually capture the plan, or can include a pointer to the plan represented elsewhere.
+
+The specific means by which a plan is assembled is left to the discretion of the project team.
 
 [TIP]
 ====
 Specification project teams should engage with the specification committee during their planning phase to request feedback and mitigate the risk of surprises during the plan review. That is, engage with the specification committee early to ensure success for your plan review.
 ====
 
-A plan should concisely describe the new features and themes on which the development team intends to focus. The level of detail required in a plan varies by working group.
+[start=2]
+. A committer representing the specification project delivers the plan to the specification committee  along with a request for them to initiate an approval ballot.
+. A specification committee member initiates the ballot, and tallies the results after the ballot period has completed and reports the results. Approval requires a super-majority affirmative vote from the specification committee.
 
 === Development
 
 *Committers work in a _specification project_ Git repository.* Committers collaborate, accept contributions from contributors, and otherwise construct the specification.
 
+[start=4]
+. Specification project committers implement the plan.
+. Committers and contributors work directly in the assigned Git repositories.
+
 If a development cycle extends beyond a year, the project team must engage in a <<efspo-reviews-progress,progress review>>. 
 
 === Release
 
-TO initiate the release process, the project team starts by creating a _specification version_. A specification version is, effectively, a release candidate build of the specification document and related artifacts.
+To initiate the release process, the project team starts by creating a _specification version_. A specification version is, effectively, a release candidate build of the specification document and related artifacts.
 
-The project lead (or their designate) then initiates a <<efspo-reviews-release,release review>>. There are several ways to initiate a release review.
+[start=6]
+. Specification project committers initiate the final build.
+. The build is referred to as a _specification version_; it is effectively a release candidate.
+. A committer initiates the <<efspo-reviews-release,release review>> by sending an email to {emoEmail}.
+. A committer sends an email to the specification committee
 ////
 
 ////
@@ -291,7 +322,7 @@ The primary role of the *PMC* is to ensure that project teams are implementing t
 
 [TIP]
 ====
-The _Committer Tools_ block on the right side of the {handbookProjectPage}[project page] contains links subscribe to the PMC's mailing list ("PMC Mailing List") and to send a note ("Send Email to the PMC").
+The _Committer Tools_ block on the right side of the {handbookProjectPageUrl}[project page] contains links subscribe to the PMC's mailing list ("PMC Mailing List") and to send a note ("Send Email to the PMC").
 ====
 
 The *specification committee* is ultimately responsible for ensuring that the ratified final specifications produced by the working group’s specification projects match the working group’s purpose and goals, that they can be implemented, and that those aspects of the Eclipse Intellectual Property Policy with regard to essential claims are observed. The specification committee exercises their responsibility via <<efspo-ballots,ballot>>.
@@ -501,7 +532,7 @@ Meritocracy is very relevant. However, the rules of engagement with specificatio
 
 Can a member participant (i.e., a participant representing a company) appoint as many _participant representative_ committers as they'd like? ::
 
-No. A member participant (i.e., a company that is a participant in the working group) can appoint a single participant representative committer on a specification project, and only if they do not already have a committer representing their interests on that project. Additional committers representing the interests of a member participant may demonstrate merit through contribution and be elected to the project using the standard mechanism for {handbookCommitterElections}[electing committers].
+No. A member participant (i.e., a company that is a participant in the working group) can appoint a single participant representative committer on a specification project, and only if they do not already have a committer representing their interests on that project. Additional committers representing the interests of a member participant may demonstrate merit through contribution and be elected to the project using the standard mechanism for {handbookCommitterElectionsUrl}[electing committers].
 
 Is a participant representative a special kind of committer? ::
 

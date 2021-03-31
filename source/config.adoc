@@ -19,6 +19,10 @@
 :efspRatificationUrl: {efspUrl}#efsp-ratification
 
 :handbookUrl: https://www.eclipse.org/projects/handbook
-:handbookCommitterElectionsUrl: {handbook}#elections-committer
+:handbookCommitterElectionsUrl: {handbookUrl}#elections-committer
+:handbookProjectPageUrl: {handbookUrl}#pmi-project-page
+:hadnbookReleasePlanUrl: {handbookUrl}#releases-plan
 :handbookReleaseUrl: {handbookUrl}#release
 :handbookReleaseAndProgressReviewsUrl: {handbookUrl}#release-review
+
+:emoEmail: mailto:emo@eclipse-foundation.org
