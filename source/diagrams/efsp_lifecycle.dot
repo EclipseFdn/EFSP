@@ -21,7 +21,7 @@
 	}
 	{
 		rank=same;rankdir=LR;
-		plan[label="Plan"];
+		plan[label="Plan",style="filled,rounded"];
 		plan_review[label="Plan\nReview"];
 		development[label="Development"];
 		milestone[label="Milestone",style="filled,rounded"];
