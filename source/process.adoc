@@ -10,7 +10,7 @@
 [[efsp]]
 = Eclipse Foundation Specification Process
 
-Version 1.2. Effective June 30, 2019
+Version {project-version}. {effectiveDate}
 
 toc::[]
 

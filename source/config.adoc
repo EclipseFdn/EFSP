@@ -8,6 +8,8 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 
+:effectiveDate: DRAFT
+
 :efspUrl: https://www.eclipse.org/projects/efsp
 :edpUrl: https://www.eclipse.org/projects/dev_process
 :ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf

@@ -8,6 +8,8 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 
+include::config.adoc[]
+
 include::process.adoc[]
 
 include::addendum.adoc[leveloffset=+1]
