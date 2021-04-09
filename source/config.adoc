@@ -10,6 +10,7 @@
 
 :effectiveDate: DRAFT
 
+:bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
 :efspUrl: https://www.eclipse.org/projects/efsp
 :edpUrl: https://www.eclipse.org/projects/dev_process
 :ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
@@ -17,6 +18,9 @@
 :ewgogUrl: https://www.eclipse.org/org/workinggroups/operations.php
 
 :compatibleImplementationUrl: {efspUrl}#efsp-compatible
+
+:ewgpMemberRoles: {ewgpUrl}#wg-member-roles
+:ewgpAgreements: {ewgpUrl}#wg-agreements
 
 :efspRatificationUrl: {efspUrl}#efsp-ratification
 

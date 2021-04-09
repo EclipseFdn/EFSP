@@ -28,7 +28,7 @@ This document, and future revisions thereof will be approved by the Eclipse Foun
 == Applicable Documents and Processes
 
 * https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf[Eclipse Foundation Bylaws]
-* https://www.eclipse.org/org/workinggroups/industry_wg_process.php#[Working Group Process]
+* {ewgpUrl}[Eclipse Foundation Working Group Process]
 * https://www.eclipse.org/org/workinggroups/IWG_Participation_Agreement.pdf#[Working Group Participation Agreement]
 * https://www.eclipse.org/legal/efsl.php[Eclipse Foundation Specification License]
 * https://www.eclipse.org/legal/tck.php[Eclipse Foundation TCK License]
@@ -64,7 +64,7 @@ Individual Participant :: An individual Committer on a Specification Project.
 
 Major Release :: A type of Release that includes either significant new functionality and/or breaking changes.
 
-Member Participant :: A Member of the Eclipse Foundation including Solutions Member, Enterprise Member, or Strategic Member (as defined in the https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf#[Eclipse Foundation Bylaws]) that has one or more Committers on a Specification Project.
+Member Participant :: A Strategic or Contributing Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]) that has executed the corresponding Working Group Participation Agreement (for more information, see the {ewgpMemberRoles}[Member Roles] and {ewgpAgreements}[Agreements] in the Eclipse Foundation Working Group Process).
 
 Milestone Build :: A build of the project content for limited distribution to demonstrate progress and solicit feedback.
 
@@ -144,7 +144,7 @@ Technology Compatibility Kit (TCK) :: Software and documented requirements that 
 
 Termination of Participation :: Occurs when an Individual Participant or Member Participant removes themselves or the Committers in their employ from a Specification Project.
 
-Working Group :: An Eclipse Foundation Working Group established under the https://www.eclipse.org/org/workinggroups/industry_wg_process.php[Eclipse Industry Working Group Process]. Definitions from the Working Group Process are included herein by reference.
+Working Group :: An Eclipse Foundation Working Group established under the {ewgpUrl}[Eclipse Foundation Working Group Process]. Definitions from the Working Group Process are included herein by reference.
 
 Other terms used in this document are defined in the https://www.eclipse.org/projects/dev_process[EDP].
 
