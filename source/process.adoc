@@ -29,7 +29,7 @@ This document, and future revisions thereof will be approved by the Eclipse Foun
 
 * https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf[Eclipse Foundation Bylaws]
 * {ewgpUrl}[Eclipse Foundation Working Group Process]
-* https://www.eclipse.org/org/workinggroups/IWG_Participation_Agreement.pdf#[Working Group Participation Agreement]
+* The Working Group Participation Agreement for the corresponding Working Group
 * https://www.eclipse.org/legal/efsl.php[Eclipse Foundation Specification License]
 * https://www.eclipse.org/legal/tck.php[Eclipse Foundation TCK License]
 * Eclipse Foundation Trademark License Agreement
