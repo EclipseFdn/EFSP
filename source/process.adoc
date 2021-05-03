@@ -16,7 +16,7 @@ toc::[]
 
 The document describes the Eclipse Foundation Specification Process (EFSP) for optional use by Eclipse Foundation Working Groups.
 
-The EFSP leverages and augments the https://www.eclipse.org/projects/dev_process/development_process.php[Eclipse Development Process] (EDP). The EDP defines important concepts, including the Open Source Rules of Engagement, the organizational framework for open source projects and teams, releases, reviews, and more.
+The EFSP leverages and augments the https://www.eclipse.org/projects/dev_process/development_process.php[Eclipse Foundation Development Process] (EDP). The EDP defines important concepts, including the Open Source Rules of Engagement, the organizational framework for open source projects and teams, releases, reviews, and more.
 
 Although many of the activities related to this process are conducted by open source projects operating under the EDP, this specification process, and the Specification Versions delivered under it, are to be managed by Working Groups.
 
@@ -34,7 +34,7 @@ This document, and future revisions thereof will be approved by the Eclipse Foun
 * https://www.eclipse.org/legal/tck.php[Eclipse Foundation TCK License]
 * Eclipse Foundation Trademark License Agreement
 * https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf#[Eclipse Foundation Membership Agreement]
-* https://www.eclipse.org/projects/dev_process/development_process.php#[Eclipse Development Process]
+* https://www.eclipse.org/projects/dev_process/development_process.php#[Eclipse Foundation Development Process]
 * https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf#[Eclipse Foundation Intellectual Property Policy]
 * https://www.eclipse.org/org/documents/Eclipse_Antitrust_Policy.pdf#[Eclipse Foundation Anti-Trust Policy]
 
@@ -94,7 +94,7 @@ Pre-Proposal Phase :: A phase in the Project lifecycle during which an individua
 
 Profile :: A Specification that includes by reference a collection of Specifications and possibly additional requirements.
 
-Progress Review :: A type of Review that is used by a Project Team to summarize the accomplishments of the Project, verify that the Eclipse Development Process and IP Policy have been followed, and to highlight any remaining quality and/or architectural issues. For a complete definition, see the EDP.
+Progress Review :: A type of Review that is used by a Project Team to summarize the accomplishments of the Project, verify that the Eclipse Foundation Development Process and IP Policy have been followed, and to highlight any remaining quality and/or architectural issues. For a complete definition, see the EDP.
 
 Project :: A Project is the main operational unit by which all open source development occurs. For a complete definition, see the https://www.eclipse.org/projects/dev_process/#4_Structure_and_Organization[EDP].
 
@@ -219,7 +219,7 @@ A Specification Committee must approve, by Super-majority, the following lifecyc
 * The creation of a new Specification Project;
 * The Release Plan for a new Release Cycle of a Specification;
 * Each revision to the Scope of a Specification;
-* Each Checkpoint Review of a Specification Project, including the adoption of Specification Versions;
+* Each Check Point Review of a Specification Project, including the adoption of Specification Versions;
 * A Profile Specification (this Super-majority must include a Super-majority of Strategic Members of the Working Group); and
 * A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group).
 
