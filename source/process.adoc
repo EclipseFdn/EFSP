@@ -165,8 +165,6 @@ Among other things, the Scope of a Specification Project is intended to inform c
 
 Specifications must be developed by Specification Projects. 
 
-A Specification may describe parts as being optional. Optional parts of a Specification must not conflict with one another; it must be possible for a Compatible Implementation to implement all optional parts.
-
 A Specification can define rules. If defined, such rules must not override the rules defined in any referenced Specification.
 
 A Specification that aggregates other Specifications by reference may be designated as a Profile. Profiles do not have to be arranged in unique subsets (i.e. a Specification may appear in more than one Profile). A Super-majority, including a Super-majority of the Strategic Members of the Working Group, is required to approve a Profile Specification. A Specification Committee may, at its discretion, elect to label one or more Profiles as a “Platform”.
@@ -190,12 +188,10 @@ A specific version of a TCK is chosen by the Specification Project for each Spec
 
 Any implementation that fulfills all of the requirements of the TCK associated with a Final Specification may claim that it is a Compatible Implementation of that Final Specification. The TCK version associated with the Final Specification must not be modified other than as allowed or required by the rules of the TCK.
 
-All parts of a Specification, including optional parts, should be covered by the TCK.
-
 [[efsp-compatible]]
 ==== Compatible Implementations
 
-A Compatible Implementation must fully implement all non-optional elements of a Specification Version, must not extend the API (no supersetting), and must fulfill all the requirements of the corresponding TCK. A Specification Version must identify at least one Compatible Implementation under an Open Source License that implements all optional elements of the Specification and fulfills the requirements of all elements (including optional elements) of the TCK.
+A Compatible Implementation must fully implement all non-optional elements of a Specification Version and must fulfill all the requirements of the corresponding TCK. A Specification Version must identify at least one Compatible Implementation under an Open Source License that fulfills the requirements of the TCK.
 
 [[efsp-committers]]
 === Committers
@@ -355,7 +351,7 @@ The final build of the Specification Version’s artifacts must be delivered to 
 
 The Specification Team must provide evidence that the TCK selected for the Specification Version provides sufficient coverage to reasonably validate Compatible Implementations.
 
-The Specification Team must provide evidence that cited Compatible Implementations fulfill all requirements of the TCK and that at least one Compatible Implementation implements all optional aspects.
+The Specification Team must provide evidence that cited Compatible Implementations fulfill all requirements of the TCK.
 
 A Release Review concludes successfully with approval from the PMC and EMO, and approval by a Super-majority of the Specification Committee.
 
