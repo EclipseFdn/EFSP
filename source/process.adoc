@@ -167,7 +167,7 @@ Specifications must be developed by Specification Projects. 
 
 A Specification can define rules. If defined, such rules must not override the rules defined in any referenced Specification.
 
-A Specification that aggregates other Specifications by reference may be designated as a Profile. Profiles do not have to be arranged in unique subsets (i.e. a Specification may appear in more than one Profile). A Super-majority, including a Super-majority of the Strategic Members of the Working Group, is required to approve a Profile Specification. A Specification Committee may, at its discretion, elect to label one or more Profiles as a “Platform”.
+A Specification that aggregates other Specifications by reference may be designated as a Profile. Profiles do not have to be arranged in unique subsets (i.e. a Specification may appear in more than one Profile). A successful Super-majority ballot of the Specification Committee is required to approve designation of a Profile Specification. A Specification Committee may, at its discretion, elect to label one or more Profiles as a “Platform”.
 
 [[efsp-versions]]
 ==== Specification Versions
@@ -216,8 +216,8 @@ A Specification Committee must approve, by Super-majority, the following lifecyc
 * The Release Plan for a new Release Cycle of a Specification;
 * Each revision to the Scope of a Specification;
 * Each Check Point Review of a Specification Project, including the adoption of Specification Versions;
-* A Profile Specification (this Super-majority must include a Super-majority of Strategic Members of the Working Group); and
-* A Platform designation (this Super-majority must include a Super-majority of Strategic Members of the Working Group).
+* A Profile Specification; and
+* A Platform designation.
 
 A ballot is used to seek Specification Committee approval. Unless otherwise stated in this process (or a Working Group-specific derivative of this process), the default period for all Specification Committee ballots is seven (7) days. During that time, any member of a Specification Committee may request that the period be extended to thirty (30) days. 
 
