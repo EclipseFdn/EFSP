@@ -27,11 +27,6 @@
 * Eclipse Board of Directors approves the final draft.
 * Version is published for use.
 
-[NOTE]
-====
-A Board delegation in place for the Executive Director to approve version 1.0 of the EFSP
-====
-
 [[efsp-addendum-revisions-wg]]
 == Working Group Specification Process
 
