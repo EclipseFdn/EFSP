@@ -300,7 +300,7 @@ To produce a <<efsp-versions,Specification Version>> (with the exception of <<ef
 include::diagrams/efsp_lifecycle.dot[]
 ----
 
-A Specification Project’s first Release Cycle starts with the successful completion of a Creation Review. To start a subsequent Release Cycle (and every Release Cycle thereafter), the Specification Team must present a Release Plan to the Specification Committee in a <<efsp-reviews-plan,Plan Review>>. The Plan Review must be approved by a Super-majority of the Specification Committee. 
+A Specification Project’s first Release Cycle starts with the successful completion of a Creation Review (or Restructuring Review in the event that a Restructuring Review is used to convert an existing Project into a Specification Project). To start a subsequent Release Cycle (and every Release Cycle thereafter), the Specification Team must present a Release Plan to the Specification Committee in a <<efsp-reviews-plan,Plan Review>>. The Plan Review must be approved by a Super-majority of the Specification Committee. 
 
 A Release Cycle ends when the Specification Team delivers a Specification Version to the EMO and Specification Committee via a <<efsp-reviews-release,Release Review>>. To extend the Release Cycle, the Specification Team must stage a Milestone Build and engage in a <<efsp-reviews-progress, Progress Review>>. The Specification Team must engage in either a Release Review (which ends the Release Cycle) or a Progress Review (which extends the Release Cycle) within twelve (12) months of the last Review.
 
@@ -324,7 +324,9 @@ The Specification Team must complete all required due diligence under the Eclips
 
 Specification Projects are created using the process defined by the EDP with the added requirement that the Specification Committee must approve the Project Proposal by a Super-majority before the Specification Project can successfully complete a Creation Review.
 
-The Specification Committee ballot and the Creation Review may run in parallel. The Project Proposal text must not be changed during the Creation Review period. If changes are required during this period, the Project Proposal is pushed back into the Proposal Phase.
+An existing Project may be converted into a Specification Project via a Restructuring Review. In this case, the Restructuring Review serves as the Creation Review; other changes to the nature of the existing Project (e.g., the scope) may be included with the Restructuring Review. Unlike a Creation Review, no Project Proposal is required for a Restructuring Review. Like a Creation Review, a Restructuring Review that converts an existing Project into a Specification Project must be approved by the Specification Committee by Super-majority ballot. 
+
+The Specification Committee ballot and the review may run in parallel. 
 
 [[efsp-reviews-plan]]
 ==== Plan Review
