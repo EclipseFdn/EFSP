@@ -268,7 +268,7 @@ A Specification Project's first Release must be a Major or Minor Release.
 [[efsp-milestones]]
 ==== Milestone Builds
 
-Leading up to a Release, a Specification Team must produce at least one Milestone Build. Milestone Builds and Release Candidates are "almost Releases" intended for adoption and testing by early-adopters. No formal Reviews are required for Milestone Builds. 
+Leading up to a Release, a Specification Team must produce at least one Milestone Build. Milestones Builds should be staged for limited distribution to key stakeholders to solicit feedback. No formal Reviews are required for Milestone Builds. 
 
 Under no circumstances are Milestone Builds to be used as a substitute for doing proper official Releases. 
 
@@ -304,7 +304,7 @@ A Specification Project’s first Release Cycle starts with the successful compl
 
 A Release Cycle ends when the Specification Team delivers a Specification Version to the EMO and Specification Committee via a <<efsp-reviews-release,Release Review>>. To extend the Release Cycle, the Specification Team must stage a Milestone Build and engage in a <<efsp-reviews-progress, Progress Review>>. The Specification Team must engage in either a Release Review (which ends the Release Cycle) or a Progress Review (which extends the Release Cycle) within twelve (12) months of the last Review.
 
-The Specification Team must deliver at least one Milestone Build to demonstrate progress and solicit feedback. Milestone Builds may be incomplete (for example, designated Compatible Implementations will not necessarily pass Milestone Builds of the TCK in their entirety). Subsequent Milestone Builds should, however, demonstrate progress. Later (feature complete) Milestone Builds may be referred to as _Release Candidates_. Milestones Builds should be staged for limited distribution to key stakeholders to solicit feedback.
+The Specification Team must deliver at least one Milestone Build to demonstrate progress and solicit feedback. Milestone Builds may be incomplete (for example, designated Compatible Implementations will not necessarily pass Milestone Builds of the TCK in their entirety). Subsequent Milestone Builds should, however, demonstrate progress. Later (feature complete) Milestone Builds may be referred to as _Release Candidates_. 
 
 The Specification Team must engage in a successful Release Review before the final Specification Version may be Ratified. A Specification Version becomes a Final Specification when it is Ratified.
 
