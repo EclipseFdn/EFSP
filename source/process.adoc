@@ -191,7 +191,7 @@ Any implementation that fulfills all of the requirements of the TCK associated
 [[efsp-compatible]]
 ==== Compatible Implementations
 
-A Compatible Implementation must fully implement all non-optional elements of a Specification Version and must fulfill all the requirements of the corresponding TCK. A Specification Version must identify at least one Compatible Implementation under an Open Source License that fulfills the requirements of the TCK.
+A Compatible Implementation must fulfill all requirements of a Final Specification including all requirements of the corresponding TCK, and must not extend the API (no supersetting). A Specification Version must identify at least one Compatible Implementation under an Open Source License that fulfills the requirements of the TCK.
 
 [[efsp-committers]]
 === Committers
