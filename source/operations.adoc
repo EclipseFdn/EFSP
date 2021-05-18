@@ -295,7 +295,7 @@ To initiate the release process, the project team starts by creating a _specific
 [#efspo-patents-license]
 === Patent License
 
-When creating a new specification project, the project team must select a _patent license_ that defines how patent grants flow from a {efspRatificationUrl}[Ficlipse/dash-licensesnal Specification] to an implementer of the specification. Generally all specification projects operating under the purview of a working group use the same patent license, which makes selecting the appropriate patent license a responsibility of the working group's _specification committee_.
+When creating a new specification project, the project team must select a _patent license_ that defines how patent grants flow from a {efspRatificationUrl}[Final Specification] to an implementer of the specification. Generally all specification projects operating under the purview of a working group use the same patent license, which makes selecting the appropriate patent license a responsibility of the working group's _specification committee_.
 
 With the *Implementation Patent License*, an implementer receives the grants by starting an implementation of the specification.  
 
