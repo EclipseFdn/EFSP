@@ -88,6 +88,8 @@ Participant :: A Member Participant or Individual Participant.
 
 Participant Representative :: The Committer on a Specification Project who has the right to represent the interests (including without limitation the right to vote on behalf of) of a Participant. The Participant Representative of an Individual Participant is the same person.
 
+Patent License :: The Patent License that defines how patent grants flow from a Final Specification to an implementer of the specification. The Patent License is either the Implementation Patent License or Compatible Patent License as defined in the {ipPolicyUrl}[Eclipse Foundation IP Policy].
+
 Plan Review :: A Review to approve a Release Plan to start a Release Cycle.
 
 Pre-Proposal Phase :: A phase in the Project lifecycle during which an individual or group of individuals declares their interest in, and rationale for, establishing a Project and assembles a proposal to create a new Specification Project. For a complete definition, see the https://www.eclipse.org/projects/dev_process/#6_2_1_Pre-Proposal[EDP].
@@ -158,7 +160,14 @@ A Specification Project is the main operational unit for Specification developme
 
 Specification Projects operate under the supervision of both the Project Leadership Chain and the Specification Committee.
 
-Among other things, the Scope of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification. Since a change in Scope may change the nature of the contribution to the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
+The _Scope_ of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification. Since a change in Scope may change the nature of the contribution to the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
+
+The _Patent License_ that defines how patent grants flow from a Final Specification to an implementer of the specification. At the time of creation Specification Project must explicitly state whether it utilizes an _Implementation Patent License_ or a _Compatible Patent License_ as defined in the Eclipse Foundation Intellectual Property Policy. The choice of Patent License must be made known to the Specification Committee in advance of the initiation of the Ballot to create the Specification Project.
+
+[TIP]
+====
+For help regarding selection of a Patent License, see the {operationsPatentLicenseUrl}[Patents and Specifications].
+====
 
 [[efsp-specifications]]
 === Specifications

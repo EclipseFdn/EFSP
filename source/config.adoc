@@ -24,6 +24,9 @@
 
 :efspRatificationUrl: {efspUrl}#efsp-ratification
 
+:operationsUrl: ./operations.php
+:operationsPatentLicenseUrl: {}#efspo-patents
+
 :handbookUrl: https://www.eclipse.org/projects/handbook
 :handbookCommitterElectionsUrl: {handbookUrl}#elections-committer
 :handbookProjectPageUrl: {handbookUrl}#pmi-project-page
