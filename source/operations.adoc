@@ -295,7 +295,7 @@ To initiate the release process, the project team starts by creating a _specific
 [#efspo-patents-license]
 === Patent License
 
-When creating a new specification project, the project team must select a _patent license_ that defines how patent grants flow from a {efspRatificationUrl}[Final Specification] to an implementer of the specification. Generally all specification projects operating under the purview of a working group use the same patent license, which makes selecting the appropriate patent license a responsibility of the working group's _specification committee_.
+When creating a new specification project, the project team must select a _patent license_ that defines how patent grants flow from a {efspRatificationUrl}[Ficlipse/dash-licensesnal Specification] to an implementer of the specification. Generally all specification projects operating under the purview of a working group use the same patent license, which makes selecting the appropriate patent license a responsibility of the working group's _specification committee_.
 
 With the *Implementation Patent License*, an implementer receives the grants by starting an implementation of the specification.  
 
@@ -510,6 +510,8 @@ The practical implementation of aspects of the process are not defined by the EF
 [[efspo-faq]]
 == Frequently Asked Questions
 
+[qanda]
+
 Is a specification project is a subtype of a Eclipse project, governed by the EDP? ::
 
 In a mathematical sense, yes. A specification project as defined by the EFSP is a specialization or subtype of an Eclipse open source project as defined by the EDP.
@@ -545,3 +547,60 @@ No.
 Will a participant representative be retired from a specification project when they change employers? ::
 
 No. A participant representative is indistinguishable from any other committer and so retains their committer status even after changing employers. After changing employers, a committer may require new committer agreements, but once those are in place, the committer retains all privileges. In the event that a committer changing employers leaves a member participant unrepresented, that member participant may appoint a new participant representative.
+
+[#efspo-patents]
+=== Patents and Specifications
+
+''This section is derived from https://eclipse-foundation.blog/2021/05/13/on-patents-and-specifications/[On Patents and Specifications] by Mike Milinkovich, published on May 13/2021.''
+
+We’ve been fielding a number of questions lately about the intersection of our spec process and patents. A couple of these community discussions have gone off in directions that are off target, factually incorrect, or both. Therefore, the purpose of this short FAQ is to explain the patent license options provided by the Eclipse Foundation Intellectual Property Policy for use by specifications developed by specification projects under the Eclipse Foundation Specification Process (EFSP). 
+
+[WARNING]
+====
+Disclaimer: This is not legal advice. I am not a lawyer. It has not been reviewed by counsel. Consult your own attorney. In addition, this note does not form part of any official Eclipse Foundation policy or process, but rather is provided for informational purposes only to aid those involved in our specification projects to better understand the EFSP and the choices available. I’ll update the content as needed.
+====
+
+One important point to keep in mind when reading this: we believe that the EFSP fully complies with the Open Standards Requirement for Software established by the Open Source Initiative. In other words, the EFSP is designed specifically to be open source friendly.  
+
+[qanda]
+
+Why do specifications require patent licenses? ::
+
+The purpose of every specification is to stimulate the development of implementations. These implementations may be derived from open source code maintained at the Eclipse Foundation or elsewhere, or they may be independently developed. They may be made available under open source licenses or proprietary. In order to facilitate and encourage these implementations, all specification processes provide some notion of patent licenses from the parties involved in developing the specifications.
+
+What types of patent licenses are used by various specification organizations? ::
+
+There are a wide variety of specification patent license options available from various sources. 
++
+Some terms that you may hear are:
++
+*FRAND means fair, reasonable, and non-discriminatory licenses. This means that before you can implement the specification you are required to obtain a license from the patent holders who developed the specification. FRAND is generally considered to be antithetical to open source development, as it requires permission and money to implement a specification or potentially even to use an implementation of such a specification.
+*FRAND-Z is FRAND where the cost of the license is set to zero. Note that although this removes the cost concerns of FRAND, permission may still be required for use and/or implementation. 
+*RF or royalty-free provides a priori royalty-free licenses from the participants developing the specifications to downstream users and implementers. This is considered a best practice for enabling open source implementations of a specification. All Eclipse Foundation specifications are developed on a royalty-free basis. 
+*Non-assert is another legal mechanism which provides a result effectively similar to royalty-free. A non-assert says that a patent holder will not assert their patent rights against an implementer or user. 
+
+Do these licenses mean that an implementer or user can never be sued for patent infringement? ::
+
+No. The patent licenses are intended to ensure that an implementer or user doesn’t need to be worried about being sued by the parties involved in developing the specifications. It does not provide protection from uninvolved third parties who may believe they have intellectual property rights applicable to the specification. 
++
+Note that the above implies that it is in the interests of the entire community and ecosystem that many participants (particularly patent-owning participants) be involved in developing the specifications. It also explains why it is in the best interest of the community that all participants in the specification process have signed agreements in place documenting their commitment to the patent licensing under the EFSP. 
+
+What patent licenses are granted by the EFSP? ::
+
+The patent licenses provided via the EFSP apply to all downstream implementations of Final Specifications, including independent implementations. They cover all patents owned by each Participant in the specification project that are essential claims needed by any implementer or user of the specification. Note that the licenses cover the entire specification, not just to the parts of the specification that a participant may have contributed to. We provide our specifications two options for patent licenses: the Compatible Patent License and the Implementation Patent License. The differences between those two are explained below.
+
+But my open source license already has a patent license in it. Why do I need more than that? ::
+
+The patent licenses provided in open source licenses such as Apache-2.0 grant a license for contributor-owned patents which apply to their contribution either alone or as combined with the work. The patent license is only to that program/implementation. Note that the Apache-2.0 patent license  “…applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work…”. Relative to the EFSP, such grants are deficient in both scope (applies only to their contributions) and target (applies only to that implementation). 
+
+What is the difference between the two patent license options provided by the EFSP? ::
+
+The only difference between the _Compatible Patent License_ and and the _Implementation Patent License_ is the timing of when the patent license grant comes into effect. In the Compatible Patent License, the license grant only happens when the implementation has demonstrated that it is fully compatible with the specification by passing the relevant TCK. The Implementation Patent License provides immediate patent licenses to all implementers, even to partial or work-in-progress implementations. The first choice emphasizes the importance of compatibility. The latter choice emphasizes the importance of open development. Both are valuable options available to Eclipse specification projects. 
+
+I’ve read the EFSP and I don’t see anything about patent licenses. ::
+
+The patent licenses are provided in the Eclipse Foundation Intellectual Property Policy. A future version of the EFSP will make this clearer.
+
+Is the Eclipse Foundation itself granted any licenses to patents? ::
+
+No. The Eclipse Foundation itself does not acquire any patent rights in the specifications. The patent licenses are granted from the participating patent owners directly to implementers and users of those specifications. More specifically, the patent license grants are “... to everyone to make, have made, use, sell, offer to sell, and import...” implementations of the specifications.
