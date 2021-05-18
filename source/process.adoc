@@ -16,7 +16,7 @@ toc::[]
 
 The document describes the Eclipse Foundation Specification Process (EFSP) for optional use by Eclipse Foundation Working Groups.
 
-The EFSP leverages and augments the https://www.eclipse.org/projects/dev_process/development_process.php[Eclipse Foundation Development Process] (EDP). The EDP defines important concepts, including the Open Source Rules of Engagement, the organizational framework for open source projects and teams, releases, reviews, and more.
+The EFSP leverages and augments the {edpUrl}[Eclipse Foundation Development Process] (EDP). The EDP defines important concepts, including the Open Source Rules of Engagement, the organizational framework for open source projects and teams, releases, reviews, and more.
 
 Although many of the activities related to this process are conducted by open source projects operating under the EDP, this specification process, and the Specification Versions delivered under it, are to be managed by Working Groups.
 
@@ -34,7 +34,7 @@ This document, and future revisions thereof will be approved by the Eclipse Foun
 * https://www.eclipse.org/legal/tck.php[Eclipse Foundation TCK License]
 * Eclipse Foundation Trademark License Agreement
 * https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf#[Eclipse Foundation Membership Agreement]
-* https://www.eclipse.org/projects/dev_process/development_process.php#[Eclipse Foundation Development Process]
+* {edpUrl}[Eclipse Foundation Development Process]
 * https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf#[Eclipse Foundation Intellectual Property Policy]
 * https://www.eclipse.org/org/documents/Eclipse_Antitrust_Policy.pdf#[Eclipse Foundation Anti-Trust Policy]
 
@@ -56,7 +56,7 @@ Contribution :: Content delivered to a Project under the terms of the https://ww
 
 Contributor :: An individual who is a party to the https://www.eclipse.org/legal/ECA.php[Eclipse Contributor Agreement].
 
-Creation Review :: A review to assess the community and membership response to a Project Proposal, verifies that appropriate resources are available for the project to achieve its plan, and serves as a Committer election for the project's initial Committers. For a complete definition, see the https://www.eclipse.org/projects/dev_process/#6_3_1_Creation_Review[EDP].
+Creation Review :: A review to assess the community and membership response to a Project Proposal, verifies that appropriate resources are available for the project to achieve its plan, and serves as a Committer election for the project's initial Committers. For a complete definition, see the {edpCreationReviewUrl}[EDP].
 
 Final Specification :: A Ratified Specification Version.
 
@@ -92,19 +92,19 @@ Patent License :: The Patent License that defines how patent grants flow from a 
 
 Plan Review :: A Review to approve a Release Plan to start a Release Cycle.
 
-Pre-Proposal Phase :: A phase in the Project lifecycle during which an individual or group of individuals declares their interest in, and rationale for, establishing a Project and assembles a proposal to create a new Specification Project. For a complete definition, see the https://www.eclipse.org/projects/dev_process/#6_2_1_Pre-Proposal[EDP].
+Pre-Proposal Phase :: A phase in the Project lifecycle during which an individual or group of individuals declares their interest in, and rationale for, establishing a Project and assembles a proposal to create a new Specification Project. For a complete definition, see the {edpPreProposalUrl}[EDP].
 
 Profile :: A Specification that includes by reference a collection of Specifications and possibly additional requirements.
 
-Progress Review :: A type of Review that is used by a Project Team to summarize the accomplishments of the Project, verify that the Eclipse Foundation Development Process and IP Policy have been followed, and to highlight any remaining quality and/or architectural issues. For a complete definition, see the EDP.
+Progress Review :: A type of Review that is used by a Project Team to summarize the accomplishments of the Project, verify that the Eclipse Foundation Development Process and Eclipse Foundation IP Policy have been followed, and to highlight any remaining quality and/or architectural issues. For a complete definition, see the EDP.
 
-Project :: A Project is the main operational unit by which all open source development occurs. For a complete definition, see the https://www.eclipse.org/projects/dev_process/#4_Structure_and_Organization[EDP].
+Project :: A Project is the main operational unit by which all open source development occurs. For a complete definition, see the {edpStructureUrl}[EDP].
 
-Project Management Committee (PMC) :: The primary leadership of a Top-Level Project with  responsibility to ensure that the Projects within its purview are active and viable. For a complete definition, see the https://www.eclipse.org/projects/dev_process/#4_6_Leaders[EDP].
+Project Management Committee (PMC) :: The primary leadership of a Top-Level Project with  responsibility to ensure that the Projects within its purview are active and viable. For a complete definition, see the {edpLeadersUrl}[EDP].
 
-Project Proposal :: A document that describes the Project and the context in which the Project is being created. For more information, see the https://www.eclipse.org/projects/dev_process/#6_2_2_Proposal[EDP].
+Project Proposal :: A document that describes the Project and the context in which the Project is being created. For more information, see the {edpProposalUrl}[EDP].
 
-Project Leadership Chain :: The leadership chain for a project is composed of the project's project lead(s), the leadership of the parent project (if any), the PMC leads and PMC members for the Top-Level Project, the EMO, and the EMO(ED). For a complete definition, see the https://www.eclipse.org/projects/dev_process/#4_6_Leaders[EDP].
+Project Leadership Chain :: The leadership chain for a project is composed of the project's project lead(s), the leadership of the parent project (if any), the PMC leads and PMC members for the Top-Level Project, the EMO, and the EMO(ED). For a complete definition, see the {edpLeadersUrl}[EDP].
 
 Proposal Phase :: A phase in the Project lifecycle during which a Project Proposal is presented to the community and Membership at Large to solicit feedback. For a complete definition, see the EDP.
 
@@ -118,9 +118,9 @@ Release Cycle :: The cycle of development that produces a Specification Version.
 
 Release Plan :: The description of activities to be undertaken as part of a Release Cycle to produce a Specification Version.
 
-Release Review :: A Release Review is a type of Progress Review that is aligned directly with a specific Release. This definition is the same as in the https://www.eclipse.org/projects/dev_process/#6_3_3_Release_Review[EDP].
+Release Review :: A Release Review is a type of Progress Review that is aligned directly with a specific Release. This definition is the same as in the {edpReleaseReviewUrl}[EDP].
 
-Review :: The EFSP uses the same reviews as defined in the https://www.eclipse.org/projects/dev_process/#6_3_Reviews[EDP].
+Review :: The EFSP uses the same reviews as defined in the {edpReviewsUrl}[EDP].
 
 Scope :: The defined scope of activities for a Specification Project.
 
@@ -148,7 +148,7 @@ Termination of Participation :: Occurs when an Individual Participant or Member 
 
 Working Group :: An Eclipse Foundation Working Group established under the {ewgpUrl}[Eclipse Foundation Working Group Process]. Definitions from the Working Group Process are included herein by reference.
 
-Other terms used in this document are defined in the https://www.eclipse.org/projects/dev_process[EDP].
+Other terms used in this document are defined in the {edpUrl}[EDP].
 
 [[efsp-structure]]
 == Structure and Organization
@@ -160,13 +160,20 @@ A Specification Project is the main operational unit for Specification developme
 
 Specification Projects operate under the supervision of both the Project Leadership Chain and the Specification Committee.
 
-The _Scope_ of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification. Since a change in Scope may change the nature of the contribution to the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
+At the time of creation, a Specification Project must provide a well-define scope that is bounded by the Scope of its Top-Level Project. The _Scope_ of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification Project. Since a change in Scope may change the nature of the contribution to the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
 
-The _Patent License_ that defines how patent grants flow from a Final Specification to an implementer of the specification. At the time of creation Specification Project must explicitly state whether it utilizes an _Implementation Patent License_ or a _Compatible Patent License_ as defined in the Eclipse Foundation Intellectual Property Policy. The choice of Patent License must be made known to the Specification Committee in advance of the initiation of the Ballot to create the Specification Project.
+At the time of creation, a Specification Project must explicitly state whether it utilizes an _Implementation Patent License_ or a _Compatible Patent License_ as defined in the Eclipse Foundation Intellectual Property Policy. The _Patent License_ that defines how patent grants flow from a Final Specification to an implementer of the specification. The choice of Patent License must be made known to the Specification Committee in advance of the initiation of the Ballot to create the Specification Project.
 
 [TIP]
 ====
-For help regarding selection of a Patent License, see the {operationsPatentLicenseUrl}[Patents and Specifications].
+For help regarding selection of a Patent License, see {operationsPatentLicenseUrl}[Patents and Specifications].
+====
+
+A new Specification Project may be created via Project Proposal and <<efsp-reviews-creation, Creation Review>>; alternatively, an existing Project may be converted into a Specification Project via <<efsp-restructuring-review,Restructuring Review>>.
+
+[TIP]
+====
+For more information regarding Project creation, see {handbookStartingUrl}[Starting an Open Source Project at the Eclipse Foundation].
 ====
 
 [[efsp-specifications]]
@@ -176,7 +183,7 @@ Specifications must be developed by Specification Projects. 
 
 A Specification can define rules. If defined, such rules must not override the rules defined in any referenced Specification.
 
-A Specification that aggregates other Specifications by reference may be designated as a Profile. Profiles do not have to be arranged in unique subsets (i.e. a Specification may appear in more than one Profile). A successful Super-majority ballot of the Specification Committee is required to approve designation of a Profile Specification. A Specification Committee may, at its discretion, elect to label one or more Profiles as a “Platform”.
+A Specification that aggregates other Specifications by reference may be designated as a _Profile_. Profiles do not have to be arranged in unique subsets (i.e. a Specification may appear in more than one Profile). A successful Super-majority ballot of the Specification Committee is required to approve designation of a Profile Specification. A Specification Committee may, at its discretion, elect to label one or more Profiles as a _Platform_.
 
 [[efsp-versions]]
 ==== Specification Versions
@@ -248,12 +255,12 @@ A Release Plan must be approved by a Super-majority of the Specification Committ
 [[efsp-process]]
 == Specification Process
 
-The EFSP is based on the Development Process described in the https://www.eclipse.org/projects/dev_process/#6_Development_Process[EDP].
+The EFSP is based on the Development Process described in the {edpUrl}[EDP].
 
 [[efsp-project-lifecycle]]
 === Specification Project Lifecycle
 
-The Specification https://www.eclipse.org/projects/dev_process/#6_2_Project_Lifecycle[Project Lifecycle] is defined by the EDP.
+The Specification {edpLifecycleUrl}[Project Lifecycle] is defined by the EDP.
 
 [[efsp-releases]]
 ==== Releases
@@ -326,14 +333,14 @@ A Specification Project may engage in all of the Reviews described by the EDP w
 
 Project Leads are responsible for initiating the appropriate Reviews. The Project Leadership Chain may also initiate a Review on the project’s behalf.
 
-The Specification Team must complete all required due diligence under the Eclipse IP Policy before initiating a Review.
+The Specification Team must complete all required due diligence under the Eclipse Foundation IP Policy before initiating a Review.
 
 [[efsp-reviews-creation]]
 ==== Creation Review
 
 Specification Projects are created using the process defined by the EDP with the added requirement that the Specification Committee must approve the Project Proposal by a Super-majority before the Specification Project can successfully complete a Creation Review.
 
-An existing Project may be converted into a Specification Project via a Restructuring Review. In this case, the Restructuring Review serves as the Creation Review; other changes to the nature of the existing Project (e.g., the scope) may be included with the Restructuring Review. Unlike a Creation Review, no Project Proposal is required for a Restructuring Review. Like a Creation Review, a Restructuring Review that converts an existing Project into a Specification Project must be approved by the Specification Committee by Super-majority ballot. 
+[#efsp-restructuring-review]An existing Project may be converted into a Specification Project via a Restructuring Review. In this case, the Restructuring Review serves as the Creation Review; other changes to the nature of the existing Project (e.g., the Scope) may be included with the Restructuring Review. Unlike a Creation Review, no Project Proposal is required for a Restructuring Review. Like a Creation Review, a Restructuring Review that converts an existing Project into a Specification Project must be approved by the Specification Committee by Super-majority ballot. 
 
 The Specification Committee ballot and the review may run in parallel. 
 

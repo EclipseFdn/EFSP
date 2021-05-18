@@ -12,7 +12,6 @@
 
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
 :efspUrl: https://www.eclipse.org/projects/efsp
-:edpUrl: https://www.eclipse.org/projects/dev_process
 :ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
 :ewgpUrl: https://www.eclipse.org/org/workinggroups/process.php
 :ewgogUrl: https://www.eclipse.org/org/workinggroups/operations.php
@@ -24,8 +23,18 @@
 
 :efspRatificationUrl: {efspUrl}#efsp-ratification
 
-:operationsUrl: ./operations.php
-:operationsPatentLicenseUrl: {}#efspo-patents
+:edpUrl: https://www.eclipse.org/projects/dev_process
+:edpStructureUrl: {edpUrl}#4_Structure_and_Organization
+:edpLeadersUrl: {edpUrl}#4_6_Leaders
+:edpLifecycleUrl: {edpUrl}#6_2_Project_Lifecycle
+:edpPreProposalUrl: {edpUrl}#6_2_1_Pre-Proposal
+:edpProposalUrl: {edpUrl}#6_2_2_Proposal
+:edpReviewsUrl: {edpUrl}#6_3_Reviews
+:edpCreationReviewUrl: {edpUrl}#6_3_1_Creation_Review
+:edpReleaseReviewUrl: {edpUrl}#6_3_3_Release_Review
+
+:operationsUrl: link:./operations.php
+:operationsPatentLicenseUrl: {operationsUrl}#efspo-patents
 
 :handbookUrl: https://www.eclipse.org/projects/handbook
 :handbookCommitterElectionsUrl: {handbookUrl}#elections-committer
@@ -33,5 +42,6 @@
 :hadnbookReleasePlanUrl: {handbookUrl}#releases-plan
 :handbookReleaseUrl: {handbookUrl}#release
 :handbookReleaseAndProgressReviewsUrl: {handbookUrl}#release-review
+:handbookStartingUrl: {handbookUrl}#starting
 
 :emoEmail: mailto:emo@eclipse-foundation.org
