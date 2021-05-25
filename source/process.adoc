@@ -232,8 +232,8 @@ A Specification Committee must approve, by Super-majority, the following lifecyc
 * The Release Plan for a new Release Cycle of a Specification;
 * Each revision to the Scope of a Specification;
 * Each Check Point Review of a Specification Project, including the adoption of Specification Versions;
-* A Profile Specification; and
-* A Platform designation.
+* Designation of a Specification as a Profile; and
+* Designation of a Profile as a Platform.
 
 A ballot is used to seek Specification Committee approval. Unless otherwise stated in this process (or a Working Group-specific derivative of this process), the default period for all Specification Committee ballots is seven (7) days. During that time, any member of a Specification Committee may request that the period be extended to thirty (30) days. 
 
@@ -340,7 +340,7 @@ The Specification Team must complete all required due diligence under the Eclips
 
 Specification Projects are created using the process defined by the EDP with the added requirement that the Specification Committee must approve the Project Proposal by a Super-majority before the Specification Project can successfully complete a Creation Review.
 
-[#efsp-restructuring-review]An existing Project may be converted into a Specification Project via a Restructuring Review. In this case, the Restructuring Review serves as the Creation Review; other changes to the nature of the existing Project (e.g., the Scope) may be included with the Restructuring Review. Unlike a Creation Review, no Project Proposal is required for a Restructuring Review. Like a Creation Review, a Restructuring Review that converts an existing Project into a Specification Project must be approved by the Specification Committee by Super-majority ballot. 
+[[efsp-restructuring-review]]An existing Project may be converted into a Specification Project via a Restructuring Review. In this case, the Restructuring Review serves as the Creation Review; other changes to the nature of the existing Project (e.g., the Scope) may be included with the Restructuring Review. Unlike a Creation Review, no Project Proposal is required for a Restructuring Review. Like a Creation Review, a Restructuring Review that converts an existing Project into a Specification Project must be approved by the Specification Committee by Super-majority ballot. 
 
 The Specification Committee ballot and the review may run in parallel. 
 
