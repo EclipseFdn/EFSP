@@ -162,7 +162,7 @@ Specification Projects operate under the supervision of both the Project Leaders
 
 At the time of creation, a Specification Project must provide a well-define scope that is bounded by the Scope of its Top-Level Project. The _Scope_ of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification Project. Since a change in Scope may change the nature of the contribution to the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
 
-At the time of creation, a Specification Project must explicitly state whether it utilizes an _Implementation Patent License_ or a _Compatible Patent License_ as defined in the Eclipse Foundation Intellectual Property Policy. The _Patent License_ that defines how patent grants flow from a Final Specification to an implementer of the specification. The choice of Patent License must be made known to the Specification Committee in advance of the initiation of the Ballot to create the Specification Project.
+At the time of creation, a Specification Project must explicitly state whether it utilizes an _Implementation Patent License_ or a _Compatible Patent License_ as defined in the Eclipse Foundation Intellectual Property Policy. The _Patent License_ defines how patent grants flow from a Final Specification to an implementer of the Specification. The choice of Patent License must be made known to the Specification Committee in advance of the initiation of the Ballot to create the Specification Project.
 
 [TIP]
 ====
