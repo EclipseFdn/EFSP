@@ -108,7 +108,7 @@ Project Leadership Chain :: The leadership chain for a project is composed of th
 
 Proposal Phase :: A phase in the Project lifecycle during which a Project Proposal is presented to the community and Membership at Large to solicit feedback. For a complete definition, see the EDP.
 
-Ratified :: A Specification Version that has been adopted by the Specification Committee and made available under the Eclipse Foundation Specification License to enable the creation and certification of Compatible Implementations.
+Ratified :: A Specification Version that has been approved by the Specification Committee and made available under the Eclipse Foundation Specification License to enable the creation and certification of Compatible Implementations.
 
 Release :: A Specification Version intended for ratification as a Final Specification.
 
@@ -231,7 +231,7 @@ A Specification Committee must approve, by Super-majority, the following lifecyc
 * The creation of a new Specification Project;
 * The Release Plan for a new Release Cycle of a Specification;
 * Each revision to the Scope of a Specification;
-* Each Check Point Review of a Specification Project, including the adoption of Specification Versions;
+* Each Check Point Review of a Specification Project, including the ratification of Specification Versions;
 * Designation of a Specification as a Profile; and
 * Designation of a Profile as a Platform.
 
