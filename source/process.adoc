@@ -88,7 +88,9 @@ Participant :: A Member Participant or Individual Participant.
 
 Participant Representative :: The Committer on a Specification Project who has the right to represent the interests (including without limitation the right to vote on behalf of) of a Participant. The Participant Representative of an Individual Participant is the same person.
 
-Patent License :: The Patent License that defines how patent grants flow from a Final Specification to an implementer of the specification. The Patent License is either the Implementation Patent License or Compatible Patent License as defined in the {ipPolicyUrl}[Eclipse Foundation IP Policy].
+Patent License :: The Patent License defines how patent grants flow from a Final Specification to an implementer of the specification. The Patent License is either the Implementation Patent License or Compatible Patent License as defined in the {ipPolicyUrl}[Eclipse Foundation IP Policy].
+
+Patent License Policy :: The policy, established by a Working Group's Steering Committee, that defines the Patent License options available to Specification Projects operating under the purview of the Working Group.
 
 Plan Review :: A Review to approve a Release Plan to start a Release Cycle.
 
@@ -162,19 +164,32 @@ Specification Projects operate under the supervision of both the Project Leaders
 
 At the time of creation, a Specification Project must provide a well-define scope that is bounded by the Scope of its Top-Level Project. The _Scope_ of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification Project. Since a change in Scope may change the nature of the contribution to the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
 
-At the time of creation, a Specification Project must explicitly state whether it utilizes an _Implementation Patent License_ or a _Compatible Patent License_ as defined in the Eclipse Foundation Intellectual Property Policy. The _Patent License_ defines how patent grants flow from a Final Specification to an implementer of the Specification. The choice of Patent License must be made known to the Specification Committee in advance of the initiation of the Ballot to create the Specification Project.
-
-[TIP]
-====
-For help regarding selection of a Patent License, see {operationsPatentLicenseUrl}[Patents and Specifications].
-====
-
 A new Specification Project may be created via Project Proposal and <<efsp-reviews-creation, Creation Review>>; alternatively, an existing Project may be converted into a Specification Project via <<efsp-restructuring-review,Restructuring Review>>.
 
 [TIP]
 ====
 For more information regarding Project creation, see {handbookStartingUrl}[Starting an Open Source Project at the Eclipse Foundation].
 ====
+
+[[efsp-patent-license]]
+=== Patent License
+
+The _Patent License_ defines how patent grants flow from a Final Specification to an implementer of the Specification. The Eclipse Foundation Intellectual Property Policy defines two choices for Patent License: _Implementation Patent License_ or _Compatible Patent License_.
+
+The Working Group's _Steering Committee_ must set the Patent License Policy for the Specification Projects that fall under the purview of the Working Group. The policy can be a simple statement that a particular Patent License is the default, or can be a more complex. The Steering Committee must approve the Patent License Policy by simple majority.
+
+The Working Group's Patent License Policy may be updated from time-to-time by the _Steering Committee_. The Steering Committee must approve changes to the Patent License Policy by simple majority. Changes to the Patent License Policy do not affect the Patent License of existing Specification Projects and Specifications.
+
+[TIP]
+====
+For help regarding selection of a Patent License, see {operationsPatentLicenseUrl}[Patents and Specifications].
+====
+
+All Specifications produced by a Specification Project must use the same Patent License.
+
+At the time of creation, a proposal to create a new Specification Project or convert an existing Project into a Specification Project must explicitly state its choice of Patent License.
+
+The Working Group's _Specification Committee_ must confirm, prior to initiating a ballot that will result in the establishment of a Specification Project, that the selection of Patent License conforms to the Patent License Policy. The Working Group's _Steering Committee_ must approve all exceptions to the Patent License Policy by simple majority.
 
 [[efsp-specifications]]
 === Specifications
