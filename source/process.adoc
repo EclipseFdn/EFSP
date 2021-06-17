@@ -142,7 +142,7 @@ Super-majority :: Two-thirds of the eligible voters.
 
 Top-Level Project :: An organizational unit that defines an overall mission and scope for a collection of Projects (and Specification Projects). For a complete definition, see the EDP.
 
-Technology Compatibility Kit (TCK) :: Software and documented requirements that support the testing of implementations to ensure that they are compatible with the Specification.
+Technology Compatibility Kit (TCK) :: Software and/or documented requirements that support the testing of implementations to ensure that they are compatible with the Specification.
 
 Termination of Participation :: Occurs when an Individual Participant or Member Participant removes themselves or the Committers in their employ from a Specification Project.
 
