@@ -88,9 +88,7 @@ Participant :: A Member Participant or Individual Participant.
 
 Participant Representative :: The Committer on a Specification Project who has the right to represent the interests (including without limitation the right to vote on behalf of) of a Participant. The Participant Representative of an Individual Participant is the same person.
 
-Patent License :: The Patent License defines how patent grants flow from a Final Specification to an implementer of the specification. The Patent License is either the Implementation Patent License or Compatible Patent License as defined in the {ipPolicyUrl}[Eclipse Foundation IP Policy].
-
-Patent License Policy :: The policy, established by a Working Group's Steering Committee, that defines the Patent License options available to Specification Projects operating under the purview of the Working Group.
+Patent License :: The Patent License defines how patent grants flow from a Final Specification to an implementer of the specification. The Patent License is either the Implementation Patent License or Compatible Patent License as defined in the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy].
 
 Plan Review :: A Review to approve a Release Plan to start a Release Cycle.
 
@@ -174,22 +172,25 @@ For more information regarding Project creation, see {handbookStartingUrl}[Start
 [[efsp-patent-license]]
 === Patent License
 
-The _Patent License_ defines how patent grants flow from a Final Specification to an implementer of the Specification. The Eclipse Foundation Intellectual Property Policy defines two choices for Patent License: _Implementation Patent License_ or _Compatible Patent License_.
-
-The Working Group's _Steering Committee_ must set the Patent License Policy for the Specification Projects that fall under the purview of the Working Group. The policy can be a simple statement that a particular Patent License is the default, or can be a more complex. The Steering Committee must approve the Patent License Policy by simple majority.
-
-The Working Group's Patent License Policy may be updated from time-to-time by the _Steering Committee_. The Steering Committee must approve changes to the Patent License Policy by simple majority. Changes to the Patent License Policy do not affect the Patent License of existing Specification Projects and Specifications.
+The _Patent License_ defines how patent grants flow from a Final Specification to an implementer of the Specification. The {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy] defines two choices for Patent License: _Implementation Patent License_ or _Compatible Patent License_.
 
 [TIP]
 ====
 For help regarding selection of a Patent License, see {operationsPatentLicenseUrl}[Patents and Specifications].
 ====
 
+The Working Group's _Steering Committee_ must set a default Patent License for the Specification Projects that fall under the purview of the Working Group.
+
+[NOTE]
+====
+Ideally, the default Patent License should be recorded in the Working Group's Charter. The means by which the Steering Committee makes the decision is not prescribed by this policy; the Steering Committee should follow their standard practices as described in their Charter.
+====
+
 All Specifications produced by a Specification Project must use the same Patent License.
 
 At the time of creation, a proposal to create a new Specification Project or convert an existing Project into a Specification Project must explicitly state its choice of Patent License.
 
-The Working Group's _Specification Committee_ must confirm, prior to initiating a ballot that will result in the establishment of a Specification Project, that the selection of Patent License conforms to the Patent License Policy. The Working Group's _Steering Committee_ must approve all exceptions to the Patent License Policy by simple majority.
+The Working Group's _Specification Committee_ must confirm, prior to initiating a ballot that will result in the establishment of a Specification Project, that the selection of Patent License matches the default Patent License. The Working Group's _Steering Committee_ must approve all exceptions.
 
 [[efsp-specifications]]
 === Specifications
