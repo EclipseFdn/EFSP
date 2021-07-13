@@ -100,7 +100,7 @@ Progress Review :: A type of Review that is used by a Project Team to summarize 
 
 Project :: A Project is the main operational unit by which all open source development occurs. For a complete definition, see the {edpStructureUrl}[EDP].
 
-Project Management Committee (PMC) :: The primary leadership of a Top-Level Project with  responsibility to ensure that the Projects within its purview are active and viable. For a complete definition, see the {edpLeadersUrl}[EDP].
+Project Management Committee (PMC) :: The primary leadership of a Top-Level Project with  responsibility to ensure that the Projects within its supervision are active and viable. For a complete definition, see the {edpLeadersUrl}[EDP].
 
 Project Proposal :: A document that describes the Project and the context in which the Project is being created. For more information, see the {edpProposalUrl}[EDP].
 
@@ -179,7 +179,7 @@ The _Patent License_ defines how patent grants flow from a Final Specification t
 For help regarding selection of a Patent License, see {operationsPatentLicenseUrl}[Patents and Specifications].
 ====
 
-The Working Group's _Steering Committee_ must set a default Patent License for the Specification Projects that fall under the purview of the Working Group.
+The Working Group's _Steering Committee_ must set a default Patent License for its Specification Projects.
 
 [NOTE]
 ====
@@ -232,7 +232,7 @@ Specification Project Committers must be Members of the Eclipse Foundation. Comm
 
 All Specification Project Committers must be covered by a Working Group Participation Agreement.
 
-Member Participants have the right to appoint a Participant Representative to every Specification Project that falls under the purview of the Specification Committee.
+Strategic and Contributing Members of the Eclipse Foundation have the right to appoint a Participant Representative to each of the Working Group's Specification Projects.
 
 [[efsp-committee]]
 === Specification Committee
@@ -323,7 +323,7 @@ No reviews are required for a Service Release.
 [[efsp-version-lifecycle]]
 === Specification Version Lifecycle
 
-To produce a <<efsp-versions,Specification Version>> (with the exception of <<efsp-releases-service, Service Releases>>) a Specification Team must engage in a formal Release Cycle under the supervision of the Project Management Committee (PMC) and the Specification Committee.
+To produce a <<efsp-versions,Specification Version>> (with the exception of <<efsp-releases-service, Service Releases>>) a Specification Team must engage in a formal Release Cycle under the supervision of the PMC and the Specification Committee.
 
 .The Specification Version Lifecycle at a high-level
 [graphviz, images/lifecycle, svg]
