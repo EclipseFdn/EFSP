@@ -70,14 +70,12 @@ Minor Release :: A type of Release that includes new features over a Major Relea
 Open Source License ::
 One of the following OSI-approved open source licenses:
 +
-****
 * https://www.eclipse.org/legal/epl-2.0/[Eclipse Public License - v 2.0] (possibly with Secondary Licenses) +
 SPDX short identifier: EPL-2.0
 * https://www.eclipse.org/org/documents/edl-v10.php[Eclipse Distribution License - v 1.0] +
 SPDX short identifier: BSD-3-Clause
 * https://opensource.org/licenses/Apache-2.0[Apache License - v 2.0] +
 SPDX short identifier: Apache-2.0
-****
 +
 This list may be modified with the unanimous approval of the Working Group Steering Committee and the Eclipse Foundation Board of Directors.
 
@@ -98,6 +96,8 @@ There are two different types of Participant: Member Participant and Individual 
 ====
 An individual who is not employed by a Member Participant must first be elected to a Specification Project, and then become a Member of the Eclipse Foundation and _Individual Participant_ of the Specification Project's Working Group. An Individual Participant is, therefore, a Committer by definition. By extension, an individual relinquishes Individual Participant status when they relinquish Committer status.
 ====
+
+Participant Representative :: The Committer on a Specification Project who has the right to represent the interests (including without limitation the right to vote on behalf of) of a Participant. The Participant Representative of an Individual Participant is the same person.
 
 Patent License :: The Patent License defines how patent grants flow from a Final Specification to an implementer of the specification. The Patent License is either the Implementation Patent License or Compatible Patent License as defined in the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy].
 
@@ -151,7 +151,7 @@ Specification Version :: A specific version of a Specification.
 
 Super-majority :: Two-thirds of the eligible voters.
 
-Top-Level Project :: An organizational unit that defines an overall mission and scope for a collection of Projects (and Specification Projects). For a complete definition, see the EDP.
+Top-Level Project :: An organizational unit that defines an overall mission and Scope for a collection of Projects (and Specification Projects). For a complete definition, see the EDP.
 
 Technology Compatibility Kit (TCK) :: Software and/or documented requirements that support the testing of implementations to ensure that they are compatible with the Specification.
 
@@ -167,9 +167,15 @@ A Specification Project is the main operational unit for Specification developme
 [[efsp-projects]]
 === Specification Projects
 
-Specification Projects operate under the supervision of both the Project Leadership Chain and the Specification Committee.
+A Specification Project is an open source Project (as that term is defined by the EDP) concerned with the development and delivery of xref:efsp-specifications[Specifications].
 
-At the time of creation, a Specification Project must provide a well-define scope that is bounded by the Scope of its Top-Level Project. The _Scope_ of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification Project. Since a change in Scope may change the nature of the contribution to the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
+A Specification Project is contained, either directly or indirectly, in exactly one Top-Level Project. The Scope of a Specification Project is bounded by the Scope defined in its Top-Level Project's Charter.
+
+A Specification Projects is aligned with exactly one Working Group. The Scope of a Specification Project is bounded by the Scope defined in its Working Group's Charter.
+
+Specification Projects operate under the supervision of both the Project Leadership Chain and their Working Group's xref:efsp-committee[Specification Committee].
+
+At the time of creation, a Specification Project must provide a well-defined Scope that is bounded by the Scope of its Top-Level Project. The Scope of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification Project. Since a change in Scope may change the nature of the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
 
 A new Specification Project may be created via Project Proposal and <<efsp-reviews-creation, Creation Review>>; alternatively, an existing Project may be converted into a Specification Project via <<efsp-restructuring-review,Restructuring Review>>.
 
