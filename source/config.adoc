@@ -10,6 +10,7 @@
 
 :effectiveDate: DRAFT
 
+:membershipLevelsUrl: https://www.eclipse.org/membership/#tab-levels
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
 :efspUrl: https://www.eclipse.org/projects/efsp
 :ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
@@ -38,8 +39,10 @@
 
 :handbookUrl: https://www.eclipse.org/projects/handbook
 :handbookCommitterElectionsUrl: {handbookUrl}#elections-committer
+:handbookCommitterRetirementUrl: {handbookUrl}#elections-retire-cm
+:handbookParticipantRepresentatives: {handbookUrl}/#specifications-participant-committers
 :handbookProjectPageUrl: {handbookUrl}#pmi-project-page
-:hadnbookReleasePlanUrl: {handbookUrl}#releases-plan
+:handbookReleasePlanUrl: {handbookUrl}#releases-plan
 :handbookReleaseUrl: {handbookUrl}#release
 :handbookReleaseAndProgressReviewsUrl: {handbookUrl}#release-review
 :handbookStartingUrl: {handbookUrl}#starting

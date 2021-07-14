@@ -60,11 +60,8 @@ Creation Review :: A review to assess the community and membership response to 
 
 Final Specification :: A Ratified Specification Version.
 
-Individual Participant :: An individual Committer on a Specification Project.
-
 Major Release :: A type of Release that includes either significant new functionality and/or breaking changes.
 
-Member Participant :: A Strategic or Contributing Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]) that has executed the corresponding Working Group Participation Agreement (for more information, see the {ewgpMemberRoles}[Member Roles] and {ewgpAgreements}[Agreements] in the Eclipse Foundation Working Group Process).
 
 Milestone Build :: A build of the project content for limited distribution to demonstrate progress and solicit feedback.
 
@@ -84,9 +81,23 @@ SPDX short identifier: Apache-2.0
 +
 This list may be modified with the unanimous approval of the Working Group Steering Committee and the Eclipse Foundation Board of Directors.
 
-Participant :: A Member Participant or Individual Participant.
+Participant :: An Eclipse Foundation Member that agrees to actively participate in the Working Group and meets the requirements for participation as defined by the Working Group Charter. 
++
+[TIP]
+====
+Membership classes are described on the {membershipLevelsUrl}[Eclipse Membership] page (and more formally in the {bylawsUrl}[Eclipse Foundation Bylaws]). Members must have executed the corresponding Working Group Participation Agreement (for more information, see the {ewgpMemberRoles}[Participation Structure for Working Groups] and {ewgpAgreements}[Agreements] in the Eclipse Foundation Working Group Process).
+====
++
+There are two different types of Participant: Member Participant and Individual Participant.
 
-Participant Representative :: The Committer on a Specification Project who has the right to represent the interests (including without limitation the right to vote on behalf of) of a Participant. The Participant Representative of an Individual Participant is the same person.
+[[efsp-member]]Member Participant ::: A Strategic or Contributing Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]).
+
+[[efsp-individual]]Individual Participant ::: An individual Committer Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]). An Individual Participant is specifically not employed by a xref:efsp-member[Member Participant].
++
+[TIP]
+====
+An individual who is not employed by a Member Participant must first be elected to a Specification Project, and then become a Member of the Eclipse Foundation and _Individual Participant_ of the Specification Project's Working Group. An Individual Participant is, therefore, a Committer by definition. By extension, an individual relinquishes Individual Participant status when they relinquish Committer status.
+====
 
 Patent License :: The Patent License defines how patent grants flow from a Final Specification to an implementer of the specification. The Patent License is either the Implementation Patent License or Compatible Patent License as defined in the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy].
 
@@ -143,8 +154,6 @@ Super-majority :: Two-thirds of the eligible voters.
 Top-Level Project :: An organizational unit that defines an overall mission and scope for a collection of Projects (and Specification Projects). For a complete definition, see the EDP.
 
 Technology Compatibility Kit (TCK) :: Software and/or documented requirements that support the testing of implementations to ensure that they are compatible with the Specification.
-
-Termination of Participation :: Occurs when an Individual Participant or Member Participant removes themselves or the Committers in their employ from a Specification Project.
 
 Working Group :: An Eclipse Foundation Working Group established under the {ewgpUrl}[Eclipse Foundation Working Group Process]. Definitions from the Working Group Process are included herein by reference.
 
@@ -228,11 +237,20 @@ A Compatible Implementation must fulfill all requirements of a Final Specificati
 [[efsp-committers]]
 === Committers
 
-Specification Project Committers must be Members of the Eclipse Foundation. Committers may be Members by virtue of working for a member organization, or may choose to complete the membership process independently.
+Committers must either be employed by a xref:efsp-member[Member Participant], or may choose to complete the membership process independently as an xref:efsp-individual[Individual Participant].
 
 All Specification Project Committers must be covered by a Working Group Participation Agreement.
 
-Strategic and Contributing Members of the Eclipse Foundation have the right to appoint a Participant Representative to each of the Working Group's Specification Projects.
+In the case where a Member Participant has no Committers on a Specification Project, they may appoint a Committer. In the case where a Member Participant already has representation by one or more Committers on a Specification Project, they must follow the election process as defined by the EDP to add additional Committers.
+
+Individual Participants must be elected as Committers.
+
+Committers may retire (or be retired by the Project Leadership Chain) from a Specification Project via the committer retirement process defined by the EDP.
+
+[TIP]
+====
+The Eclipse Project Handbook defines the {handbookCommitterElectionsUrl}[election process] to add additional Committers, and the {handbookCommitterRetirementUrl}[committer retirement process].
+====
 
 [[efsp-committee]]
 === Specification Committee
