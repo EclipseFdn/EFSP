@@ -121,7 +121,7 @@ Proposal Phase :: A phase in the Project lifecycle during which a Project Propos
 
 Ratified :: A Specification Version that has been approved by the Specification Committee and made available under the Eclipse Foundation Specification License to enable the creation and certification of Compatible Implementations.
 
-Release :: A Specification Version intended for ratification as a Final Specification.
+Release :: A final aggregate build of Specification Project artifacts produced at the end of a Release Cycle.
 
 Release Candidate :: A feature-complete Milestone Build.
 
@@ -137,7 +137,7 @@ Scope :: The defined scope of activities for a Specification Project.
 
 Service Release :: A Release that includes only minor changes and/or clarifications over a Major or Minor Release.
 
-Specification :: A collection of Application Programming Interface (API) definitions, descriptions of semantic behavior, data formats, protocols, and/or other referenced specifications, along with its TCK, intended to enable the development and testing of independent Compatible Implementations.
+Specification :: A collection of Application Programming Interface (API) definitions, descriptions of semantic behavior, data formats, protocols, and/or other referenced specifications, along with its TCK.
 
 Specification Committee :: A committee of a Working Group established to manage this Process for technologies within the scope of its Working Group.
 
@@ -147,7 +147,7 @@ Specification Project :: An Eclipse Foundation Project operating under the EDP 
 
 Specification Team :: The collective of Committers with responsibilities and privileges on a specific Specification Project.
 
-Specification Version :: A specific version of a Specification.
+Specification Version :: A Release that is delivered to the Specification Committee for ratification as a Final Specification. A Specification Version is either a Major Release or a Minor Release.
 
 Super-majority :: Two-thirds of the eligible voters.
 
@@ -175,7 +175,7 @@ A Specification Projects is aligned with exactly one Working Group. The Scope of
 
 Specification Projects operate under the supervision of both the Project Leadership Chain and their Working Group's xref:efsp-committee[Specification Committee].
 
-At the time of creation, a Specification Project must provide a well-defined Scope that is bounded by the Scope of its Top-Level Project. The Scope of a Specification Project is intended to inform companies and individuals so they can determine whether or not to contribute to the Specification Project. Since a change in Scope may change the nature of the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
+At the time of creation, a Specification Project must provide a well-defined Scope that is bounded by the Scope of its Top-Level Project. Since a change in Scope may change the nature of the project, a change to a Specification Project’s Scope must be approved by a Super-majority of the Specification Committee.
 
 A new Specification Project may be created via Project Proposal and <<efsp-reviews-creation, Creation Review>>; alternatively, an existing Project may be converted into a Specification Project via <<efsp-restructuring-review,Restructuring Review>>.
 
@@ -324,7 +324,7 @@ A Specification Project's first Release must be a Major or Minor Release.
 [[efsp-milestones]]
 ==== Milestone Builds
 
-Leading up to a Release, a Specification Team must produce at least one Milestone Build. Milestones Builds should be staged for limited distribution to key stakeholders to solicit feedback. No formal Reviews are required for Milestone Builds. 
+Leading up to a Release, a Specification Team must produce at least one Milestone Build. Milestone Builds should be staged for limited distribution to key stakeholders to solicit feedback. No formal Reviews are required for Milestone Builds. 
 
 Under no circumstances are Milestone Builds to be used as a substitute for doing proper official Releases. 
 
