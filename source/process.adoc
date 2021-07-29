@@ -18,7 +18,7 @@ The document describes the Eclipse Foundation Specification Process (EFSP) for o
 
 The EFSP leverages and augments the {edpUrl}[Eclipse Foundation Development Process] (EDP). The EDP defines important concepts, including the Open Source Rules of Engagement, the organizational framework for open source projects and teams, releases, reviews, and more.
 
-Although many of the activities related to this process are conducted by open source projects operating under the EDP, this specification process, and the Specification Versions delivered under it, are to be managed by Working Groups.
+Although many of the activities related to this process are conducted by open source projects operating under the EDP, this specification process, and the Final Specifications delivered under it, are to be managed by Working Groups.
 
 Subject to the approval of the Eclipse Management Organization (Executive Director or Delegate), individual Specification Committees may tailor the process for their unique requirements.
 
@@ -58,10 +58,9 @@ Contributor :: An individual who is a party to the https://www.eclipse.org/legal
 
 Creation Review :: A review to assess the community and membership response to a Project Proposal, verifies that appropriate resources are available for the project to achieve its plan, and serves as a Committer election for the project's initial Committers. For a complete definition, see the {edpCreationReviewUrl}[EDP].
 
-Final Specification :: A Ratified Specification Version.
+Final Specification :: A complete Specification which may be used as a basis for creating Compatible Implementations.
 
 Major Release :: A type of Release that includes either significant new functionality and/or breaking changes.
-
 
 Milestone Build :: A build of the project content for limited distribution to demonstrate progress and solicit feedback.
 
@@ -121,7 +120,7 @@ Proposal Phase :: A phase in the Project lifecycle during which a Project Propos
 
 Ratified :: A Specification Version that has been approved by the Specification Committee and made available under the Eclipse Foundation Specification License to enable the creation and certification of Compatible Implementations.
 
-Release :: A final aggregate build of Specification Project artifacts produced at the end of a Release Cycle.
+Release :: TBD
 
 Release Candidate :: A feature-complete Milestone Build.
 
@@ -147,7 +146,7 @@ Specification Project :: An Eclipse Foundation Project operating under the EDP 
 
 Specification Team :: The collective of Committers with responsibilities and privileges on a specific Specification Project.
 
-Specification Version :: A Release that is delivered to the Specification Committee for ratification as a Final Specification. A Specification Version is either a Major Release or a Minor Release.
+Specification Version :: A feature-complete version of a Specification is referred to as a Specification Version. A Specification Version is a candidate Final Specification. 
 
 Super-majority :: Two-thirds of the eligible voters.
 
@@ -210,7 +209,7 @@ The Working Group's _Specification Committee_ must confirm, prior to initiating 
 [[efsp-specifications]]
 === Specifications
 
-Specifications must be developed by Specification Projects. 
+Specifications must be developed by Specification Projects. A Specification Project may be used to develop multiple Specifications.
 
 A Specification can define rules. If defined, such rules must not override the rules defined in any referenced Specification.
 
@@ -219,6 +218,8 @@ A Specification that aggregates other Specifications by reference may be designa
 [[efsp-versions]]
 ==== Specification Versions
 
+A Specification Version is a candidate Final Specification. 
+
 Each Specification Version references specific versions of its constituent artifacts. These artifacts include the Specification Documents, zero or more other Specifications, one or more Compatible Implementations licensed under an Open Source License, and exactly one associated TCK for this Specification.
 
 .Conceptual structure of a Specification Version
@@ -226,12 +227,14 @@ image::images/version.svg[image, 250]
 
 The Specification Document and related technical artifacts must be developed by the Specification Team.
 
+A Specification Team must engage in a xref:efsp-reviews-release[Release Review] to turn a Major Release or Minor Release of a Specification Version into a Final Specification. A Service Release of a Specification Version is automatically a Final Specification.
+
 [[efsp-tck]]
 ==== Technology Compatibility Kits
 
-There is exactly one TCK under an Open Source License for each Specification Version.
+The Specification Team must designate exactly one TCK under an Open Source License for each Specification Version. The TCK becomes a part of the Final Specification.
 
-A specific version of a TCK is chosen by the Specification Project for each Specification Version; the TCK may be different for different Specification Versions.
+The TCK may be different for different Specification Versions/Final Specifications.
 
 Any implementation that fulfills all of the requirements of the TCK associated with a Final Specification may claim that it is a Compatible Implementation of that Final Specification. The TCK version associated with the Final Specification must not be modified other than as allowed or required by the rules of the TCK.
 
@@ -305,7 +308,7 @@ The Specification {edpLifecycleUrl}[Project Lifecycle] is defined by the EDP.
 [[efsp-releases]]
 ==== Releases
 
-While in the Incubation and Mature Phases, a Specification Project may engage in the Release process to produce Specification Versions which, when <<efsp-ratification,Ratified>>, become Final Specifications. <<efsp-reviews,Reviews>> are required for all Releases of a Specification Project.
+While in the Incubation and Mature Phases, a Specification Project may engage in the Release process to produce Specification Versions which, when <<efsp-ratification,Ratified>>, become Final Specifications. <<efsp-reviews,Reviews>> are required for all Major and Minor Releases of a Specification Project.
 
 There are three types of Releases: Major, Minor, and Service. A Specification Team may consult with their PMC and Specification Committee to determine the appropriate classification.
 
@@ -369,7 +372,7 @@ The Specification Team must engage in a successful Release Review before the fin
 
 Reviews are a formal process through which all major lifecycle events and changes to Specification Projects are announced and reviewed by the membership-at-large, and approved by the PMC, the Specification Committee, and the EMO.
 
-A Specification Project may engage in all of the Reviews described by the EDP with the additional requirement that approval by a Super-majority of the Specification Committee is required to successfully complete a Review. Such Review shall include affirmation that the Specification Version in progress remains within the Scope of the Specification Project. Other additions and qualifications are noted in the descriptions of the reviews below.
+A Specification Project may engage in all of the Reviews described by the EDP with the additional requirement that approval by a Super-majority of the Specification Committee is required to successfully complete a Review. Such Review must include affirmation that the Specification Version in progress remains within the Scope of the Specification Project. Other additions and qualifications are noted in the descriptions of the reviews below.
 
 Project Leads are responsible for initiating the appropriate Reviews. The Project Leadership Chain may also initiate a Review on the project’s behalf.
 
