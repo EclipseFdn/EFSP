@@ -60,7 +60,16 @@ Creation Review :: A review to assess the community and membership response to 
 
 Final Specification :: A complete Specification which may be used as a basis for creating Compatible Implementations.
 
+[[efsp-individual]]Individual Participant :: An individual Committer Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]). An Individual Participant is specifically not employed by a xref:efsp-member[Member Participant].
++
+[TIP]
+====
+An individual who is not employed by a Member Participant must first be elected to a Specification Project, and then become a Member of the Eclipse Foundation and _Individual Participant_ of the Specification Project's Working Group. An Individual Participant is, therefore, a Committer by definition. By extension, an individual relinquishes Individual Participant status when they relinquish Committer status.
+====
+
 Major Release :: A type of Release that includes either significant new functionality and/or breaking changes.
+
+[[efsp-member]]Member Participant :: A Strategic or Contributing Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]).
 
 Milestone Build :: A build of the project content for limited distribution to demonstrate progress and solicit feedback.
 
@@ -86,15 +95,6 @@ Membership classes are described on the {membershipLevelsUrl}[Eclipse Membership
 ====
 +
 There are two different types of Participant: Member Participant and Individual Participant.
-
-[[efsp-member]]Member Participant ::: A Strategic or Contributing Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]).
-
-[[efsp-individual]]Individual Participant ::: An individual Committer Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]). An Individual Participant is specifically not employed by a xref:efsp-member[Member Participant].
-+
-[TIP]
-====
-An individual who is not employed by a Member Participant must first be elected to a Specification Project, and then become a Member of the Eclipse Foundation and _Individual Participant_ of the Specification Project's Working Group. An Individual Participant is, therefore, a Committer by definition. By extension, an individual relinquishes Individual Participant status when they relinquish Committer status.
-====
 
 Participant Representative :: The Committer on a Specification Project who has the right to represent the interests (including without limitation the right to vote on behalf of) of a Participant. The Participant Representative of an Individual Participant is the same person.
 
