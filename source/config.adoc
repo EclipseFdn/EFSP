@@ -22,6 +22,8 @@
 :ewgpMemberRoles: {ewgpUrl}#wg-member-roles
 :ewgpAgreements: {ewgpUrl}#wg-agreements
 
+:membershipAgreementUrl: https://www.eclipse.org/org/documents/eclipse-foundation-membership-agreement.pdf
+
 :efspRatificationUrl: {efspUrl}#efsp-ratification
 
 :edpUrl: https://www.eclipse.org/projects/dev_process

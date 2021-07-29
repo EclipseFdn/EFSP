@@ -48,7 +48,7 @@ Brand :: The name and logo selected by the Working Group solely for the use of C
 
 Check Point Reviews :: The Plan Review, the Progress Review, and the Release Reviews.
 
-Committer :: A developer who has the necessary rights to make decisions regarding a Project.
+Committer :: A developer who has the necessary rights to make decisions regarding a Project. A Committer on a Specification Project is a Participant Representative.
 
 Compatible Implementation :: Any implementation that fulfills all requirements of a Final Specification as demonstrated by fulfilling all requirements of the associated TCK.
 
@@ -56,7 +56,7 @@ Contribution :: Content delivered to a Project under the terms of the https://ww
 
 Contributor :: An individual who is a party to the https://www.eclipse.org/legal/ECA.php[Eclipse Contributor Agreement].
 
-Creation Review :: A review to assess the community and membership response to a Project Proposal, verifies that appropriate resources are available for the project to achieve its plan, and serves as a Committer election for the project's initial Committers. For a complete definition, see the {edpCreationReviewUrl}[EDP].
+Creation Review :: A review to assess the community and membership response to a Project Proposal, verifies that appropriate resources are available for the project to achieve its plan, and serves as a Committer election for the project's initial Participant Representatives. For a complete definition, see the {edpCreationReviewUrl}[EDP].
 
 Final Specification :: A complete Specification which may be used as a basis for creating Compatible Implementations.
 
@@ -96,7 +96,7 @@ Membership classes are described on the {membershipLevelsUrl}[Eclipse Membership
 +
 There are two different types of Participant: Member Participant and Individual Participant.
 
-Participant Representative :: The Committer on a Specification Project who has the right to represent the interests (including without limitation the right to vote on behalf of) of a Participant. The Participant Representative of an Individual Participant is the same person.
+Participant Representative :: Participant Representatives represent the interests of a Participant on a Specification Project. All Committers on a Specification Project are Participant Representatives (the terms _Committer_ and _Participant Representative_ are used synonymously in the context of a Specification Project). The Participant Representative of an Individual Participant is the same person.
 
 Patent License :: The Patent License defines how patent grants flow from a Final Specification to an implementer of the specification. The Patent License is either the Implementation Patent License or Compatible Patent License as defined in the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy].
 
@@ -244,21 +244,21 @@ Any implementation that fulfills all of the requirements of the TCK associated
 A Compatible Implementation must fulfill all requirements of a Final Specification including all requirements of the corresponding TCK. A Specification Version must identify at least one Compatible Implementation under an Open Source License that fulfills the requirements of the TCK.
 
 [[efsp-committers]]
-=== Committers
+=== Participant Representatives
 
-Committers must either be employed by a xref:efsp-member[Member Participant], or may choose to complete the membership process independently as an xref:efsp-individual[Individual Participant].
+Committers on Specification Projects must either work for a Member Participant or individually become an Individual Participant, thereby working on behalf of a Participant. By definition, a Committer on a Specification Project is a Participant Representative. The terms _Committer_ and _Participant Representative_ are therefore used synonymously in the context of a Specification Project. 
 
-All Specification Project Committers must be covered by a Working Group Participation Agreement.
+Participant Representatives must either be employed by a xref:efsp-member[Member Participant], or may complete the membership process independently as an xref:efsp-individual[Individual Participant].
 
-In the case where a Member Participant has no Committers on a Specification Project, they may appoint a Committer. In the case where a Member Participant already has representation by one or more Committers on a Specification Project, they must follow the election process as defined by the EDP to add additional Committers.
+In the case where a Member Participant has no Participant Representative on a Specification Project, they may appoint one. In the case where a Member Participant already has representation by one or more Participant Representatives on a Specification Project, they must follow the Committer election process as defined by the EDP to add additional Participant Representatives.
 
-Individual Participants must be elected as Committers.
+An individual who is not affiliated with a Member Participant must be elected as a Committer to a Specification Project following the Committer election process defined by the EDP, before becoming an Participant Representative as an Individual Member.
 
-Committers may retire (or be retired by the Project Leadership Chain) from a Specification Project via the committer retirement process defined by the EDP.
+Participant Representatives may retire (or be retired by the Project Leadership Chain) from a Specification Project via the Committer retirement process defined by the EDP.
 
 [TIP]
 ====
-The Eclipse Project Handbook defines the {handbookCommitterElectionsUrl}[election process] to add additional Committers, and the {handbookCommitterRetirementUrl}[committer retirement process].
+The Eclipse Project Handbook defines the {handbookCommitterElectionsUrl}[Committer election process] to add additional Participant Representatives, and the {handbookCommitterRetirementUrl}[Committer retirement process].
 ====
 
 [[efsp-committee]]
