@@ -60,7 +60,7 @@ Creation Review :: A review to assess the community and membership response to 
 
 Final Specification :: A complete Specification which may be used as a basis for creating Compatible Implementations.
 
-[[efsp-individual]]Individual Participant :: An individual Committer Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]). An Individual Participant is specifically not employed by a xref:efsp-member[Member Participant].
+[[efsp-individual]]Individual Participant :: An individual Committer Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]) who agrees to actively participate in the Working Group and meets the requirements for participation as defined by the Working Group Charter. An Individual Participant is specifically not employed by a xref:efsp-member[Member Participant].
 +
 [TIP]
 ====
@@ -69,7 +69,7 @@ An individual who is not employed by a Member Participant must first be elected 
 
 Major Release :: A type of Release that includes either significant new functionality and/or breaking changes.
 
-[[efsp-member]]Member Participant :: A Strategic or Contributing Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]).
+[[efsp-member]]Member Participant :: A Strategic or Contributing Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]) that agrees to actively participate in the Working Group and meets the requirements for participation as defined by the Working Group Charter.
 
 Milestone Build :: A build of the project content for limited distribution to demonstrate progress and solicit feedback.
 
@@ -94,7 +94,7 @@ Participant :: An Eclipse Foundation Member that agrees to actively participate 
 Membership classes are described on the {membershipLevelsUrl}[Eclipse Membership] page (and more formally in the {bylawsUrl}[Eclipse Foundation Bylaws]). Members must have executed the corresponding Working Group Participation Agreement (for more information, see the {ewgpMemberRoles}[Participation Structure for Working Groups] and {ewgpAgreements}[Agreements] in the Eclipse Foundation Working Group Process).
 ====
 +
-There are two different types of Participant: Member Participant and Individual Participant.
+There are two different types of Participant: xref:efsp-member[Member Participant] and xref:efsp-individual[Individual Participant].
 
 Participant Representative :: Participant Representatives represent the interests of a Participant on a Specification Project. All Committers on a Specification Project are Participant Representatives (the terms _Committer_ and _Participant Representative_ are used synonymously in the context of a Specification Project). The Participant Representative of an Individual Participant is the same person.
 
