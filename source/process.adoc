@@ -352,7 +352,6 @@ No reviews are required for a Service Release.
 
 To produce a <<efsp-versions,Specification Version>> (with the exception of <<efsp-releases-service, Service Releases>>) a Specification Team must engage in a formal Release Cycle under the supervision of the PMC and the Specification Committee.
 
-.The Specification Version Lifecycle at a high-level
 [graphviz, images/lifecycle, svg]
 .An overview of the Eclipse Foundation Specification Process
 ----
@@ -385,7 +384,26 @@ Specification Projects are created using the process defined by the EDP with th
 
 [[efsp-restructuring-review]]An existing Project may be converted into a Specification Project via a Restructuring Review. In this case, the Restructuring Review serves as the Creation Review; other changes to the nature of the existing Project (e.g., the Scope) may be included with the Restructuring Review. Unlike a Creation Review, no Project Proposal is required for a Restructuring Review. Like a Creation Review, a Restructuring Review that converts an existing Project into a Specification Project must be approved by the Specification Committee by Super-majority ballot. 
 
-The Specification Committee ballot and the review may run in parallel. 
+The Eclipse Foundation's Executive Director must approve a Project Proposal before it can be posted for community review. 
+
+[NOTE]
+====
+In the event where a Project Proposal undergoes significant changes during the community review period (e.g., the scope or patent license is changed), the EMO will confirm the Executive Director's approval prior to initiating a creation review.
+====
+
+A Project Proposal's selection of xref:efsp-patent-license[Patent License] must be approved by the Working Group's _Steering Committee_ prior to the start of a Creation Review. A Patent License that matches the Working Group default Patent License (as designated by the Steering Committee) is automatically approved. In the case where the Specification Project proposes to use a Patent License that is different from the Working Group's default the EMO will engage the Working Group's Steering Committee to vote to approve the exception.
+
+The Working Group's _Specification Committee_ must approve the Project Proposal by a Super-majority ballot to accept the Specification Project under its supervision. The Specification Committee ballot may be undertaken in parallel with the Creation Review. A Creation Review must run for a minimum of one week; in the case where a Specification Committee ballot is not complete within the review period, the EMO will withhold declaration of the outcome of the Creation Review until after the ballot has completed.
+
+The Project Proposal must not be modified while the Creation Review and Specification Committee ballot are in progress. In the event that the Project Proposal is modified during the review period, the review will be terminated by the EMO. A terminated review can be restarted at a later date.
+
+Upon successful completion of a Creation Review, the EMO will declare the review successful and initiate the process of provisioning project resources.
+
+[graphviz, images/creation, svg]
+.Overview of the creation of a Specification Project
+----
+include::diagrams/efsp_creation.dot[]
+----
 
 [[efsp-reviews-plan]]
 ==== Plan Review
