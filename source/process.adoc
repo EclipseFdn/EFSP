@@ -58,7 +58,7 @@ Contributor :: An individual who is a party to the https://www.eclipse.org/legal
 
 Creation Review :: A review to assess the community and membership response to a Project Proposal, verifies that appropriate resources are available for the project to achieve its plan, and serves as a Committer election for the project's initial Participant Representatives. For a complete definition, see the {edpCreationReviewUrl}[EDP].
 
-Final Specification :: A complete Specification which may be used as a basis for creating Compatible Implementations.
+Final Specification :: A complete revision of a Specification which may be used as a basis for creating Compatible Implementations.
 
 [[efsp-individual]]Individual Participant :: An individual Committer Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]) who agrees to actively participate in the Working Group and meets the requirements for participation as defined by the Working Group Charter. An Individual Participant is specifically not employed by a xref:efsp-member[Member Participant].
 +
@@ -120,11 +120,11 @@ Proposal Phase :: A phase in the Project lifecycle during which a Project Propos
 
 Ratified :: A Specification Version that has been approved by the Specification Committee and made available under the Eclipse Foundation Specification License to enable the creation and certification of Compatible Implementations.
 
-Release :: TBD
+Release :: A synonym for Final Specification.
 
 Release Candidate :: A feature-complete Milestone Build.
 
-Release Cycle :: The cycle of development that produces a Specification Version.
+Release Cycle :: The cycle of development that produces a Final Specification.
 
 Release Plan :: The description of activities to be undertaken as part of a Release Cycle to produce a Specification Version.
 
@@ -146,7 +146,7 @@ Specification Project :: An Eclipse Foundation Project operating under the EDP 
 
 Specification Team :: A synonym for Project Team (as that term is defined in the EDP). The Project Team may also be referred to as an Expert Group, Special Interest Group, or Technical Committee.
 
-Specification Version :: A feature-complete version of a Specification is referred to as a Specification Version. A Specification Version is a candidate Final Specification. 
+Specification Version :: A complete revision of a Specification which is a candidate to become a Final Specification.
 
 Super-majority :: Two-thirds of the eligible voters.
 
@@ -225,7 +225,7 @@ Each Specification Version references specific versions of its constituent artif
 .Conceptual structure of a Specification Version
 image::images/version.svg[image, 250]
 
-A Project Team must engage in a xref:efsp-reviews-release[Release Review] to turn a Major Release or Minor Release of a Specification Version into a Final Specification. A Service Release of a Specification Version is automatically a Final Specification.
+When the result is a Major or Minor Release, a Project Team must engage in a xref:efsp-reviews-release[Release Review] to ratify a Specification Version as a Final Specification. When the result is a Service Release, a Specification Version is automatically a Final Specification.
 
 [[efsp-tck]]
 ==== Technology Compatibility Kits
@@ -287,7 +287,7 @@ All artifacts related to a ballot must be delivered in distribution form to the 
 
 A Release Plan lists themes and areas of focus, describes Milestone Builds, and lists tentative dates for Reviews. The work defined by a Release Plan must be within the Scope of the Specification Project.
 
-The exact requirements for a Release Plan, including the number and timing of Milestone Builds and Reviews, are determined by the Project Leadership Chain and the Specification Committee. Minimally, a Release Plan must include a textual description of the activities planned for the Specification Version, and tentative dates for Milestone Builds, Progress Reviews, and the Release Review. Following approval, the Specification Committee must be notified of any changes to the dates of the Progress Review and the Release Review. The Specification Committee may, at their discretion, demand that the project team engage in additional Progress Reviews.
+The exact requirements for a Release Plan, including the number and timing of Milestone Builds and Reviews, are determined by the Project Leadership Chain and the Specification Committee. Minimally, a Release Plan must include a textual description of the activities planned for the Release, and tentative dates for Milestone Builds, Progress Reviews, and the Release Review. Following approval, the Specification Committee must be notified of any changes to the dates of the Progress Review and the Release Review. The Specification Committee may, at their discretion, demand that the project team engage in additional Progress Reviews.
 
 The Project Proposal serves as the Release Plan for the first release of a Specification Project.
 
@@ -306,7 +306,7 @@ The Specification {edpLifecycleUrl}[Project Lifecycle] is defined by the EDP.
 [[efsp-releases]]
 ==== Releases
 
-While in the Incubation and Mature Phases, a Specification Project may engage in the Release process to produce Specification Versions which, when <<efsp-ratification,Ratified>>, become Final Specifications. <<efsp-reviews,Reviews>> are required for all Major and Minor Releases of a Specification Project.
+While in the Incubation and Mature Phases, a Specification Project may produce Specification Versions which, when <<efsp-ratification,Ratified>>, become Final Specifications. A <<efsp-reviews-release,Release Reviews>> is required to ratify all Major and Minor Releases of a Specification Project.
 
 There are three types of Releases: Major, Minor, and Service. A Project Team may consult with their PMC and Specification Committee to determine the appropriate classification.
 
@@ -336,7 +336,7 @@ All communication regarding Milestone Builds must include caveats explaining tha
 
 A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. Specifically, a Service Release must not include any significant new features and/or breaking changes. A Project Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
 
-A Project Team must have engaged in a successful Release Review prior to engaging in a Service Release. 
+A Project Team must have previously engaged in a successful Release Review prior to engaging in a Service Release. 
 
 [NOTE]
 ====
