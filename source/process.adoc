@@ -225,8 +225,6 @@ Each Specification Version references specific versions of its constituent artif
 .Conceptual structure of a Specification Version
 image::images/version.svg[image, 250]
 
-The Specification Document and related technical artifacts must be developed by the Project Team.
-
 A Project Team must engage in a xref:efsp-reviews-release[Release Review] to turn a Major Release or Minor Release of a Specification Version into a Final Specification. A Service Release of a Specification Version is automatically a Final Specification.
 
 [[efsp-tck]]
