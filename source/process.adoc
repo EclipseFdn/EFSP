@@ -144,7 +144,7 @@ Specification Document :: The document that defines a Specification.
 
 Specification Project :: An Eclipse Foundation Project operating under the EDP and EFSP that is constituted to deliver Specification Versions.
 
-Specification Team :: The collective of Committers with responsibilities and privileges on a specific Specification Project.
+Specification Team :: A synonym for Project Team (as that term is defined in the EDP). The Project Team may also be referred to as an Expert Group, Special Interest Group, or Technical Committee.
 
 Specification Version :: A feature-complete version of a Specification is referred to as a Specification Version. A Specification Version is a candidate Final Specification. 
 
@@ -225,14 +225,14 @@ Each Specification Version references specific versions of its constituent artif
 .Conceptual structure of a Specification Version
 image::images/version.svg[image, 250]
 
-The Specification Document and related technical artifacts must be developed by the Specification Team.
+The Specification Document and related technical artifacts must be developed by the Project Team.
 
-A Specification Team must engage in a xref:efsp-reviews-release[Release Review] to turn a Major Release or Minor Release of a Specification Version into a Final Specification. A Service Release of a Specification Version is automatically a Final Specification.
+A Project Team must engage in a xref:efsp-reviews-release[Release Review] to turn a Major Release or Minor Release of a Specification Version into a Final Specification. A Service Release of a Specification Version is automatically a Final Specification.
 
 [[efsp-tck]]
 ==== Technology Compatibility Kits
 
-The Specification Team must designate exactly one TCK under an Open Source License for each Specification Version. The TCK becomes a part of the Final Specification.
+The Project Team must designate exactly one TCK under an Open Source License for each Specification Version. The TCK becomes a part of the Final Specification.
 
 The TCK may be different for different Specification Versions/Final Specifications.
 
@@ -293,7 +293,7 @@ The exact requirements for a Release Plan, including the number and timing of Mi
 
 The Project Proposal serves as the Release Plan for the first release of a Specification Project.
 
-A Release Plan must be approved by a Super-majority of the Specification Committee. If the Release Plan is rejected, the Specification Team may reapply at a future date.
+A Release Plan must be approved by a Super-majority of the Specification Committee. If the Release Plan is rejected, the Project Team may reapply at a future date.
 
 [[efsp-process]]
 == Specification Process
@@ -310,11 +310,11 @@ The Specification {edpLifecycleUrl}[Project Lifecycle] is defined by the EDP.
 
 While in the Incubation and Mature Phases, a Specification Project may engage in the Release process to produce Specification Versions which, when <<efsp-ratification,Ratified>>, become Final Specifications. <<efsp-reviews,Reviews>> are required for all Major and Minor Releases of a Specification Project.
 
-There are three types of Releases: Major, Minor, and Service. A Specification Team may consult with their PMC and Specification Committee to determine the appropriate classification.
+There are three types of Releases: Major, Minor, and Service. A Project Team may consult with their PMC and Specification Committee to determine the appropriate classification.
 
 [NOTE]
 ====
-The notions of Major, Minor, and Service Release bear a close resemblance to the "MAJOR.MINOR.PATCH" structure described by the Semantic Versioning specification. While a Specification Team may opt to use Semantic Versioning when naming their releases, this process imposes no requirement to do so. Further, this process imposes no requirement to tie any particular type of Release to any particular Semantic Versioning scheme.
+The notions of Major, Minor, and Service Release bear a close resemblance to the "MAJOR.MINOR.PATCH" structure described by the Semantic Versioning specification. While a Project Team may opt to use Semantic Versioning when naming their releases, this process imposes no requirement to do so. Further, this process imposes no requirement to tie any particular type of Release to any particular Semantic Versioning scheme.
 ====
 
 [[efsp-releases-major]]
@@ -327,7 +327,7 @@ A Specification Project's first Release must be a Major or Minor Release.
 [[efsp-milestones]]
 ==== Milestone Builds
 
-Leading up to a Release, a Specification Team must produce at least one Milestone Build. Milestone Builds should be staged for limited distribution to key stakeholders to solicit feedback. No formal Reviews are required for Milestone Builds. 
+Leading up to a Release, a Project Team must produce at least one Milestone Build. Milestone Builds should be staged for limited distribution to key stakeholders to solicit feedback. No formal Reviews are required for Milestone Builds. 
 
 Under no circumstances are Milestone Builds to be used as a substitute for doing proper official Releases. 
 
@@ -336,9 +336,9 @@ All communication regarding Milestone Builds must include caveats explaining tha
 [[efsp-releases-service]]
 ==== Service Releases
 
-A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. Specifically, a Service Release must not include any significant new features and/or breaking changes. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
+A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. Specifically, a Service Release must not include any significant new features and/or breaking changes. A Project Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
 
-A Specification Team must have engaged in a successful Release Review prior to engaging in a Service Release. 
+A Project Team must have engaged in a successful Release Review prior to engaging in a Service Release. 
 
 [NOTE]
 ====
@@ -350,7 +350,7 @@ No reviews are required for a Service Release.
 [[efsp-version-lifecycle]]
 === Specification Version Lifecycle
 
-To produce a <<efsp-versions,Specification Version>> (with the exception of <<efsp-releases-service, Service Releases>>) a Specification Team must engage in a formal Release Cycle under the supervision of the PMC and the Specification Committee.
+To produce a <<efsp-versions,Specification Version>> (with the exception of <<efsp-releases-service, Service Releases>>) a Project Team must engage in a formal Release Cycle under the supervision of the PMC and the Specification Committee.
 
 [graphviz, images/lifecycle, svg]
 .An overview of the Eclipse Foundation Specification Process
@@ -358,13 +358,13 @@ To produce a <<efsp-versions,Specification Version>> (with the exception of <<ef
 include::diagrams/efsp_lifecycle.dot[]
 ----
 
-A Specification Project’s first Release Cycle starts with the successful completion of a Creation Review (or Restructuring Review in the event that a Restructuring Review is used to convert an existing Project into a Specification Project). To start a subsequent Release Cycle (and every Release Cycle thereafter), the Specification Team must present a Release Plan to the Specification Committee in a <<efsp-reviews-plan,Plan Review>>. The Plan Review must be approved by a Super-majority of the Specification Committee. 
+A Specification Project’s first Release Cycle starts with the successful completion of a Creation Review (or Restructuring Review in the event that a Restructuring Review is used to convert an existing Project into a Specification Project). To start a subsequent Release Cycle (and every Release Cycle thereafter), the Project Team must present a Release Plan to the Specification Committee in a <<efsp-reviews-plan,Plan Review>>. The Plan Review must be approved by a Super-majority of the Specification Committee. 
 
-A Release Cycle ends when the Specification Team delivers a Specification Version to the EMO and Specification Committee via a <<efsp-reviews-release,Release Review>>. To extend the Release Cycle, the Specification Team must stage a Milestone Build and engage in a <<efsp-reviews-progress, Progress Review>>. The Specification Team must engage in either a Release Review (which ends the Release Cycle) or a Progress Review (which extends the Release Cycle) within twelve (12) months of the last Review.
+A Release Cycle ends when the Project Team delivers a Specification Version to the EMO and Specification Committee via a <<efsp-reviews-release,Release Review>>. To extend the Release Cycle, the Project Team must stage a Milestone Build and engage in a <<efsp-reviews-progress, Progress Review>>. The Project Team must engage in either a Release Review (which ends the Release Cycle) or a Progress Review (which extends the Release Cycle) within twelve (12) months of the last Review.
 
-The Specification Team must deliver at least one Milestone Build to demonstrate progress and solicit feedback. Milestone Builds may be incomplete (for example, designated Compatible Implementations will not necessarily pass Milestone Builds of the TCK in their entirety). Subsequent Milestone Builds should, however, demonstrate progress. Later (feature complete) Milestone Builds may be referred to as _Release Candidates_. 
+The Project Team must deliver at least one Milestone Build to demonstrate progress and solicit feedback. Milestone Builds may be incomplete (for example, designated Compatible Implementations will not necessarily pass Milestone Builds of the TCK in their entirety). Subsequent Milestone Builds should, however, demonstrate progress. Later (feature complete) Milestone Builds may be referred to as _Release Candidates_. 
 
-The Specification Team must engage in a successful Release Review before the final Specification Version may be Ratified. A Specification Version becomes a Final Specification when it is Ratified.
+The Project Team must engage in a successful Release Review before the final Specification Version may be Ratified. A Specification Version becomes a Final Specification when it is Ratified.
 
 [[efsp-reviews]]
 === Reviews
@@ -375,7 +375,7 @@ A Specification Project may engage in all of the Reviews described by the EDP w
 
 Project Leads are responsible for initiating the appropriate Reviews. The Project Leadership Chain may also initiate a Review on the project’s behalf.
 
-The Specification Team must complete all required due diligence under the Eclipse Foundation IP Policy before initiating a Review.
+The Project Team must complete all required due diligence under the Eclipse Foundation IP Policy before initiating a Review.
 
 [[efsp-reviews-creation]]
 ==== Creation Review
@@ -399,16 +399,10 @@ The Project Proposal must not be modified while the Creation Review and Specific
 
 Upon successful completion of a Creation Review, the EMO will declare the review successful and initiate the process of provisioning project resources.
 
-[graphviz, images/creation, svg]
-.Overview of the creation of a Specification Project
-----
-include::diagrams/efsp_creation.dot[]
-----
-
 [[efsp-reviews-plan]]
 ==== Plan Review
 
-A Plan Review provides a means for the Specification Team to present their Release Plan to the Project Leadership Chain, the Specification Committee, and the community for feedback. The Specification Committee must approve the Plan Review by a Super-majority ballot.
+A Plan Review provides a means for the Project Team to present their Release Plan to the Project Leadership Chain, the Specification Committee, and the community for feedback. The Specification Committee must approve the Plan Review by a Super-majority ballot.
 
 [[efsp-reviews-progress]]
 ==== Progress Review
@@ -428,9 +422,9 @@ A Specification Project must engage in a successful Release Review at the end of
 
 The final build of the Specification Version’s artifacts must be delivered to the PMC and Specification Committee before the start of the Release Review. The final build may be staged before the start of the review, but must not be distributed as an official release until the Release Review is successfully completed.
 
-The Specification Team must provide evidence that the TCK selected for the Specification Version provides sufficient coverage to reasonably validate Compatible Implementations.
+The Project Team must provide evidence that the TCK selected for the Specification Version provides sufficient coverage to reasonably validate Compatible Implementations.
 
-The Specification Team must provide evidence that cited Compatible Implementations fulfill all requirements of the TCK.
+The Project Team must provide evidence that cited Compatible Implementations fulfill all requirements of the TCK.
 
 A Release Review concludes successfully with approval from the PMC and EMO, and approval by a Super-majority of the Specification Committee.
 
