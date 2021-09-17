@@ -382,12 +382,7 @@ Specification Projects are created using the process defined by the EDP with th
 
 [[efsp-restructuring-review]]An existing Project may be converted into a Specification Project via a Restructuring Review. In this case, the Restructuring Review serves as the Creation Review; other changes to the nature of the existing Project (e.g., the Scope) may be included with the Restructuring Review. Unlike a Creation Review, no Project Proposal is required for a Restructuring Review. Like a Creation Review, a Restructuring Review that converts an existing Project into a Specification Project must be approved by the Specification Committee by Super-majority ballot. 
 
-The Eclipse Foundation's Executive Director must approve a Project Proposal before it can be posted for community review. 
-
-[NOTE]
-====
-In the event where a Project Proposal undergoes significant changes during the community review period (e.g., the scope or patent license is changed), the EMO will confirm the Executive Director's approval prior to initiating a creation review.
-====
+The Eclipse Foundation's Executive Director must approve a Project Proposal before it can be posted for community review. In the event where a Project Proposal undergoes significant changes during the community review period (e.g., the Scope or Patent License is changed), the EMO will confirm the Executive Director's approval prior to initiating a Creation Review.
 
 A Project Proposal's selection of xref:efsp-patent-license[Patent License] must be approved by the Working Group's _Steering Committee_ prior to the start of a Creation Review. A Patent License that matches the Working Group default Patent License (as designated by the Steering Committee) is automatically approved. In the case where the Specification Project proposes to use a Patent License that is different from the Working Group's default the EMO will engage the Working Group's Steering Committee to vote to approve the exception.
 
