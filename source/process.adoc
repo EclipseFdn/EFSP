@@ -58,7 +58,7 @@ Contributor :: An individual who is a party to the https://www.eclipse.org/legal
 
 Creation Review :: A review to assess the community and membership response to a Project Proposal, verifies that appropriate resources are available for the project to achieve its plan, and serves as a Committer election for the project's initial Participant Representatives. For a complete definition, see the {edpCreationReviewUrl}[EDP].
 
-Final Specification :: A complete revision of a Specification which may be used as a basis for creating Compatible Implementations.
+Final Specification :: A completed revision of a Specification which may be used as a basis for creating Compatible Implementations.
 
 [[efsp-individual]]Individual Participant :: An individual Committer Member of the Eclipse Foundation (as defined in the {bylawsUrl}[Eclipse Foundation Bylaws]) who agrees to actively participate in the Working Group and meets the requirements for participation as defined by the Working Group Charter. An Individual Participant is specifically not employed by a xref:efsp-member[Member Participant].
 +
@@ -85,7 +85,7 @@ SPDX short identifier: BSD-3-Clause
 * https://opensource.org/licenses/Apache-2.0[Apache License - v 2.0] +
 SPDX short identifier: Apache-2.0
 +
-This list may be modified with the unanimous approval of the Working Group Steering Committee and the Eclipse Foundation Board of Directors.
+This list may be modified with the Super-majority approval of the Working Group Steering Committee and the Eclipse Foundation Board of Directors.
 
 Participant :: An Eclipse Foundation Member that agrees to actively participate in the Working Group and meets the requirements for participation as defined by the Working Group Charter. 
 +
@@ -146,7 +146,7 @@ Specification Project :: An Eclipse Foundation Project operating under the EDP 
 
 Specification Team :: A synonym for Project Team (as that term is defined in the EDP). The Project Team may also be referred to as an Expert Group, Special Interest Group, or Technical Committee.
 
-Specification Version :: A complete revision of a Specification which is a candidate to become a Final Specification.
+Specification Version :: A completed revision of a Specification which is a candidate to become a Final Specification.
 
 Super-majority :: Two-thirds of the eligible voters.
 
@@ -193,18 +193,13 @@ The _Patent License_ defines how patent grants flow from a Final Specification t
 For help regarding selection of a Patent License, see {operationsPatentLicenseUrl}[Patents and Specifications].
 ====
 
-The Working Group's _Steering Committee_ must set a default Patent License for its Specification Projects.
-
-[NOTE]
-====
-Ideally, the default Patent License should be recorded in the Working Group's Charter. The means by which the Steering Committee makes the decision is not prescribed by this policy; the Steering Committee should follow their standard practices as described in their Charter.
-====
+The Working Group's _Steering Committee_ must set the Working Group's default Patent License for its Specification Projects following the process defined by the Eclipse Foundation Working Group Process. In the absence of an explicit Steering Committee decision to the contrary, the Implementation Patent License prevails.
 
 All Specifications produced by a Specification Project must use the same Patent License.
 
 At the time of creation, a proposal to create a new Specification Project or convert an existing Project into a Specification Project must explicitly state its choice of Patent License.
 
-The Working Group's _Specification Committee_ must confirm, prior to initiating a ballot that will result in the establishment of a Specification Project, that the selection of Patent License matches the default Patent License. The Working Group's _Steering Committee_ must approve all exceptions.
+The Working Group's _Specification Committee_ must confirm, prior to initiating a ballot that will result in the establishment of a Specification Project, that the selection of Patent License matches the default Patent License. The Working Group's _Steering Committee_ must approve exceptions to the Working Group's default Patent License.
 
 [[efsp-specifications]]
 === Specifications
@@ -273,8 +268,8 @@ A Specification Committee must approve, by Super-majority, the following lifecyc
 * The Release Plan for a new Release Cycle of a Specification;
 * Each revision to the Scope of a Specification;
 * Each Check Point Review of a Specification Project, including the ratification of Specification Versions;
-* Designation of a Specification as a Profile; and
-* Designation of a Profile as a Platform.
+* Designation of a Specification as a Profile (this Super-majority must include a Super-majority of Strategic Members of the Working Group, when the Working Group has a notion of Strategic Member or equivalent); and
+* Designation of a Profile as a Platform (this Super-majority must include a Super-majority of Strategic Members of the Working Group, when the Working Group has a notion of Strategic Member or equivalent).
 
 A ballot is used to seek Specification Committee approval. Unless otherwise stated in this process (or a Working Group-specific derivative of this process), the default period for all Specification Committee ballots is seven (7) days. During that time, any member of a Specification Committee may request that the period be extended to thirty (30) days. 
 
@@ -282,12 +277,14 @@ A Specification Committee may opt to increase the length of the ballot period, b
 
 All artifacts related to a ballot must be delivered in distribution form to the Specification Committee prior to the start of the ballot period, must not change during the ballot period (with the exception of minor corrections that do not change the semantic intent, as determined by the Specification Committee), and must persist in the delivered form following the ballot as part of the public record.
 
+All other votes of the Specification Committee require a simple majority.
+
 [[efsp-plans]]
 === Release Plans
 
 A Release Plan lists themes and areas of focus, describes Milestone Builds, and lists tentative dates for Reviews. The work defined by a Release Plan must be within the Scope of the Specification Project.
 
-The exact requirements for a Release Plan, including the number and timing of Milestone Builds and Reviews, are determined by the Project Leadership Chain and the Specification Committee. Minimally, a Release Plan must include a textual description of the activities planned for the Release, and tentative dates for Milestone Builds, Progress Reviews, and the Release Review. Following approval, the Specification Committee must be notified of any changes to the dates of the Progress Review and the Release Review. The Specification Committee may, at their discretion, demand that the project team engage in additional Progress Reviews.
+The exact requirements for a Release Plan, including the number and timing of Milestone Builds and Reviews, are determined by both the Project Leadership Chain and the Specification Committee. Minimally, a Release Plan must include a textual description of the activities planned for the Release, and tentative dates for Milestone Builds, Progress Reviews, and the Release Review. Following approval, the Specification Committee must be notified of any changes to the dates of the Progress Review and the Release Review. The Specification Committee may, at their discretion, require that the project team engage in additional Progress Reviews.
 
 The Project Proposal serves as the Release Plan for the first release of a Specification Project.
 
@@ -306,7 +303,7 @@ The Specification {edpLifecycleUrl}[Project Lifecycle] is defined by the EDP.
 [[efsp-releases]]
 ==== Releases
 
-While in the Incubation and Mature Phases, a Specification Project may produce Specification Versions which, when <<efsp-ratification,Ratified>>, become Final Specifications. A <<efsp-reviews-release,Release Reviews>> is required to ratify all Major and Minor Releases of a Specification Project.
+While in the Incubation and Mature Phases, a Specification Project may produce Specification Versions which, when <<efsp-ratification,Ratified>>, become Final Specifications. A <<efsp-reviews-release,Release Review>> is required to ratify all Major and Minor Releases of a Specification Project.
 
 There are three types of Releases: Major, Minor, and Service. A Project Team may consult with their PMC and Specification Committee to determine the appropriate classification.
 
@@ -340,7 +337,7 @@ A Project Team must have previously engaged in a successful Release Review prior
 
 [NOTE]
 ====
-In the case where a Specification Project hosts multiple Specifications, the first release any individual Specification must be treated as either a Major or Minor Release regardless of its history.
+In the case where a Specification Project hosts multiple Specifications, the first release of any individual Specification must be treated as either a Major or Minor Release regardless of its history.
 ====
 
 No reviews are required for a Service Release.
