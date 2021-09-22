@@ -6,6 +6,7 @@
 - Reference Patent Licenses, see https://github.com/EclipseFdn/EFSP/issues/47 and https://github.com/EclipseFdn/EFSP/issues/51
 - Describe the relation between specification projects and working groups, see https://github.com/EclipseFdn/EFSP/issues/56
 - The Eclipse Foundation Executive Director must approval all Project Proposals, see https://github.com/EclipseFdn/EFSP/issues/62
+- Add clarification that the TCK must be licensed under the Eclipse Foundation TCK License https://github.com/EclipseFdn/EFSP/issues/65
 
 ### Removed
 - Removes requirements regarding optional elements and supersetting (delegates to working groups), see https://github.com/EclipseFdn/EFSP/issues/42

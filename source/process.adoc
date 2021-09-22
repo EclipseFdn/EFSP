@@ -225,7 +225,7 @@ When the result is a Major or Minor Release, a Project Team must engage in a xre
 [[efsp-tck]]
 ==== Technology Compatibility Kits
 
-The Project Team must designate exactly one TCK under an Open Source License for each Specification Version. The TCK becomes a part of the Final Specification.
+The Project Team must designate exactly one TCK under an Open Source License for each Specification Version. A binary version of the TCK licensed under the _Eclipse Foundation TCK License_ becomes a part of the Final Specification.
 
 The TCK may be different for different Specification Versions/Final Specifications.
 
