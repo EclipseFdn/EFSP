@@ -13,12 +13,3 @@ include::config.adoc[]
 include::process.adoc[]
 
 include::addendum.adoc[leveloffset=+1]
-
-[[efsp-history]]
-== History
-
-:!sectlinks:
-
-Changes made in this document:
-
-include::../CHANGELOG[leveloffset=+2]
