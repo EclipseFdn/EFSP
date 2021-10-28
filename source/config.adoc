@@ -8,7 +8,7 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 
-:effectiveDate: DRAFT
+:effectiveDate: Effective November 1, 2021
 
 :membershipLevelsUrl: https://www.eclipse.org/membership/#tab-levels
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
