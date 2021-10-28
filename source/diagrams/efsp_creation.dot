@@ -15,12 +15,16 @@
 	start[shape="circle";label=""];
 	proposal[shape="box"; label="Project Team\nPresents Proposal\nto the EMO"];
 	ed_approval[shape="box"; label="EMO(ED)\nApproval"];
-	start_community_review[shape="box"; label="Start\nCommunity\nReview"];
+	{
+		rank=same;rankdir="LR";
+		start_community_review[shape="box"; label="Start\nCommunity\nReview"];
+		community_review[shape="none";label="📆\nMinimum\nOne Week"];
+	}
 	{
 		{
 			rank=same;rankdir="TB";
 			is_patent_license[shape="diamond";label="Does Patent License\nmatch the default?";fontsize="10"];
-			is_patent_license_yes[style="invis",fixedsize=true,width=0,height=0];
+			//is_patent_license_yes[style="invis",fixedsize=true,width=0,height=0];
 		}
 		{
 			rank=same;rankdir="TB";
@@ -35,7 +39,7 @@
 		{
 			rank=same;rankdir=LR;
 			pmc_approval[shape="box";label="PMC Approval"];
-			community_review[shape="none";label="📆\nMinimum\nOne Week"];
+			creation_review[shape="none";label="📆\nMinimum\nOne Week"];
 			specification_committee_ballot[shape="box";label="Specification Committee\nBallots"];
 		}
 		
@@ -47,17 +51,18 @@
 	start -> proposal;
 	proposal -> ed_approval;
 	ed_approval-> start_community_review[label=" approve"];
+	start_community_review -> community_review;
+	community_review -> review;
 	start_community_review -> is_patent_license;
 	is_patent_license -> steering_committee_vote [label=" no"];
-	is_patent_license -> is_patent_license_yes[arrowhead="none"];
-	is_patent_license_yes -> review [label=" yes"];
+	is_patent_license -> review [label=" yes"];
 	steering_committee_vote -> steering_committee_approval[arrowhead="none"];
 	steering_committee_approval -> review [xlabel="approve "];
 	review -> pmc_approval;
 	pmc_approval -> success[xlabel="+1 "];
 	review -> specification_committee_ballot;
 	specification_committee_ballot -> success[label="approve"];
-	review -> community_review -> success;
+	review -> creation_review -> success;
 	success -> provision_project;
 	
 }
