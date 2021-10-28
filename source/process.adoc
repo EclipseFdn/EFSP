@@ -231,6 +231,8 @@ The TCK may be different for different Specification Versions/Final Specificatio
 
 Any implementation that fulfills all of the requirements of the TCK associated with a Final Specification may claim that it is a Compatible Implementation of that Final Specification. The TCK version associated with the Final Specification must not be modified other than as allowed or required by the rules of the TCK.
 
+All parts of a Specification should be covered by the TCK.
+
 [[efsp-compatible]]
 ==== Compatible Implementations
 
