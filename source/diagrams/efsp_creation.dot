@@ -7,62 +7,89 @@
  * 
  * SPDX-License-Identifier: EPL-2.0
  */
- digraph {
+digraph {
 	bgcolor=transparent;
 	rankdir=TB;
 	splines=ortho;
-	
-	start[shape="circle";label=""];
-	proposal[shape="box"; label="Project Team\nPresents Proposal\nto the EMO"];
-	ed_approval[shape="box"; label="EMO(ED)\nApproval"];
+
+	start[ shape="circle"; label="" ];
+	proposal[ shape="box"; label="Project Team\nPresents Proposal\nto the EMO" ];
+	ed_approval[ shape="box"; label="EMO(ED)\nApproval" ];
+
 	{
-		rank=same;rankdir="LR";
-		start_community_review[shape="box"; label="Start\nCommunity\nReview"];
-		community_review[shape="none";label="📆\nMinimum\nOne Week"];
-	}
-	{
-		{
-			rank=same;rankdir="TB";
-			is_patent_license[shape="diamond";label="Does Patent License\nmatch the default?";fontsize="10"];
-			//is_patent_license_yes[style="invis",fixedsize=true,width=0,height=0];
+
+		subgraph cluster_community_review {
+			label="Community Review";
+			labeljust="r";
+			graph[ style="dotted" ];
+
+			{
+				rank=same;
+				rankdir="LR";
+				start_community_review[ shape="box"; label="Start\nCommunity\nReview" ];
+				{
+				rank=same;
+				rankdir="TB";
+				notify_specification_committee[ shape="box"; label="Notify\nSpecification Committee,\nPMC, and community" ];
+				community_review[ shape="box"; label="📆\nMinimum\nTwo Weeks" ];
+				}
+			}
+
+			{
+
+				{
+					rank=same;
+					rankdir="TB";
+					is_patent_license[ shape="diamond"; label="Patent License\nmatches the default?"; fontsize="10" ];
+					//is_patent_license_yes[style="invis",fixedsize=true,width=0,height=0];
+
+				}
+
+				{
+					rank=same;
+					rankdir="TB";
+					steering_committee_vote[ shape="box"; label="Steering\nCommittee\nVotes" ];
+					steering_committee_approval[ style="invis", fixedsize=true, width=0, height=0 ];
+				}
+			}
+			end_community_review[ shape="box"; label="End Community\nReview" ];
 		}
-		{
-			rank=same;rankdir="TB";
-			steering_committee_vote[shape="box";label="Steering Committee\nVotes"];
-			steering_committee_approval[style="invis",fixedsize=true,width=0,height=0];
+
+		subgraph cluster_creation_review {
+			label="Creation Review";
+			labeljust="r";
+			graph[ style="dotted" ];
+
+			review[ shape="box"; label="Start\nCreation\nReview" ];
+
+			{
+				rank=same;
+				rankdir=LR;
+				pmc_approval[ shape="box"; label="PMC\nApproves" ];
+				creation_review[ shape="none"; label="📆\nMinimum\nOne Week" ];
+				specification_committee_ballot[ shape="box"; label="Specification\nCommittee\nBallots" ];
+			}
+
+			success[ shape="box"; label="End\nCreation\nReview" ];
 		}
 	}
-	
-	{
-		review[shape="box";label="Start\nCreation\nReview"];
-		
-		{
-			rank=same;rankdir=LR;
-			pmc_approval[shape="box";label="PMC Approval"];
-			creation_review[shape="none";label="📆\nMinimum\nOne Week"];
-			specification_committee_ballot[shape="box";label="Specification Committee\nBallots"];
-		}
-		
-		success[shape="box";label="End\nCreation\nReview"];
-	}
-	
-	provision_project[shape="box";label="Initiate\nProject Provisioning"];
-	
+	provision_project[ shape="box"; label="Initiate\nProject Provisioning" ];
+
 	start -> proposal;
 	proposal -> ed_approval;
-	ed_approval-> start_community_review[label=" approve"];
-	start_community_review -> community_review;
-	community_review -> review;
+	ed_approval -> start_community_review[ label=" approve" ];
+	start_community_review -> notify_specification_committee;
+	notify_specification_committee -> community_review;
+	community_review -> end_community_review[ label="gather\nfeedback" ];
 	start_community_review -> is_patent_license;
-	is_patent_license -> steering_committee_vote [label=" no"];
-	is_patent_license -> review [label=" yes"];
-	steering_committee_vote -> steering_committee_approval[arrowhead="none"];
-	steering_committee_approval -> review [xlabel="approve "];
-	review -> pmc_approval;
-	pmc_approval -> success[xlabel="+1 "];
-	review -> specification_committee_ballot;
-	specification_committee_ballot -> success[label="approve"];
-	review -> creation_review -> success;
+	is_patent_license -> steering_committee_vote[ label=" no" ];
+	is_patent_license -> end_community_review[ label=" yes" ];
+	steering_committee_vote -> steering_committee_approval[ arrowhead="none" ];
+	steering_committee_approval -> end_community_review[ xlabel="approve " ];
+	end_community_review -> review;
+
+	review -> creation_review -> success; review -> pmc_approval; pmc_approval -> success[ xlabel="+1 " ]; review ->
+	specification_committee_ballot; specification_committee_ballot -> success[ label="approve" ];
+	//review -> creation_review -> success;
 	success -> provision_project;
-	
 }
