@@ -13,7 +13,7 @@ include::config.adoc[]
 [[efspo]]
 = Eclipse Foundation Specification Operations Guide
 
-Version 1.0. Effective March 31/2021.
+Version {revnumber}. Effective 2021-11-01. Updated {docdate}.
 
 toc::[]
 

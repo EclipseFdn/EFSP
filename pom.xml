@@ -69,6 +69,9 @@
 					</requires>
 					<backend>xhtml5</backend>
 					<attributes>
+						<revnumber>${project.version}</revnumber>
+						<revdate>${maven.build.timestamp}</revdate>
+						<organization>${project.organization.name}</organization>
 						<endpoint-url>http://www.eclipse.org</endpoint-url>
 						<project-version>${project.version}</project-version>
 						<doctype>book</doctype>
