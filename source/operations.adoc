@@ -189,7 +189,89 @@ Appointing a participant representative this is a power that a member participan
 
 Additional committers can be added via {handbookCommitterElectionsUrl}[committer election].
 
-////
+[#efspo-creating]
+== Creating a Specification Project
+
+Specification project start with a project proposal which is presented to the community for review and then used as the basis for a xref:efspo-reviews-creation[creation review] (which requires a successful xref:efspo-ballots[ballot] of the xref:efspo-spec-committee[specification committee].
+
+The gist of how this works is shown here:
+
+.An overview of the Specification Project Creation Process
+[plantuml, overview_creation, svg]
+----
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+hide footbox
+
+actor Committer
+actor EMO
+actor PMC
+actor "Specification\nCommittee" as SpecificationCommittee
+
+participant Proposal
+participant "Creation\nReview" as CreationReview
+
+== Initiate (internal) ==
+Committer -> Proposal : Assemble
+activate Proposal
+Committer -> EMO : Request to Post
+EMO -> Proposal : Review
+EMO -> Proposal : Post for Community Review
+
+== Community Review (public) ==
+EMO -> PMC : Request approval
+activate PMC
+PMC -> EMO : Approves!
+deactivate PMC
+EMO -> SpecificationCommittee : Inform and start socialization
+Committer -> SpecificationCommittee : Socialize
+...minimum of two weeks...
+
+== Creation Review ==
+
+EMO -> CreationReview : Initiate
+activate CreationReview
+CreationReview -> Ballot: Initiates
+activate Ballot
+SpecificationCommittee -> Ballot: Votes
+...minimum of one week...
+CreationReview <- Ballot: Success!
+deactivate Ballot
+EMO -> CreationReview : Declares Success
+deactivate CreationReview
+deactivate Proposal
+
+== Provisioning ==
+
+EMO -> Provisioning : Initiate
+activate Provisioning
+@enduml
+----
+
+[efspo-proposal]
+=== Proposal
+
+Use the {createUrl}[web form] to create a new project proposal. This is the same form that we use for all {forgeName} Projects and it captures the same sort of information, including the identity of the working group under which the specification project is intended to operate (the field labeled "Is this a specification project?").
+
+A proposal document is initially accessible only by the person who creates the proposal and anybody that they list in a project role. Everyone who is listed as a project lead will have read and write access to the proposal document while it is in this draft state; all other listed persons will have read access.
+
+[TIP]
+====
+To be listed on a project proposal as a project lead, an individual must be known to the project system. That is, to be listed as a project lead, an individual must have previously created an Eclipse Foundation account and must have logged into `projects.eclipse.org` at least once.
+====
+
+To open the proposal for community review, send a note to the {emoEmail}EMO. The EMO will review the proposal and may make recommendations for changes to the team. When the EMO is satisfied that the proposal is ready for community review, they will open the proposal for community review.
+
+[efspo-proposal-approval]
+=== Approvals
+
+Immediately after opening a specification project proposal for community review, the EMO will request approval from the corresponding xref:efspo-roles-pmc[PMC] and inform the corresponding specification committee.
+
+The EMO will connect with the PMC via their mailing list request their approval. With their approval, the PMC indicates that they believe that the scope of the specification project fits in with the overall mission and scope of the top-level project and that they are prepared to provide guidance to the project team and participate in the specification project's governance as required by the Eclipse Foundation Development Process. The EMO will accept a `pass::[+1]` from any member of the PMC as approval on behalf of the entire PMC. PMC approval is required _before_ the start of the xref:efspo-reviews-creation[creation review].
+
+
+
 [#efspo-implementing]
 == Implementing the EFSP
 
@@ -202,7 +284,6 @@ The specification committee must establish open and transparent communication ch
 skinparam monochrome true
 skinparam shadowing false
 hide footbox
-autonumber
 
 actor Committer
 actor SpecificationCommittee
@@ -245,6 +326,7 @@ activate FinalSpecification
 @enduml
 ----
 
+[efspo-planning]
 === Planning
 
 Every development cycle starts with a plan and a plan review. The project team assembles their release plan, the project lead (or their delegate) presents the plan to the specification committee, and the specification committee initiates <<efspo-reviews-plan,plan review>>. The plan review consists entirely of a ballot of the specification committee. A super-majority of the specification committee must vote to approve the plan.
@@ -252,7 +334,7 @@ Every development cycle starts with a plan and a plan review. The project team a
 A plan should concisely describe the new features and themes on which the development team intends to focus. The level of detail required in a plan varies by working group.
 
 [start=1]
-. The specification project committers assemble the plan in an open and transparent manner. Project committers create a {hadnbookReleasePlanUrl}[release record]. The release record can be used to actually capture the plan, or can include a pointer to the plan represented elsewhere.
+. The specification project committers assemble the plan in an open and transparent manner. Project committers create a {handbookReleasePlanUrl}[release record]. The release record can be used to actually capture the plan, or can include a pointer to the plan represented elsewhere.
 
 The specific means by which a plan is assembled is left to the discretion of the project team.
 
@@ -265,6 +347,7 @@ Specification project teams should engage with the specification committee durin
 . A committer representing the specification project delivers the plan to the specification committee  along with a request for them to initiate an approval ballot.
 . A specification committee member initiates the ballot, and tallies the results after the ballot period has completed and reports the results. Approval requires a super-majority affirmative vote from the specification committee.
 
+[efspo-development]
 === Development
 
 *Committers work in a _specification project_ Git repository.* Committers collaborate, accept contributions from contributors, and otherwise construct the specification.
@@ -275,6 +358,8 @@ Specification project teams should engage with the specification committee durin
 
 If a development cycle extends beyond a year, the project team must engage in a <<efspo-reviews-progress,progress review>>. 
 
+
+[efspo-release-release]
 === Release
 
 To initiate the release process, the project team starts by creating a _specification version_. A specification version is, effectively, a release candidate build of the specification document and related artifacts.
@@ -284,7 +369,6 @@ To initiate the release process, the project team starts by creating a _specific
 . The build is referred to as a _specification version_; it is effectively a release candidate.
 . A committer initiates the <<efspo-reviews-release,release review>> by sending an email to {emoEmail}.
 . A committer sends an email to the specification committee
-////
 
 ////
 [#efspo-patents]
@@ -330,7 +414,12 @@ The *specification committee* is ultimately responsible for ensuring that the ra
 [#efspo-reviews-creation]
 === Creation Reviews
 
-A creation review is required before a new specification project is created. In the case where an existing open source project is converted into a specification project, or a specification moves from working under the supervision of one working group to another, the creation review will be combined with a restructuring review.
+A creation review is required before a new specification project is created. 
+
+[TIP]
+====
+In the case where an existing Eclipse open source project is converted into a specification project, or a specification moves from working under the supervision of one working group to another, the creation review will be combined with a restructuring review.
+====
 
 Creation reviews are tracked and managed by the EMO. A creation review requires a <<efspo-ballot,ballot>> of the specification committee. The ballot may be initiated directly by a member of the specification committee; the EMO can provide assistance if required.
 
